@@ -326,7 +326,7 @@ ni-scenes       & \textbf{-0.66} ($p<0.01$)    & \textbf{-0.47} ($p<0.01$) \\
 
 \begin{figure}[t!]
 \centering
-\includegraphics[width=.4\paperwidth]{../gfxMatlab/xp1_div_1.eps} 
+\includegraphics[width=\columnwidth]{../gfxMatlab/xp1_div_1.eps} 
 \caption{\label{fig:analyseDensitySnrGlobal3} Diversity across semantic levels for event and texture classes. \nm{il faut mieux differencier les donnees provenant du corpus event et du corpus texture}}
 \end{figure}
 
@@ -354,8 +354,8 @@ There is a considerable difference between the sound class selections of the i- 
 
 \begin{figure*}[t!]
 \begin{center}
-\includegraphics[scale=1]{../gfxMatlab/xp1_class_1.eps}
-    \caption{\label{fig:xp1_class_1} (a) Percentage of subjects using (a) event sound classes of the semantic level $0^{+}$, (b) texture sound classes of the semantic level $0^{+}$ and (c) event subclasses of the $0^{+}$ classes \emph{car} and \emph{public transport}, to simulate the i-scenes (left-green) and the ni-scenes (right-red).}
+\includegraphics[width=2\columnwidth]{../gfxMatlab/xp1_class_1.eps}
+    \caption{\label{fig:xp1_class_1} (a) Percentage of subjects using (a) event sound classes of the semantic level $0^{+}$, (b) texture sound classes of the semantic level $0^{+}$ and (c) event classes of the semantic level 1 belonging to the event classes \emph{traffic} and \emph{public transport} of the semantic level $0^{+}$; ni-scenes (left-red), i-scenes (right-green).}
 \end{center}
 \end{figure*}
 
@@ -376,27 +376,28 @@ Results are shown on Table~\ref{tab:markers}. Nine markers are found across all 
 Markers of the ni-scenes are sounds due to construction work (\textit{construction work}), and sounds suggesting dense traffic (\textit{horn}, \textit{siren}). Although these markers are rather intuitive, none of the event classes related to motorized vehicles is a marker. It seems that subjects chose to illustrate unpleasant traffic sounds using horns and sirens.
 
 \begin{table}[t]
- \setlength{\tabcolsep}{0.1pt}
+ \setlength{\tabcolsep}{0.2pt}
  \centering
   {\renewcommand{\arraystretch}{0.9}
 \begin{tabular}{c c c c} 
 Semantic   &  \multicolumn{2}{c}{Markers} \\
 level & i-scenes & ni-scenes \\
 \hline
-0  &              &  construction work  \\
+0  &                                &  construction work (3.78)  \\
 \hline
-1  & church bell  & horn  \\
-   & bell bike    & siren \\
-   & animal       &       \\
+  & church bell  (4.5)             & horn  (3.9) \\
+1   & bell bike    (4.3)             & siren (3.9)\\
+   & animal       (4.2)             &       \\
    \hline
-2  & birds         & horn  \\
-   & church bell   & siren \\
-   & bell bike     &       \\
+  & birds        (4.8)             & horn  (4.0)\\
+2   & church bell  (4.4)             & siren (4.0)\\
+   & bell bike    (4.2)             &       \\
    \hline
-3  & birds singing & horn  \\
-   & church bell   & siren \\
-   & bell bike     &       \\
-   & male footsteps concrete &  \\
+  & birds singing (4.8)            & horn  (4.1)\\
+   & church bell   (4.3)            & siren (4.0)\\
+3   & bell bike     (4.2)            &       \\
+   & male footsteps                 &  \\
+   &   concrete (3.6)               &  \\
   \hline
 \end{tabular}
 }
@@ -409,7 +410,7 @@ level & i-scenes & ni-scenes \\
 
 \begin{figure}[t]
 \begin{center}
-\includegraphics[width=.4\paperwidth]{../gfxMatlab/pa5_1.eps}
+\includegraphics[width=\columnwidth]{../gfxMatlab/pa5_1.eps}
 \caption{\label{fig:pa5} Precision at rank 5 ($P@5$) computed from the \textit{Hamming} distances between the scenes at different semantic levels, considering the event and texture classes ($ET$), the event classes ($E$), the texture classes ($T$), the event markers ($E_m$) and event classes without event markers ($E_{w/o m}$) .}
 \end{center}
 \end{figure}
@@ -447,19 +448,19 @@ $D_{b}$       & -0.23  ($p=0.18$)          & -0.30 ($p=0.07$)  \\
 \begin{figure}[t]
 \begin{center}
 \includegraphics[width=.4\paperwidth]{../gfxMatlab/xp1_deSoLvMar_1.eps}
-  \caption{\label{fig:numMarkers} Averaged pleasantness vs. (a)  $LA_{(eq,V)\_m-b}$, (b) $LA_{(eq,V)\_m}$, (c) $LA_{(eq,V)\_b}$ and (d) $Density_m$.}
+  \caption{\label{fig:numMarkers} Averaged pleasantness vs. (a)  $L_{m-b}$, (b) $L_{m}$, (c) $L_{b}$ and (d) $D_m$.}
   \end{center}
 \end{figure}
 
-In order to check if the physical characteristics of the markers alone have an influence on the pleasantness, we now consider the densities and the $LA_{(eq,V)}$ with on one hand the tracks of the markers ($LA_{(eq,V)\_m}$, $Density_{m}$) and on the other hand the remaining sounds ($LA_{(eq,V)\_b}$, $Density_{b}$). The marker durations is rather short, and the number of markers in a scene is rather low, a window length of 125 ms is used to compute $LA_{(eq,V)\_m}$ and $LA_{(eq,V)\_b}$. For the i-scenes we consider only the markers of the i-scenes (i-markers), and for the ni-scenes only the markers of the ni-scenes (ni-markers). 
+In order to check if the physical characteristics of the markers alone have an influence on the pleasantness, we now consider the $D$ and the $L$ with on one hand the tracks of the markers ($L_m$, $D_{m}$) and on the other hand the remaining sounds ($L_b$, $D_b$). As the marker durations are rather short, and the number of markers in a scene are rather low, a window length of 125 ms is used to compute $L_m$ and $L_b$ \nm{pourquoi cette precision methodologique n'a t'elle pas ete donnee aussi au moment de definir ce parametre ?} \gl{plus simple ici}. For the i-scenes we consider only the markers of the i-scenes (i-markers), and for the ni-scenes only the markers of the ni-scenes (ni-markers). \nm{cela parait evident, pourquoi y'a-t'il besoin de le preciser ?} \gl{fixe bien les idées}
 
-The difference $LA_{(eq,V)\_m-b}=LA_{(eq,V)\_m}-LA_{(eq,V)\_b}$ is also considered as it illustrates how the markers emerge from the other sounds. Correlations between those descriptors and the average perceptual ratings are depicted in Table~\ref{tab:numMarkers} and Figure~\ref{fig:numMarkers}.
+The difference $L_{m-b}=L_m-L_b$ is also considered as it illustrates how the markers emerge from the other sounds. Correlations between those descriptors and the average perceptual ratings are depicted in Table~\ref{tab:numMarkers} and Figure~\ref{fig:numMarkers}.
 
-Considering $Density_{m}$ (Figure~\ref{fig:numMarkers}.d), results are almost the same than to those found in section~\ref{sec:levelDensityDiversity}. There is no correlation for the i-scenes, but the correlation increases for the ni-scenes. No correlation is found for $Density_{b}$. Sound levels descriptors are much more informative. Little to no information is lost by considering only the markers to compute $LA_{(eq,V)\_m}$, \emph{i.e.} there is still a good correlation for the ni-scenes (although inferior to the one observed in Section~\ref{sec:levelDensityDiversity}), and no correlation for the i-scenes.
+Considering $D_{m}$ (Figure~\ref{fig:numMarkers}.d), results are almost the same than to those found in section~\ref{sec:levelDensityDiversity}. There is no correlation for the i-scenes, but the correlation increases for the ni-scenes. No correlation is found for $D_{b}$. Sound levels descriptors are much more informative. Little to no information is lost by considering only the markers to compute $L_m$, \emph{i.e.} there is still a good correlation for the ni-scenes (although inferior to the one observed in Section~\ref{sec:levelDensityDiversity}), and no correlation for the i-scenes.
 
-Considering the ni-scenes, the good correlation for $LA_{(eq,V)\_m}$  (Figure~\ref{fig:numMarkers}.b) and the absence of correlation for $LA_{(eq,V)\_b}$  (Figure~\ref{fig:numMarkers}.c) suggests that the sound levels of the ni-markers convey most of the annoyance. Also, no correlation is observed for $LA_{(eq,V)\_m-b}$ (Figure~\ref{fig:numMarkers}.a). This indicates that the predominant influence of the marker sound levels remains true irrespective of the sound level of the other sounds. A loud horn sound is expected to increase the annoyance level of a scene (more so than a soft klaxon sound), whether or not the remaining of the sonic environment is ``\,noisy\,''.
+Considering the ni-scenes, the good correlation for $L_m$  (Figure~\ref{fig:numMarkers}.b) and the absence of correlation for $L_{b}$  (Figure~\ref{fig:numMarkers}.c) suggests that the sound levels of the ni-markers convey most of the unpleasantness. Also, no correlation is observed for $L_{m-b}$ (Figure~\ref{fig:numMarkers}.a). This indicates that the predominant influence of the marker sound levels remains true irrespective of the sound level of the other sounds. A loud horn sound is expected to increase the annoyance level of a scene (more so than a soft klaxon sound), whether or not the remaining of the sonic environment is ``\,noisy\,''.
 
-That said, this last statement is not valid for the i-scenes. The strong uphill correlation found between pleasantness and  $LA_{(eq,V)\_m-b}$ (Figure~\ref{fig:numMarkers}.a) shows that the higher the markers sound levels relative to the other sounds, the higher the pleasantness. But the moderate downhill correlation observed for $LA_{(eq,V)\_b}$ (Figure~\ref{fig:numMarkers}.c) shows that the levels of those remaining sounds may be a cause of annoyance if perceived as too loud. It is thus the emergence of the i-markers from the others sounds that drive the appraisal. Considering for example the sonic environment of a park and following those conclusions, the global appraisal will increase with the sound level of the birds, provided other sounds like human voices or traffic hubbub are not too loud.
+That said, this last statement is not valid for the i-scenes. The strong uphill correlation found between pleasantness and  $L_{m-b}$ (Figure~\ref{fig:numMarkers}.a) shows that the higher the markers sound levels relative to the other sounds, the higher the pleasantness. But the moderate downhill correlation observed for $L_{b}$ (Figure~\ref{fig:numMarkers}.c) shows that the levels of those remaining sounds may be a cause of annoyance if perceived as too loud. It is thus the emergence of the i-markers from the others sounds that drive the appraisal. Considering for example the sonic environment of a park and following those conclusions, the global appraisal will increase with the sound level of the birds, provided other sounds like human voices or traffic hubbub are not too loud.
 
 These results are strong indicators that global sound level is not a good indicator to characterize the appraisal of \emph{a priori} positive sound environments such as a park or a quiet street. On the contrary, the contribution of each sound source needs to be considered separately, as for certain type of sounds, the pleasantness does increase with their sound levels.
 
@@ -470,6 +471,7 @@ Those observations may also serve as guidelines for urban planner, showing that:
 \item in the case of positive environment such as park or quiet street, the appraisal may be enhanced by increasing the presence of specific sound sources such as birds singing.
 \end{itemize}
 
+\nm{n'est ce pas au bout du compte, 2 propositions contraposees qui reviennent a dire qu'il faut au 1er ordre s'interesser a certaines sources particulieres (et a leur niveau) plutot que considerer un percept global (notamment en terme de niveau)} \gl{rien compris}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%    DISCUSSION AND PERSPECTIVES   %%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -477,7 +479,7 @@ Those observations may also serve as guidelines for urban planner, showing that:
 \section{Discussion and perspectives}
 
 
-We introduce in this paper a novel experimental protocol to study the perception of soundscapes, where subjects are asked to recreate an auditory environment using a tool specifically developed for that purpose and a structured database of isolated sounds. This protocol allows us to generate soundscapes whose composition, in terms of nature, timing and intensity of sound sources, is known with perfect accuracy. Using the data thus produced in a series of analyses on the issue of ideal \emph{vs} non-ideal urban soundscape classification and characterization, we show that:
+We introduce in this paper a novel experimental protocol to study the perception of soundscapes, where subjects are asked to recreate an auditory environment using a tool specifically developed for that purpose and a structured database of isolated sounds. This protocol allows us to generate soundscapes whose composition, in terms of nature, timing and intensity of sound sources, is known with perfect accuracy. Using the data thus produced in a series of analyses on the issue of ideal \emph{vs} non-ideal urban soundscape classification and characterization, we showed that:
 
 \begin{itemize}
 \item The data obtained with the simulation allows us to reach results that are consistent with previous perceptual studies relying on recorded scenes \cite{lavandier2006contribution} or the experimental subjects' memory \cite{guastavino_ideal_2006}.
@@ -488,9 +490,11 @@ We introduce in this paper a novel experimental protocol to study the perception
 \item The sound level computed on the markers only is a better predictor of perceived agreement than the global sound level.
 \end{itemize}
 
-Compared to more traditional survey based methods, the proposed method provides an increased precision and reliability of soundscape description useful for the analysis of subjects' judgments. This article was intentionally focused on the analysis of the scene composition; further research shall be dedicated to 1) a thorough study of the influence of the physical characteristics of the sound markers on pleasantness evaluation, as well as categorisation process, and 2) the elaboration of a predictive method based on that analysis, allowing to anticipate the agreement of an acoustic environment from its composition.
+Compared to more traditional survey based methods, the proposed method provides an increased precision and reliability of soundscape description useful for the analysis of subjects' judgments. This article was intentionally focused on the analysis of the scene composition; further research shall be dedicated to 1) a thorough study of the influence of the physical characteristics of the sound markers on pleasantness evaluation, as well as categorisation process, and 2) the elaboration of a predictive method based on that analysis, allowing to anticipate the agreement \nm{encore un autre terme : synonyme de pleasantness ?} of an acoustic environment from its composition.
 
-In addition, more understanding shall be gained about the actual impact of sound level on soundscape perception: is there a significant difference in evaluation between two scenes having the exact same composition, but different levels? Is loudness but a consequence of scene composition ?
+In addition, more understanding shall be gained about the actual impact of sound level on soundscape perception: is there a significant difference in evaluation between two scenes having the exact same composition, but different levels? Is loudness but a consequence of scene composition ? \nm{cette derniere phrase est incomprehensible .... bien qu'elle semble importante car elle introduit la notion de loudness (perceived intensity) en oppposition a la notion de sound level (measured intensity) utilisee jusqu'a present : a eclaircir et approfondir davantage, je pense .....}
+
+\nm{je ne suis pas trop du genre a raisonner comme cela mais je me dis que : vu le type de revue (AAA) et la thematique de l'article , il est possible que nous ayons JD. Polack comme potentiel reviewer, or nous ne citons aucun de ses travaux en la matiere ......}
 
 \noindent \textbf{Acknowledgements}\\
 \setlength{\parindent}{0.7cm} 

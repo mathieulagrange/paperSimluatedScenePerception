@@ -21,7 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -41,12 +41,12 @@
      id="namedview492"
      showgrid="false"
      inkscape:zoom="2.0977778"
-     inkscape:cx="47.764885"
+     inkscape:cx="-32.31986"
      inkscape:cy="352.79657"
      inkscape:window-x="1985"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g354"
+     inkscape:current-layer="g288"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
@@ -892,10 +892,16 @@
          cx="0"
          cy="0" />
       <text
-         dx="8"
-         dy="3"
-         style="font-size:10px;line-height:13px;font-family:sans-serif;overflow:visible"
-         id="text292">bike</text>
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:10px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="7.2296257"
+         y="2.766712"
+         id="text3669"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3671"
+           x="7.2296257"
+           y="2.766712">bell bike</tspan></text>
     </g>
     <g
        class="node"
