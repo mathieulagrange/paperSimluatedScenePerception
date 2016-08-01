@@ -371,7 +371,7 @@ There is a considerable difference between the sound class selections of the i- 
 
 As semantics is found to play an important role in the qualitative perception of the soundscape, we now investigate the existence of sound markers \nm{est-ce l'accepation de Schafer ? d'apres ce qui est ecrit juste apres je ne pense pas; par contre, d'apres ce qui est ecrit un peu plus bas (en citant justement Schafer) ca peut l'etre .... Il y a ici une ambiguite sur le terme qu'il serait bon de clarifier.} \gl{Non ce n'est pas  l'interprétation de Schaffer, on expliquait plus en détail avant les termes, mais c'est trop long, et non necessaire pour la compréhension du papier}, \textit{i.e.} sound classes of great importance when considering the pleasantness of a soundscape. Here, an event class is considered as a marker if it has been mostly used in one type of soundscape (i or ni). To identify markers, a two-tailed V-test statistical test is performed for each semantic level. The V-test tests the null hypothesis that the $n_k$ event classes used for the scene type $k$ are randomly drawn from all the $n$ event classes available. A rejection of that hypothesis provides evidences that an event class has been significantly used for one type of scene only. Since the test concerns many event classes, Bonferroni correction is applied.
 
-Results are shown on Table~\ref{tab:markers}. Nine markers are found across all semantic levels. As suggested by Figures~\ref{fig:xp1_class_1} and~\ref{fig:xp1_class_2}, sounds evoking human activity (\textit{male footsteps concrete}) and nature (\textit{animal}, \textit{birds} and \textit{birds singing}) are markers of the i-scene. The presence of \textit{church bell} and \textit{bell bike} as strong markers of the i-scenes can be due to the socio-cultural background of the subjects, in great majority European citizens. It confirms Schafer's claim that sounds that are recognized by a community as integral part of its sonic environment are popular \cite{schafer1977tuning}. 
+Results are shown on Table~\ref{tab:markers}. Nine markers are found across all semantic levels. As suggested by Figures~\ref{fig:xp1_class_1}.a, sounds evoking human activity (\textit{male footsteps concrete}) and nature (\textit{animal}, \textit{birds} and \textit{birds singing}) are markers of the i-scene. The presence of \textit{church bell} and \textit{bell bike} as strong markers of the i-scenes can be due to the socio-cultural background of the subjects, in great majority European citizens. It confirms Schafer's claim that sounds that are recognized by a community as integral part of its sonic environment are popular \cite{schafer1977tuning}. 
 
 Markers of the ni-scenes are sounds due to construction work (\textit{construction work}), and sounds suggesting dense traffic (\textit{horn}, \textit{siren}). Although these markers are rather intuitive, none of the event classes related to motorized vehicles is a marker. It seems that subjects chose to illustrate unpleasant traffic sounds using horns and sirens.
 
@@ -383,21 +383,21 @@ Markers of the ni-scenes are sounds due to construction work (\textit{constructi
 Semantic   &  \multicolumn{2}{c}{Markers} \\
 level & i-scenes & ni-scenes \\
 \hline
-0  &                                &  construction work (3.78)  \\
+0  &                               &  construction work (3.78)  \\
 \hline
   & church bell  (4.5)             & horn  (3.9) \\
-1   & bell bike    (4.3)             & siren (3.9)\\
-   & animal       (4.2)             &       \\
+1 & bell bike    (4.3)             & siren (3.9)\\
+  & animal       (4.2)             &       \\
    \hline
   & birds        (4.8)             & horn  (4.0)\\
-2   & church bell  (4.4)             & siren (4.0)\\
-   & bell bike    (4.2)             &       \\
+2 & church bell  (4.4)             & siren (4.0)\\
+  & bell bike    (4.2)             &       \\
    \hline
   & birds singing (4.8)            & horn  (4.1)\\
-   & church bell   (4.3)            & siren (4.0)\\
-3   & bell bike     (4.2)            &       \\
-   & male footsteps                 &  \\
-   &   concrete (3.6)               &  \\
+  & church bell   (4.3)            & siren (4.0)\\
+3 & bell bike     (4.2)            &       \\
+  & male footsteps                 &  \\
+  &   concrete (3.6)               &  \\
   \hline
 \end{tabular}
 }
@@ -411,19 +411,19 @@ level & i-scenes & ni-scenes \\
 \begin{figure}[t]
 \begin{center}
 \includegraphics[width=\columnwidth]{../gfxMatlab/pa5_1.eps}
-\caption{\label{fig:pa5} Precision at rank 5 ($P@5$) computed from the \textit{Hamming} distances between the scenes at different semantic levels, considering the event and texture classes ($ET$), the event classes ($E$), the texture classes ($T$), the event markers ($E_m$) and event classes without event markers ($E_{w/o m}$) .}
+\caption{\label{fig:pa5} Precision at rank 5 ($P@5$) computed from the \textit{Hamming} distances between the scenes at different semantic levels, considering the event and texture classes ($ET$), the event classes ($E$), the texture classes ($T$), the event markers ($E_m$) and event classes without event markers ($E_{w/o,m}$) .}
 \end{center}
 \end{figure}
 
 To quantify how class selection characterizes the pleasantness of a urban environment, we now follow a class-based classification of the scenes evaluated with the standard precision at rank 5 ($P@5$) metric. 
 
-Each simulated scene $s_i$ is represented by a boolean vector of dimension $n$: $S_i = (x_1, x_2, \ldots{}, x_{n})$, $i\in[1,72]$. Each dimension corresponds to a sound class (event and texture) of a particular semantic level (for example: $n=44$ classes for semantic level 1). Thus $x_1 = 1$ indicates that the sound class $x_1$ is present in scene $s_i$ (not present if $x_1=0$). A \textit{Hamming} distance is computed between all pairs of $S_i$. Then, for each vector $S_i$ the number of scenes sharing the same label (i or ni) as $S_i$  among the five scenes $s_j$ ($j=1,...,5$) that have the smallest distance to it is computed. The $P@5$ precision is then obtained by averaging the results over all the scenes $s_i$ ($i=1, \ldots{}, 72$).
+Each simulated scene $s_i$ is represented by a boolean vector of dimension $n$: $S_i = (x_1, x_2, \ldots{}, x_{n})$, $i=\lbrace 1, \ldots, 72 \rbrace$. Each dimension corresponds to a sound class (event and texture) of a particular semantic level (for example: $n=44$ classes for semantic level 1). Thus $x_1 = 1$ indicates that the sound class $x_1$ is present in scene $s_i$ (not present if $x_1=0$). A \textit{Hamming} distance is computed between all pairs of $S_i$. Then, for each scene $s_i$, the number of scenes sharing the same label (i or ni) among the five scenes $s_j$ that have the smallest distance to $s_i$ is computed. The $P@5$ precision is then obtained by averaging the results over the 72 scenes $s_i$.
 
-Results considering both the event and texture classes ($ET$) \nm{symbolisme pas clair} \gl{pk ?} to build the vectors  $S_i$ are shown on Figure~\ref{fig:pa5}. The $P@5$ is of 81\% for semantic level 0 and remains above 89\% starting at semantic level 1. These result strongly indicates that it is possible to make a clear distinction between the i- and ni-scenes based solely on the class presence/absence. We also note that the deeper the hierarchical level, the higher the $P@5$; in other words an increased precision in identifying scene elements allows a better distinction between i- and ni-scenes. 
+Results considering both the event and texture classes ($ET$) \nm{symbolisme pas clair} \gl{pk ?} to build the vectors  $S_i$ are shown on Figure~\ref{fig:pa5}. The $P@5$ is of 76\% for semantic level 0 and remains above 86\% starting at semantic level 1. These result strongly indicates that it is possible to make a clear distinction between the i- and ni-scenes based solely on the class presence/absence. We also note that the deeper the hierarchical level, the higher the $P@5$; in other words an increased precision in identifying scene elements allows a better distinction between i- and ni-scenes. 
 
-To refine the analysis, only event classes ($E$), texture classes ($T$), event markers ($E_m$) and event classes without event markers ($E_{w/o m}$) are also considered on Figure~\ref{fig:pa5}. The constant deviation of circa $10\%$ from the semantic level 1 between $E$ and $T$, and the fact that $P@5$ are similar for $ET$ and $E$ indicate that soundscape quality is mostly conveyed by sound events.
+To refine the analysis, only event classes ($E$), texture classes ($T$), event markers ($E_m$) and event classes without event markers ($E_{w/o,m}$) are also considered on Figure~\ref{fig:pa5}. The constant deviation of circa $15\%$ from the semantic level 1 between $E$ and $T$, and the fact that $P@5$ are similar for $ET$ and $E$ indicate that soundscape quality is mostly conveyed by sound events.
 
-Since similar precision are achieved by $ET$, $E$ and $E_m$, we may conclude that all the event classes are not equivalently important to distinguish between the two scene types. Indeed, $E_m$ uses very partial information but still reaches quasi-equivalent results. Moreover, the drop in $P@5$ considering $E_{w/o m}$ from the semantic level 1 confirms the fact that soundscape quality mostly relies on the presence of specific sound markers.
+Since similar precision are achieved by $ET$, $E$ and $E_m$, we may conclude that all the event classes are not equivalently important to distinguish between the two scene types. Indeed, $E_m$ uses very partial information but still reaches quasi-equivalent results. Moreover, the drop in $P@5$ considering $E_{w/o,m}$ from the semantic level 1 confirms the fact that soundscape quality mostly relies on the presence of specific sound markers.
 
 
 \subsection{Marker-wise pleasantness descriptors}
@@ -452,17 +452,15 @@ $D_{b}$       & -0.23  ($p=0.18$)          & -0.30 ($p=0.07$)  \\
   \end{center}
 \end{figure}
 
-In order to check if the physical characteristics of the markers alone have an influence on the pleasantness, we now consider the $D$ and the $L$ with on one hand the tracks of the markers ($L_m$, $D_{m}$) and on the other hand the remaining sounds ($L_b$, $D_b$). As the marker durations are rather short, and the number of markers in a scene are rather low, a window length of 125 ms is used to compute $L_m$ and $L_b$ \nm{pourquoi cette precision methodologique n'a t'elle pas ete donnee aussi au moment de definir ce parametre ?} \gl{plus simple ici}. For the i-scenes we consider only the markers of the i-scenes (i-markers), and for the ni-scenes only the markers of the ni-scenes (ni-markers). \nm{cela parait evident, pourquoi y'a-t'il besoin de le preciser ?} \gl{fixe bien les idées}
-
-The difference $L_{m-b}=L_m-L_b$ is also considered as it illustrates how the markers emerge from the other sounds. Correlations between those descriptors and the average perceptual ratings are depicted in Table~\ref{tab:numMarkers} and Figure~\ref{fig:numMarkers}.
+In order to check if the physical characteristics of the markers alone have an influence on the pleasantness, we now compute $D$ and $L$ considering on one hand the tracks of the markers ($L_m$, $D_{m}$) only, and on the other hand the remaining of the sounds ($L_b$, $D_b$). As the marker durations are rather short, and the number of markers in a scene rather low, a window length of 125 ms is used to compute $L_m$ and $L_b$ \nm{pourquoi cette precision methodologique n'a t'elle pas ete donnee aussi au moment de definir ce parametre ?} \gl{non, elle change ici}. The difference $L_{m-b}=L_m-L_b$ is also considered as it illustrates how the markers emerge from the other sounds. Correlations between those descriptors and the average ratings are depicted in Table~\ref{tab:numMarkers} and Figure~\ref{fig:numMarkers}.
 
 Considering $D_{m}$ (Figure~\ref{fig:numMarkers}.d), results are almost the same than to those found in section~\ref{sec:levelDensityDiversity}. There is no correlation for the i-scenes, but the correlation increases for the ni-scenes. No correlation is found for $D_{b}$. Sound levels descriptors are much more informative. Little to no information is lost by considering only the markers to compute $L_m$, \emph{i.e.} there is still a good correlation for the ni-scenes (although inferior to the one observed in Section~\ref{sec:levelDensityDiversity}), and no correlation for the i-scenes.
 
-Considering the ni-scenes, the good correlation for $L_m$  (Figure~\ref{fig:numMarkers}.b) and the absence of correlation for $L_{b}$  (Figure~\ref{fig:numMarkers}.c) suggests that the sound levels of the ni-markers convey most of the unpleasantness. Also, no correlation is observed for $L_{m-b}$ (Figure~\ref{fig:numMarkers}.a). This indicates that the predominant influence of the marker sound levels remains true irrespective of the sound level of the other sounds. A loud horn sound is expected to increase the annoyance level of a scene (more so than a soft klaxon sound), whether or not the remaining of the sonic environment is ``\,noisy\,''.
+Considering the ni-scenes, the good correlation for $L_m$  (Figure~\ref{fig:numMarkers}.b) and the absence of correlation for $L_{b}$  (Figure~\ref{fig:numMarkers}.c) suggest that sound levels of the ni-markers convey most of the unpleasantness. The fact that no correlation is observed for $L_{m-b}$ (Figure~\ref{fig:numMarkers}.a) indicates that the predominant influence of the marker sound levels remains true irrespective of the sound level of the other sounds. A loud horn sound is expected to increase the annoyance level of a scene (more so than a soft klaxon sound), whether or not the remaining of the sonic environment is ``\,noisy\,''.
 
 That said, this last statement is not valid for the i-scenes. The strong uphill correlation found between pleasantness and  $L_{m-b}$ (Figure~\ref{fig:numMarkers}.a) shows that the higher the markers sound levels relative to the other sounds, the higher the pleasantness. But the moderate downhill correlation observed for $L_{b}$ (Figure~\ref{fig:numMarkers}.c) shows that the levels of those remaining sounds may be a cause of annoyance if perceived as too loud. It is thus the emergence of the i-markers from the others sounds that drive the appraisal. Considering for example the sonic environment of a park and following those conclusions, the global appraisal will increase with the sound level of the birds, provided other sounds like human voices or traffic hubbub are not too loud.
 
-These results are strong indicators that global sound level is not a good indicator to characterize the appraisal of \emph{a priori} positive sound environments such as a park or a quiet street. On the contrary, the contribution of each sound source needs to be considered separately, as for certain type of sounds, the pleasantness does increase with their sound levels.
+These results are strong indicators that global sound level alone is not sufficient to properly characterize the appraisal of \emph{a priori} positive sound environments such as a park or a quiet street. On the contrary, the contribution of each sound source needs to be considered separately, as for certain type of sounds, the pleasantness does increase with their sound levels.
 
 Those observations may also serve as guidelines for urban planner, showing that:
 
