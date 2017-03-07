@@ -100,7 +100,7 @@ Par souci d'espace, nous ne détaillons pas dans ce papier l'outil de simulation
 \section{L'outil de simulation}
 \label{sec:simscene}
 
-\emph{Simscene} est un environnement de travail audio-numérique dont la première version a été développée dans le cadre du projet HOULE\footnote{\emph{Projet HOULE} : \url{houle.ircam.fr}}. Il  Il est prévu pour fonctionner sur les navigateurs internet \emph{Chrome} et \emph{Firefox}. L'outil a été développé en javascript à l'aide de la bibliothèque \emph{angular.js}\footnote{\emph{angular.js} : \url{angularjs.org}} et du standard \emph{web-audio}\footnote{\emph{web-audio} : \url{www.w3.org/TR/webaudio}}. L'interface de sélection (\cf~Section~\ref{sec:simscene_ssf}) a été développée à l'aide de la bibliothèque \emph{D3.js} \cite{d32011}.
+\emph{Simscene} est un environnement de travail audio-numérique dont la première version a été développée dans le cadre du projet HOULE\footnote{\emph{Projet HOULE} : \url{houle.ircam.fr}}. Il est prévu pour fonctionner sur les navigateurs internet \emph{Chrome} et \emph{Firefox}. L'outil a été développé en javascript à l'aide de la bibliothèque \emph{angular.js}\footnote{\emph{angular.js} : \url{angularjs.org}} et du standard \emph{web-audio}\footnote{\emph{web-audio} : \url{www.w3.org/TR/webaudio}}. L'interface de sélection (\cf~Section~\ref{sec:simscene_ssf}) a été développée à l'aide de la bibliothèque \emph{D3.js} \cite{d32011}.
 
 Le fonctionnement de \emph{Simscene} se rapproche de celui d'un séquenceur audio. Chaque utilisateur choisit une classe de sons via l'interface de sélection (\cf~Section~\ref{sec:simscene_ssf}). Une fois la classe de sons sélectionnée, une piste audio, liée à cette classe, est créée. L'utilisateur peut alors modifier certaines propriétés de la piste via un groupe de paramètres de contrôle propre à chacune (\cf~Section~\ref{sec:simscene_parametre}). Des champs de texte sont prévus afin de permettre à l'utilisateur 1) de nommer chaque piste, 2) de donner un titre à la scène simulée 3) de commenter la scène simulée.
 
@@ -118,20 +118,26 @@ Les réactions à la musique étant jugées trop subjectives, et les jugements e
 
 \subsubsection*{Événements et Textures}
 
-Lorsque des événements émergent d'un environnement sonore, le cerveau traite l'information des différentes sources de manière séparée. Plusieurs flux auditifs sont ainsi générés \ie~un pour chaque séquence d'événements émis par la même source \cite{carlyon2004brain,winkler2009modeling}. Inversement, quand le cerveau ne parvient pas à isoler d'événement, la scène est traitée globalement, tous ces constituants étant agglomérés dans un même flux.
-
-Dans la littérature, quatre types de sons semblent pouvoir être isolés:
+Dans la littérature, on fait généralement la distinction entre :
 
 \begin{itemize}
-\item {événement sonore}: un son isolé, ponctuel, dont les caractéristiques physiques varient au cours du temps;
-\item {texture sonore}: un son, isolé, long, dont les caractéristiques physiques restent stables au cours du temps, et analysé à partir de statistiques extraites d'une représentation temps-fréquence;
-\item \emph{scène événementielle}: une séquence contenant une information sémantique élevée;
-\item \emph{scène amorphe}: une séquence contenant une information sémantique faible.
+\item {un événement sonore}: un son isolé, ponctuel, dont les caractéristiques physiques varient au cours du temps;
+\item {une texture sonore}: un son, isolé, long, dont les caractéristiques physiques restent stables au cours du temps \cite{saint1995classification}.
 \end{itemize}
 
-Une scène événementielle est une séquence composée soit uniquement d'événements, soit d'événements et de textures, les événements porteurs d'une information plus riche primant quant au choix du processus de traitement à mettre en œuvre.
- 
-Les textures et les scènes amorphes, elles, sont traitées de manière holistique, à partir de propriétés acoustiques globales pour les scènes amorphes \cite{dubois2006cognitive,maffiolo_caracterisation_1999}, et sur la base d'une information résumée statistiquement pour les textures \cite{mcdermott2013summary}. Toutes deux portent une information limitée \cite{saint1995classification,nelken2013ear}. Cependant, les séquences amorphes sont spontanément décrites par les sujets comme des «~fonds sonores~» \cite{maffiolo_caracterisation_1999,guastavino2006ideal}, induisant qu'elles n'existent que grâce à un processus de construction de flux auditifs, alors que les textures sont des objets définis seulement sur la base de leur nature physique. Il est cependant possible d'assimiler une scène amorphe à une texture, ses caractéristiques physiques demeurant stables au cours du temps. De fait, nombre de scènes amorphes («~brouhaha de rue~», «~brouhaha de trafic~») sont citées comme textures. Cependant, l'inverse, considérer une texture comme une scène amorphe, n'est pas forcément vrai. Un exemple de texture souvent cité est le son du «~galop~», son qui peut très bien apparaître au premier plan de la scène.
+\emph{Simscene} tient compte de cette différence morphologique, et considère deux banques de données distinctes : l'une relative aux classes d’événements, l'autre aux classes de textures. Les séquences d'événements et les textures profitent chacune d'un processus de simulation particulier.
+
+Cette distinction entre événements et textures sonores a des conséquences sur la perception des scènes. Ces dernières étant importantes pour l'analyse de nos résultats, nous les résumons ici. 
+
+Lorsque des événements émergent d'un environnement sonore, le cerveau traite l'information des différentes sources de manière séparée. Plusieurs flux auditifs sont ainsi générés, \ie~un pour chaque séquence d'événements émis par la même source \cite{carlyon2004brain}. Inversement, quand le cerveau ne parvient pas à isoler d'événements, les éléments constituants de la scène sont agglomérés dans un même flux. 
+
+Maffiolo \cite{maffiolo_caracterisation_1999} met en évidence deux processus de catégorisation distincts, engagés en fonction de la capacité de l'auditeur à identifier des événements sonores. Elle montre l'existence de deux catégories cognitives abstraites d'environnements sonores respectivement appelées: «~les séquences événementielles~» et «~les séquences amorphes~». 
+
+Les séquences événementielles sont des environnements composés d'événements saillants et identifiables (\emph{démarrage de voiture}, \emph{voix d'homme}). Elles profitent d'une analyse descriptive basée sur l'identification des sources sonores. Les séquences amorphes sont des environnements dont il est difficile d'isoler des éléments distincts («~brouhaha de rue~», «~brouhaha de trafic~»). Elles bénéficient d'une analyse holistique, effectuée à partir d'indicateurs acoustiques (subjectifs) globaux. Cette différence de traitement entre scènes événementielles et scènes amorphes est relevée également dans \cite{guastavino2006ideal,dubois2006cognitive}.
+
+Pour ce qui est des textures, \ie~des sons possédants des caractéristiques stables au cours du temps, \cite{mcdermott2011sound,mcdermott2013summary} montrent que le cerveau peut décider sciemment de dégrader l'information physique perçue, en la résumant de manière statistique, faisant fi de toute autre représentation plus détaillée \cite{nelken2013ear}.
+
+Au regard de ces résultats, il apparaît que le processus de traitement de l'information sonore comprend une prise de décision quant à la nature des stimuli \cite{nelken2013ear,mcdermott2013summary}, laquelle va ensuite influer sur la manière d'extraire et d'analyser l'information.
 
 \subsubsection*{Taxonomie}
 
@@ -210,6 +216,8 @@ Cette interface a fait l'objet d'une étude approfondie dont les résultats sont
 \subsection{Interface de simulation}
 
 L'interface de simulation propose un rendu graphique schématisé de la scène en cours de création (\cf~Figure~\ref{fig:simscene}). La piste est représentée par une bande possédant un axe temporel. Sur cette bande, chaque sample est représenté par un rectangle. L'espacement entre les rectangles est relatif à l'espacement entre les samples. De même, la hauteur des rectangles est proportionnelle au niveau sonore des samples. Dans le cas d'une piste de texture, un unique rectangle apparaît sur toute la longueur de la piste, un son de texture ne pouvant être entrecoupé de silences. Les caractéristiques des rectangles évoluent en fonction des changements de paramètres de la piste. L'utilisateur a la possibilité, à tout moment, d'écouter la scène simulée. 
+
+La scène sonore est ainsi vue comme une somme de sources sonores, ou, si l'on admet la distinction opérée entre événements et textures sonores, «~un squelette d'événements sur un lit de textures~» \cite{nelken2013ear}. 
 
 \emph{Simscene} est présenté en détail dans \cite{rossignol2015simscene}.
 
