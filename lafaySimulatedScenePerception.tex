@@ -116,22 +116,19 @@ Les réactions à la musique étant jugées trop subjectives, et les jugements e
 
 \subsubsection*{Événements et Textures}
 
-\jlv{Dans la littérature, on fait généralement la distinction entre}
-\jls{La littérature fait généralement la distinction entre} :
+La littérature fait généralement la distinction entre :
 
 \begin{itemize}
 \item {un événement sonore}: un son isolé, ponctuel, dont les caractéristiques physiques varient au cours du temps;
 \item {une texture sonore}: un son, isolé, long, dont les caractéristiques physiques restent stables au cours du temps \cite{saint1995classification}.
 \end{itemize}
 
-\jls{ \emph{Simscene} tient compte de cette distinction, et \jlv{considère} \jlc{utilise} deux banques de données : l'une regroupant classes d’événements, l'autre des classes de textures. Evénements et textures bénéficient de processus de simulation particuliers.} 
+\emph{Simscene} tient compte de cette distinction, et utilise deux banques de données : l'une regroupant classes d’événements, l'autre des classes de textures. Événements et textures bénéficient de processus de simulation particuliers.
 
-\jls{Les différences morphologiques entre événements et textures sonores ont des conséquences sur la perception des scènes.}  
+Les différences morphologiques entre événements et textures sonores ont des conséquences sur la perception des scènes.
 
-\jlc{Je reprends ici ma lecture ce matin 20170314. Hier j'ai perdu un peu patience et j'ai, sur les lignes 135 et 137, laissé tomber le système jlv/jlc avant de m'arrêter. Mes corrections: s'agissant de 135 = je retire "différences morphologiques" pour réemployer "distinction", par ailleurs je retire de la deuxième phrase "Les séquences de" pour enchaîner directement sur "Evénements et textures..."; s'agissant de 137 = je réemploie "différences morphologiques". Le discours gagne en fluidité, et au passage, si j'en ai la possibilité, je réduis le texte. C'est dans cet esprit que je continue ma relecture.}
+Lorsque des événements émergent d'un environnement sonore, le cerveau traite l'information des différentes sources de manière séparée. Plusieurs flux auditifs sont ainsi générés, \ie~un pour chaque séquence d'événements émis par la même source \cite{carlyon2004brain}. Inversement, quand le cerveau ne parvient pas à isoler d'événements, les éléments constituants de la scène sont agglomérés dans un même flux. 
 
-Lorsque des événements émergent d'un environnement sonore, le cerveau traite l'information \jlv{des différentes sources} de manière séparée. Plusieurs flux auditifs sont ainsi générés, \jlv{ \ie~un pour chaque séquence d'événements émis par la même source} \cite{carlyon2004brain}. Inversement, quand le cerveau ne parvient pas à isoler d'événements, les éléments constituants de la scène sont agglomérés dans un même flux. 
-\jlc{on vient de poser clairement la problématique: événements/textures. Les notions de 1_ "séquence d'évènements" (j'ai déjà supprimé une locution similaire L135, et j'ajoute par ailleurs que tu abordes dans la phrase juste après le concept de "séquence événementielle selon Maffiolo) 2_ "source" tombent comme un cheveu dans la soupe. C'est trop de vocabulaire d'un coup, et ça brouille un peu les pistes... Tu vois ce que je veux dire ? tu peux reformuler ?}
 
 Maffiolo \cite{maffiolo_caracterisation_1999} met en évidence deux processus de catégorisation distincts, engagés en fonction de la capacité de l'auditeur à identifier des événements sonores. Elle montre l'existence de deux catégories cognitives abstraites d'environnements sonores respectivement appelées: «~les séquences événementielles~» et «~les séquences amorphes~». 
 
@@ -150,10 +147,9 @@ Au regard de ces résultats, il apparaît que le processus de traitement de l'in
 \end{figure}
 
 
-\jlv{Nous nommons sample, un enregistrement d'un son isolé, qu'il s'agisse d'un événement ou d'une texture. Chaque classe est alors comprise comme une collection de samples jugés perceptivement équivalents} \jls{Nous nommons sample, un enregistrement d'un son isolé, événement ou texture. Chaque classe est alors comprise comme une collection de samples jugés perceptivement équivalents}. 
+Nous nommons sample, un enregistrement d'un son isolé, événement ou texture. Chaque classe est alors comprise comme une collection de samples jugés perceptivement équivalents. 
 
-\jlv{Les classes de sons sont organisées suivant une structure hiérarchique, afin de former une taxonomie \jlc{Je relis brièvement "psycho-ea" et je m'interroge. La taxonomie est-elle la finalité de l'organisation hiérarchique des classes (on emploie d'ailleurs plutôt le terme catégories) ou en est-elle une conséquence ? Autrement dit Rosch avait-il pour but de dresser cette taxonomie (comme une nécessité) ou celle-ci est-elle née de sa volonté de hiérarchiser ? Je ne sais pas pourquoi, mais au niveau du sens ça me perturbe}(\cf~Figure~\ref{fig:orgDb}). La structure taxonomique s'inspire \jlc{Exit: grandement} de l'axe vertical de l'organisation catégorielle proposée par E. Rosch \cite{rosch1978cognition}, \ie~plus le niveau d'abstraction de la classe est élevé, plus la description de la classe est précise, et plus les sources sonores incluses dans cette classe sont semblables. Si le niveau d'abstraction d'une classe est tel que cette dernière possède des sous-classes, alors sa collection de samples est la somme des collections respectives de chacune des sous-classes.} 
-\jls{Les classes de sons sont organisées suivant une structure hiérarchique(\cf~Figure~\ref{fig:orgDb}) \jlc{est-ce que dans ma correction la référence à la figure (\cf~Figure~\ref{fig:orgDb}) est toujours bien placée/pertinente ?}. Cette structure hiérarchique est largement inspirée de l'axe vertical de l'organisation catégorielle proposée par E. Rosch \cite{rosch1978cognition}, qui dresse une taxonomie des classes ou catégories \ie~plus le niveau d'abstraction de la classe est élevé, plus la description de la classe est précise, et plus les sources sonores incluses dans cette classe sont semblables. Si le niveau d'abstraction d'une classe est tel que cette dernière possède des sous-classes, alors sa collection de samples est la somme des collections respectives de chacune des sous-classes. \jlc{est-ce que dans ma correction ton "\ie~plus le niveau d'abstraction..." est toujours bien placé/pertinent ?} 
+Les classes de sons sont organisées suivant une structure hiérarchique (\cf~Figure~\ref{fig:orgDb}). Cette structure hiérarchique est largement inspirée de l'axe vertical de l'organisation catégorielle proposée par E. Rosch \cite{rosch1978cognition}, qui dresse une taxonomie des classes ou catégories \ie~plus le niveau d'abstraction de la classe est faible, plus la description de la classe est précise, et plus les sources sonores incluses dans cette classe sont semblables. Si le niveau d'abstraction d'une classe est tel que cette dernière possède des sous-classes, alors sa collection de samples est la somme des collections respectives de chacune des sous-classes. 
 
 Nous établissons deux taxonomies, une pour les événements, une autre pour les textures (\cf~Annexe~\ref{app:taxonomie}). Pour les événements, nous considérons quatre niveaux d'abstraction allant des classes les plus globalisantes (niveau d'abstraction 0), aux classes les plus spécifiques (niveau d'abstraction 3). Pour les textures, nous ne considérons que trois niveaux d'abstraction. Notons que la taxonomie des événements est assez proche de celle de \cite{Salamon14}, introduite ultérieurement à notre étude.
 
@@ -161,60 +157,42 @@ Nous établissons deux taxonomies, une pour les événements, une autre pour les
 
 Sur la base des taxonomies précédemment établies, 483 sons isolés ont été collectés, dont 381 événements, et 102 textures. Parmi ces samples, 332 ont été enregistrés, et 151 proviennent de différentes banques de sons (\emph{SoundIdeas}\footnote{\emph{SoundIdeas}: \url{www.sound-ideas.com}} et \emph{Universal SoundBank}\footnote{\emph{Universal SoundBank}: \url{www.universal-soundbank.com}}).
 
-\jlv{Tous les enregistrements ont été effectués à l’aide d'un micro canon \emph{AT8035}\footnote{\emph{Micro canon AT8035}: \url{eu.audio-technica.com}} relié à un enregistreur \emph{ZOOM H4n}\footnote{\emph{ZOOM H4n} : \url{www.zoom.co.jp/english/products/h4n}}. L’utilisation du micro canon nous permet d’isoler les événements sonores du brouhaha urbain. Pour les textures, il nous permet d’éviter les événements sonores proches du preneur de son. Nous pouvons ainsi pointer des "zones sonores", en nous tenant à une certaine distance de ces dernières, afin de capter uniquement le brouhaha émanant de la zone ciblée}. \jlc{Le fait de préciser le modèle de micro ne nous dispense-t-il pas, dans le cadre de cette communication, d'expliciter encore le pourquoi. Désigner l'AT8035 c'est aussi dire ses qualités. Je propose...} \jls{Exit: L’utilisation du micro canon nous permet d’isoler les événements sonores du brouhaha urbain. Pour les textures, il nous permet d’éviter les événements sonores proches du preneur de son. Nous pouvons ainsi pointer des "zones sonores", en nous tenant à une certaine distance de ces dernières, afin de capter uniquement le brouhaha émanant de la zone ciblée}.
+Tous les enregistrements ont été effectués à l’aide d'un micro canon \emph{AT8035}\footnote{\emph{Micro canon AT8035}: \url{eu.audio-technica.com}} relié à un enregistreur \emph{ZOOM H4n}\footnote{\emph{ZOOM H4n} : \url{www.zoom.co.jp/english/products/h4n}}. L’utilisation du micro canon nous permet d’isoler les événements sonores du brouhaha urbain. Pour les textures, il nous permet d’éviter les événements sonores proches du preneur de son. Nous pouvons ainsi pointer des "zones sonores", en nous tenant à une certaine distance de ces dernières, afin de capter uniquement le brouhaha émanant de la zone ciblée. 
 
 Tous les sons ont été normalisés au même niveau $RMS$ de $-12$ $dB$ (FS), \ie. relativement à un niveau pleine échelle (\emph{relative to Full Scale}). Dans notre cas, ce niveau pleine échelle est de 1 Volt.
 
 \subsection{Paramètres}
 \label{sec:simscene_parametre}
 
-L'outil de simulation \jlv{ne propose pas} \jls{n'autorise pas} d’interagir avec un sample en particulier, mais toujours avec une piste, \ie~une séquence de samples. Plusieurs paramètres permettent au sujet de contrôler la structure de chaque piste. 
+L'outil de simulation n'autorise pas d’interagir avec un sample en particulier, mais toujours avec une piste, \ie~une séquence de samples. Plusieurs paramètres permettent au sujet de contrôler la structure de chaque piste. 
 
 \begin{itemize}
-\item \emph{niveau sonore} ($dB$): \jlv{pour chaque sample, les niveaux sont tirés aléatoirement à partir d'une distribution normale, paramétrée par le sujet en terme de moyenne et de variance} \jls{concerne les samples, les niveaux sont tirés aléatoirement à partir d'une distribution normale, paramétrée par le sujet en terme de moyenne et de variance};
-\item \emph{espacement inter-onset} (seconde): \jlv{(piste d'événements seulement) comme pour les niveaux, les espacements sont tirés aléatoirement à partir d'une distribution normale, paramétrée par le sujet en terme de moyenne et de variance} \jls{concerne les pistes d'événements, les espacements sont tirés aléatoirement à partir d'une distribution normale, paramétrée par le sujet en terme de moyenne et de variance};
-\item \emph{début et fin} (seconde): \jlv{le sujet fixe le début et la fin de chaque piste} \jls{concerne les pistes d'événements, le sujet fixe le début et la fin de chaque séquence}.
+\item \emph{niveau sonore} ($dB$): pour chaque sample, les niveaux sont tirés aléatoirement à partir d'une distribution normale, paramétrée par le sujet en terme de moyenne et de variance;
+\item \emph{espacement inter-onset} (seconde): (piste d'événements seulement) comme pour les niveaux, les espacements sont tirés aléatoirement à partir d'une distribution normale, paramétrée par le sujet en terme de moyenne et de variance;
+\item \emph{début et fin} (seconde): le sujet fixe le début et la fin de chaque piste.
 \end{itemize}
 
 Afin de faciliter la simulation, deux paramètres supplémentaires sont proposés:
 
-\jlc{dans ce deuxième itemize on s'y perd un peu entre les "fondu par événement", "piste d'événements" et "sample" non ?}
 \begin{itemize}
-\item \emph{fondu par événement} (seconde): (piste d'événements seulement) le sujet fixe une durée de fondu (entrée et sortie), appliquée à chaque sample d'une piste d'événements \jlc{"piste d'événements seulement" est contradictoire avec "appliquée à chaque sample d'une piste..." non ?};
+\item \emph{fondu par événement} (seconde): (piste d'événements seulement) le sujet fixe une durée de fondu (entrée et sortie) appliquée à chaque sample;
 \item \emph{fondu global} (seconde): le sujet fixe les durées de fondus pour l'entrée et la sortie de la piste. Ces fondus s'appliquent ainsi à l'ensemble des samples de la piste.
 \end{itemize}
 
-\jls{Pour coller au premier itemize (version corrigée) je propose l'itemize suivant... en espérant ne pas faire de faute de sens. Tu valideras.} 
-\begin{itemize}
-\item \emph{fondu par événement} (seconde): concerne les samples, le sujet fixe la durée de fondu (entrée et sortie) de chaque événement};
-\item \emph{fondu global} (seconde): concerne les pistes d'événements, le sujet fixe la durée de fondu (entrée et sortie) de la piste. Ce fondu s'applique à l'ensemble des samples de la séquence.
-\end{itemize}
-
-
-Deux de ces paramètres ne s’appliquent que pour les pistes d'événements (\emph{fondu par événement} \jlc{je réitère ma remarque. Si le \emph{fondu par événement} comme son nom l'indique s'applique au niveau de l'événement, il ne s'applique pas au niveau de la piste. Mais peut-être aussi est-ce que je me perds dans tous ces événements/textures/pistes etc. Tu dépatouilles ?} et \emph{espacement inter-onset}), les samples des textures étant séquencés sans espacement.
+Deux de ces paramètres ne s’appliquent que pour les pistes d'événements (\emph{fondu par événement}  et \emph{espacement inter-onset}), les samples des textures étant séquencés sans espacement.
 
 \subsection{Interface de sélection}
 \label{sec:simscene_ssf}
 
-La grande majorité des outils permettant de parcourir une banque de données propose une recherche textuelle sur la base de mots clefs. \jlc{Exit: L’efficacité de ce principe repose avant tout sur la structure typologique, et la nomenclature de la base de données.} Dans le cadre d'une expérience sensorielle visant à objectiver la représentation interne du sujet, cette approche est problématique.
+La grande majorité des outils permettant de parcourir une banque de données propose une recherche textuelle sur la base de mots clefs. Dans le cadre d'une expérience sensorielle visant à objectiver la représentation interne du sujet, cette approche est problématique.
 
 En effet la description verbale du son, si elle est accessible au sujet, peut potentiellement influencer sa sélection. Dans les faits, pour construire une scène environnementale «~calme~», le sujet sélectionne a priori les sons référencés sous le vocable \emph{parc}.
 
 Pour limiter l’influence de l’interface sur le sujet, il nous paraît nécessaire de libérer sa recherche de toute information textuelle. Nous proposons à l'utilisateur une interface graphique lui permettant d’explorer la banque de sons exclusivement à partir de l’écoute.
 
-\jlv{La figure~\ref{fig:ssf} présente l'interface pour la banque de données d'événements sonores. Visuellement, les classes du dernier niveau (les seules accessibles par le sujet) sont représentées par des cercles, et positionnées sur un plan. La disposition des cercles dans l'espace dépend de l’organisation hiérarchique de la base de données: les sous-classes appartenant à une même classe sont proches les unes des autres, et ainsi de suite jusqu'à atteindre les classes de niveaux d'abstraction élevés. Le sujet ne peut accéder qu'aux classes du niveau d'abstraction le plus élevé, classes qui ne possèdent pas de sous-classes, et sont directement liées à une collection de samples.} 
-\jlc{dans ta parenthèse (les seules accessibles par le sujet) tu précises une chose sur laquelle tu reviens dans la phrase d'après "Le sujet ne peut accéder qu'aux classes du niveau d'abstraction le plus élevé". Ta parenthèse n'est peut-être pas nécessaire. En lieu et place tu pourrais plutôt préciser ce que sont "les classes du dernier niveau" non ?}. 
-\jls{La figure~\ref{fig:ssf} présente l'interface pour la banque de données d'événements sonores. Visuellement, les classes du dernier \jlv{niveau} \jlc{ce mot niveau n'est pas le même, je parle de sens, que le le mot niveau de "niveau d'abstraction". Ne peut-on utiliser un autre terme cf. "dernier palier/échellon etc." ?} (les classes de niveau d'abstraction XXX) sont représentées par des cercles, et positionnées sur un plan. La disposition des cercles dans l'espace dépend de l’organisation hiérarchique de la base de données: les sous-classes appartenant à une même classe sont proches les unes des autres, et ainsi de suite jusqu'à atteindre les classes de niveaux d'abstraction élevés, les seules auxquelles le sujet peut accéder, des classes qui ne possèdent pas de sous-classes, et sont directement liées à une collection de samples.} 
+La figure~\ref{fig:ssf} présente l'interface pour la banque de données d'événements sonores. Visuellement, les classes du dernier palier (les classes d'un niveau d'abstraction faible) sont représentées par des cercles, et positionnées sur un plan. La disposition des cercles dans l'espace dépend de l’organisation hiérarchique de la base de données: les sous-classes appartenant à une même classe sont proches les unes des autres, et ainsi de suite jusqu'à atteindre les classes du dernier palier, les seules auxquelles le sujet peut accéder, des classes qui ne possèdent pas de sous-classes, et sont directement liées à une collection de samples. 
 
 Chaque classe possède un son prototype. Ces sons ont été choisis par les expérimentateurs. Lorsqu’on clique sur un cercle, le prototype associé à la classe est joué. Le sujet parcourt la banque de sons en cliquant sur les cercles.
-
-\jlc{Concernant ce qui suit et par quoi tu termines ta "section", je m'interroge sur la nécessité de préciser, dans le cadre toujours de cette communication et compte tenu du format texte qui t'est imposé. Ne peut-on élaguer. Ou alors ne peut-on aussi préciser en footnote la question étant: les footnotes sont-elles comptabilisées comme texte ou nous offrent-elles une possibilité tricher ;-) ?} 
-Cette organisation visuelle à été pensée afin de:
-
-\begin{enumerate}
-\item faciliter le parcours de la banque de données, les sons similaires \jlv{(au sens des classes)} \jls{(au regard des classes)} étant proches les uns des autres.
-\item permettre aux sujets de rapidement appréhender toute l'étendue de la banque de données, \ie~l'ensemble des sons disponibles.
-\end{enumerate}
 
 Cette interface a fait l'objet d'une étude approfondie dont les résultats sont publiés dans \cite{lafay2016JAES}.
 
@@ -229,7 +207,7 @@ Cette interface a fait l'objet d'une étude approfondie dont les résultats sont
 
 \subsection{Interface de simulation}
 
-L'interface de simulation propose un rendu graphique schématisé de la scène en cours de création (\cf~Figure~\ref{fig:simscene}). La piste est représentée par une bande possédant un axe temporel. Sur cette bande, chaque sample est représenté par un rectangle. L'espacement entre les rectangles est \jlv{relatif à} \jls{fonction de} l'espacement entre les samples. De même, la hauteur des rectangles est proportionnelle au niveau sonore des samples. Dans le cas d'une piste de texture, un unique rectangle apparaît sur toute la longueur de la piste, un son de texture ne pouvant être entrecoupé de silences. Les caractéristiques des rectangles évoluent en fonction des changements de paramètres de la piste. L'utilisateur a la possibilité, à tout moment, d'écouter la scène simulée. 
+L'interface de simulation propose un rendu graphique schématisé de la scène en cours de création (\cf~Figure~\ref{fig:simscene}). La piste est représentée par une bande possédant un axe temporel. Sur cette bande, chaque sample est représenté par un rectangle. L'espacement entre les rectangles est fonction de l'espacement entre les samples. De même, la hauteur des rectangles est proportionnelle au niveau sonore des samples. Dans le cas d'une piste de texture, un unique rectangle apparaît sur toute la longueur de la piste, un son de texture ne pouvant être entrecoupé de silences. Les caractéristiques des rectangles évoluent en fonction des changements de paramètres de la piste. L'utilisateur a la possibilité, à tout moment, d'écouter la scène simulée. 
 
 La scène sonore est ainsi vue comme une somme de sources sonores, ou, si l'on admet la distinction opérée entre événements et textures sonores, «~un squelette d'événements sur un lit de textures~» \cite{nelken2013ear}. 
 
