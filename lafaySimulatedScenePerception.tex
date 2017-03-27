@@ -259,7 +259,7 @@ Les sujets sont totalement libres dans le choix des sons, et des paramètres. Il
 
 \begin{itemize}
 \item le sujet doit prendre le point de vue d’un auditeur fixe;
-\item le paysage sonore doit être réaliste, au sens de physiquement plausible. Le sujet peut très bien réunir 10 chiens dans un paysage sonore. Il n'en peut introduire 1 qui aboierait toutes les 10 millisecondes.
+\item le paysage sonore doit être réaliste, au sens de physiquement plausible. Le sujet peut très bien réunir 10 chiens dans un paysage sonore. Il ne peut en introduire 1 qui aboierait toutes les 10 millisecondes.
 \end{itemize}
 
 Ces contraintes font partie de la consigne. Aucun contrôle n'est fait \emph{a priori} dans l'interface de simulation.
@@ -267,7 +267,7 @@ Ces contraintes font partie de la consigne. Aucun contrôle n'est fait \emph{a p
 Chaque processus de simulation comprend deux parties :
 
 \begin{enumerate}
-\item la réalisation de la simulation: cette étape cette étape se décompose en trois temps:
+\item la réalisation de la simulation: cette étape se décompose en trois temps:
 \begin{itemize}
 \item sélectionner les classes de sons
 \item nommer les classes de sons sélectionnées
@@ -330,7 +330,7 @@ Tous les sujets ont réalisé l'expérience avec succès.
 \subsection{Données et méthodes d'analyses}
 \label{sec:xp1_dataAna}
 
-A chaque scène est associé un groupe de descripteurs. C'est sur ces descripteurs que nous pratiquons l'analyse. Un résumé de ces derniers, ainsi que des acronymes les désignant, est présenté dans le Tableau~\ref{tab:acronyme}. Afin de rester cohérent avec l’expérience 1.b d'évaluation, les descripteurs ne sont pas calculés sur la durée totale des scènes, mais sur une version réduite de 30 secondes (\cf~Section~\ref{sec:xp1b_plan}).
+A chaque scène est associé un groupe de descripteurs. C'est sur ces descripteurs que nous pratiquons l'analyse. Un résumé de ces derniers, ainsi que des acronymes les désignant, est présenté dans le Tableau~\ref{tab:acronyme}. Afin de rester cohérent avec l’expérience 1.b d'évaluation, les descripteurs ne sont pas calculés sur la durée totale des scènes, mais sur la version réduite de 30 secondes (\cf~Section~\ref{sec:xp1b_plan}).
 
 Pour chaque scène sonore, trois types de descripteurs sont considérés:
 
@@ -345,7 +345,7 @@ Pour évaluer l'impact spécifique des différentes sources sonores sur l'agrém
 \begin{itemize}
 \item \emph{vérification de l'agrément des scènes simulées}: afin de vérifier que la distinction affective imposée entre les i- et ni-scènes se retrouve au niveau de l'agrément perçu, nous observons s'il existe des différences entre les deux types de scènes au niveau de $\mathcal{A}_{scene}$ et $\mathcal{A}_{sujet}$. La significativité est évaluée par un test de Student à deux populations indépendantes pour $\mathcal{A}_{scene}$, et par un test de Student à deux populations appariées pour $\mathcal{A}_{sujet}$;
 \item \emph{analyse des descripteurs structurels}: afin d'évaluer si la distinction affective imposée entre les i- et ni-scènes impacte de manière significative la nature des scènes, \ie~s'il existe des différences significatives entre les descripteurs structurels et/ou l'agrément perçu, nous évaluons cette significativité à partir d'un test de Student à deux populations;
-\item \emph{étude de l'influence des descripteurs structurels sur l'agrément perçu}: afin d'évaluer l'impact potentiel des descripteurs structurels sur l'agrément perçu, nous étudions l'existence de corrélations linéaires entre ces descripteurs et $\mathcal{A}_{scene}$ . Pour mesurer la corrélation, nous utilisons le coefficient de Pearson. Nous adoptons ici une méthodologie couramment utilisée dans l'approche dimensionnelle;
+\item \emph{étude de l'influence des descripteurs structurels sur l'agrément perçu}: afin d'évaluer l'impact potentiel des descripteurs structurels sur l'agrément perçu, nous étudions l'existence de corrélations linéaires entre ces descripteurs et $\mathcal{A}_{scene}$. Pour mesurer la corrélation, nous utilisons le coefficient de Pearson. Nous adoptons ici une méthodologie couramment utilisée dans l'approche dimensionnelle;
 \item \emph{analyse des descripteurs sémantiques}: afin d'apprécier si la distinction affective imposée a un impact sur la composition des scènes en terme de sources sonores, s'il est des classes de sons plus particulièrement utilisées pour simuler un type d'environnement (i ou ni), nous utilisons le V-test. Le test est effectué pour chaque niveau d'abstraction, et séparément, pour les classes d'événements et de textures. Pour chaque classe $j$ et chaque type d'environnement $k$ ($k=\lbrace i,ni\rbrace$), la valeur $V_{jk}$ du V-test se calcule comme suit:
 
 \begin{equation*}
@@ -360,7 +360,7 @@ où $c$ est le nombre de classes utilisées, $c_k$ le nombre de classes utilisé
 d_{ham}(S_1,S_2)=\dfrac{1}{n}\sum_{i=1}^{n} (x_{1,i} \bigoplus x_{2,i})
 \end{equation*}
 
-où $\bigoplus$ désigne l'opérateur du \emph{ou-exclusif}. Plus la composition des deux scènes est similaire, et plus ces deux scènes sont proches. L'utilisation de la distance de Hamming permet de prendre en compte de manière égale les classes présentes et absentes. Pour mesurer la capacité intrinsèque de l'espace à séparer les i- et ni-scènes, nous utilisons une métrique de \emph{clustering} nommée précision au rang $k$ ($P@k$). La $P@k$ mesure la précision obtenue après que $k$ items ont été retrouvés. Formellement, pour chaque scène $s_i$, nous calculons le rapport entre le nombre de scènes $s_j$ prises parmi les $k$ plus proches voisines de $s_i$, et partageant le même label que $s_i$, sur le nombre d'items à retrouver ($k$). La $P@k$ est alors la moyenne des rapports pour tous les items;
+où $\bigoplus$ désigne l'opérateur du \emph{ou-exclusif}. Plus la composition des deux scènes est similaire, et plus ces deux scènes sont proches. L'utilisation de la distance de Hamming permet de prendre en compte de manière égale les classes présentes et absentes. Pour mesurer la capacité intrinsèque de l'espace à séparer les i- et ni-scènes, nous utilisons une métrique d'\emph{ordre} nommée précision au rang $k$ ($P@k$). La $P@k$ mesure la précision obtenue après que $k$ items ont été retrouvés. Formellement, pour chaque scène $s_i$, nous calculons le rapport entre le nombre de scènes $s_j$ prises parmi les $k$ plus proches voisines de $s_i$, et partageant le même label que $s_i$, sur le nombre d'items à retrouver ($k$). La $P@k$ est alors la moyenne des rapports pour tous les items;
 
 \item \emph{influence des marqueurs sonores sur l'agrément perçu}: afin d'évaluer les contributions spécifiques de certaines sources sonores, nous évaluons une nouvelle fois l'impact potentiel des descripteurs structurels sur l'agrément perçu, mais en ne tenant compte, cette fois, que des marqueurs sonores pour calculer ces descripteurs.
 \end{itemize}
@@ -393,7 +393,7 @@ scène non-idéale/désagréable   & ni-scène               \\
 
 \subsubsection*{Vérification de l'agrément des scènes simulées}
 
-Dans un premier temps, et afin de garantir la cohérence de nos données, nous vérifions qu'aucune ni-scène n'ait un $\mathcal{A}_{scene}$ supérieur à celui d'une i-scène. Quatre des scènes ne respectent pas la contrainte. Elles et leurs correspondantes i ou ni sont retirées. 36 i-scènes et 36 ni-scènes restent donc dans le champ de l'analyse.
+Dans un premier temps, et afin de garantir la cohérence de nos données, nous vérifions qu'aucune ni-scène n'a un $\mathcal{A}_{scene}$ supérieur à celui d'une i-scène. Quatre des scènes ne respectent pas la contrainte. Elles et leurs correspondantes i ou ni sont retirées. 36 i-scènes et 36 ni-scènes restent donc dans le champ de l'analyse.
 
 Dans un deuxième temps, nous voulons nous assurer que les sujets ont bien perçu une différence d'agrément entre les i- et ni-scènes. Pour ce faire, nous observons l'agrément moyen de chaque sujet $\mathcal{A}_{sujet}$, calculé séparément, pour chaque type d'environnement. Il apparaît que les i-scènes ont bien été perçues comme significativement plus agréables ($p<0.01$) que les ni-scènes.
 
@@ -804,7 +804,7 @@ Outre les possibilités déjà évoquées, la simulation présente encore dans c
 
 \begin{itemize}
 \item le simulateur peut être déployé à large échelle via internet;
-\item les scènes simulées peuvent être analysées sans avoir à tenir compte des différentes langues maternelles des sujets, la nature sémantique des classes de sons utilisées étant connue \emph{a priori} par l'expérimentateur.
+\item les scènes simulées peuvent être analysées sans avoir à tenir compte des différentes langues maternelles des sujets, la nature sémantique des classes de sons utilisées étant connue \emph{a priori} par l'expérimentateur et sans avoir besoin d'analyser la scène sonore pour idientifier les sources, leurs présences dans la scène étant directement exploitable.
 \end{itemize}
 
 Bien évidemment, ces approches nécessitent d'accroître la taille des banques de sons isolés disponibles, un effort conséquent, mais nécessaire, qui contribuera grandement aux nombreux domaines de recherche ayant trait aux scènes sonores.
