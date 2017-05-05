@@ -122,37 +122,53 @@ L'expérience 1 .a a fait l'objet d'une étude pilote dont les résultats sont p
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\section{L'outil de simulation}
+\section{The simulator}
 \label{sec:simscene}
 
-\emph{Simscene} est un environnement de travail audio-numérique dont la première version a été développée dans le cadre du projet HOULE\footnote{\emph{Projet HOULE} : \url{houle.ircam.fr}}. Il est prévu pour fonctionner sur les navigateurs internet \emph{Chrome} et \emph{Firefox}. L'outil a été développé en javascript à l'aide de la bibliothèque \emph{angular.js}\footnote{\emph{angular.js} : \url{angularjs.org}} et du standard \emph{web-audio}\footnote{\emph{web-audio} : \url{www.w3.org/TR/webaudio}}. L'interface de sélection (\cf~Section~\ref{sec:simscene_ssf}) a été développée à l'aide de la bibliothèque \emph{D3.js} \cite{d32011}.
+%\emph{Simscene} est un environnement de travail audio-numérique dont la première version a été développée dans le cadre du projet HOULE\footnote{\emph{Projet HOULE} : \url{houle.ircam.fr}}. Il est prévu pour fonctionner sur les navigateurs internet \emph{Chrome} et \emph{Firefox}. L'outil a été développé en javascript à l'aide de la bibliothèque \emph{angular.js}\footnote{\emph{angular.js} : \url{angularjs.org}} et du standard \emph{web-audio}\footnote{\emph{web-audio} : \url{www.w3.org/TR/webaudio}}. L'interface de sélection (\cf~Section~\ref{sec:simscene_ssf}) a été développée à l'aide de la bibliothèque \emph{D3.js} \cite{d32011}.
 
-Le fonctionnement de \emph{Simscene} se rapproche de celui d'un séquenceur audio. Un utilisateur choisit une classe de sons via l'interface de sélection (\cf~Section~\ref{sec:simscene_ssf}). Une fois la classe de sons sélectionnée, une piste audio, liée à cette classe, est créée. L'utilisateur peut alors modifier certaines propriétés de la piste via un groupe de paramètres de contrôle propre à chacune (\cf~Section~\ref{sec:simscene_parametre}). Des champs de texte sont prévus afin de permettre à l'utilisateur 1) de nommer chaque piste, 2) de donner un titre à la scène simulée 3) de commenter la scène simulée.
+\emph{Simscene} is an online digital audio tool whose first version have been developped as part of the HOULE prokect\footnote{\emph{Projet HOULE} : \url{houle.ircam.fr}}. It has been designed to run on the popular web browers \emph{Chrome} and \emph{Firefox}. It is fully written in javascript using the \emph{angular.js} library\footnote{\emph{angular.js} : \url{angularjs.org}} and the \emph{web-audio} standard that allows the manipulation of digita audio data within the browser\footnote{\emph{web-audio} : \url{www.w3.org/TR/webaudio}}. The interface for selecting the soud sources (\cf~Section~\ref{sec:simscene_ssf}) uses the popular \emph{D3.js} \cite{d32011} visualization library.
 
-\subsection{Banque de données de samples}
+%Le fonctionnement de \emph{Simscene} se rapproche de celui d'un séquenceur audio. Un utilisateur choisit une classe de sons via l'interface de sélection (\cf~Section~\ref{sec:simscene_ssf}). Une fois la classe de sons sélectionnée, une piste audio, liée à cette classe, est créée. L'utilisateur peut alors modifier certaines propriétés de la piste via un groupe de paramètres de contrôle propre à chacune (\cf~Section~\ref{sec:simscene_parametre}). Des champs de texte sont prévus afin de permettre à l'utilisateur 1) de nommer chaque piste, 2) de donner un titre à la scène simulée 3) de commenter la scène simulée.
+
+\emph{Simscene} is designed to be used as a simplified audio sequencer, with sequencing parameters specifically chosen for the generation of realistic soundscapes. To do so, the user first selects a sound source using a non verbal selection interface presented in Section~\ref{sec:simscene_ssf}. A track is then created for this sounds source within the simulator interface. The user can then manipulate some parameters detailed in Section~\ref{sec:simscene_parametre} to control the time and magnitude distribution of the occurences of the sounds source. Text fields are also available for the user to 1) name each track, 2) name the entire scene, 3) to provide some comments about the simulated scene.
+
+\subsection{Sound database}
 \label{sec:simscene_sampleDataSet}
 
-\subsubsection*{Typologie}
+In order to provide the user with a sound database that is well organized and covers as much as possible the variety of sound sources that are available in urban areas, a typology of urban sounds is first agreed upon.
 
-Afin de créer un corpus de classes de sons de référence pour la simulation, nous réalisons une typologie des sons environnementaux urbains.
+\subsubsection*{Typology}
 
-Une étude bibliographique est effectuée, afin d'identifier les sources et ambiances sonores les plus souvent citées dans les publications. Cette étude porte sur 16 articles ou thèses \cite{maffiolo_caracterisation_1999,raimbault2002simulation,guastavino_etude_2003,defreville2004aactivity,raimbault2005urban,dubois2006cognitive,devergie_relations_2006,guastavino2006ideal,niessen2010categories,maffiolo_caracterisation_1999,beaumont2004pertinence,polack2008perceptive,leobon_analyse_1986,brown2011towards}
-traitant de la manière dont nous discriminons les paysages sonores urbains. Notre typologie est établie sur la base des catégories/classes de sons relevées dans cette littérature.
+%Afin de créer un corpus de classes de sons de référence pour la simulation, nous réalisons une typologie des sons environnementaux urbains.
 
-Les réactions à la musique étant jugées trop subjectives, et les jugements esthétiques ne pouvant qu'altérer les données d'évaluation, nous choisissons, dans cette étude, de ne pas considérer les sources musicales de type musiciens de rue, radios de voitures, d'appartements, \etc.
+%Une étude bibliographique est effectuée, afin d'identifier les sources et ambiances sonores les plus souvent citées dans les publications. Cette étude porte sur 16 articles ou thèses \cite{maffiolo_caracterisation_1999,raimbault2002simulation,guastavino_etude_2003,defreville2004aactivity,raimbault2005urban,dubois2006cognitive,devergie_relations_2006,guastavino2006ideal,niessen2010categories,maffiolo_caracterisation_1999,beaumont2004pertinence,polack2008perceptive,leobon_analyse_1986,brown2011towards} traitant de la manière dont nous discriminons les paysages sonores urbains. Notre typologie est établie sur la base des catégories/classes de sons relevées dans cette littérature.
 
-\subsubsection*{Événements et Textures}
+The chosen typology is established based on the category/classes of sounds found while reviewing 16 articles or thesis manuscripts \cite{maffiolo_caracterisation_1999,raimbault2002simulation,guastavino_etude_2003,defreville2004aactivity,raimbault2005urban,dubois2006cognitive,devergie_relations_2006,guastavino2006ideal,niessen2010categories,maffiolo_caracterisation_1999,beaumont2004pertinence,polack2008perceptive,leobon_analyse_1986,brown2011towards} that study how humans discriminate different kind of urban soundscapes.
 
-La littérature fait généralement la distinction entre :
+%Les réactions à la musique étant jugées trop subjectives, et les jugements esthétiques ne pouvant qu'altérer les données d'évaluation, nous choisissons, dans cette étude, de ne pas considérer les sources musicales de type musiciens de rue, radios de voitures, d'appartements, \etc.
 
+We choose not to include any musical content in the database of sounds, as the study of the pleasantness of a given style or genre of music is beyond the scope of the study.
+
+\subsubsection*{Events and Textures}
+
+%La littérature fait généralement la distinction entre :
+% \begin{itemize}
+% \item {un événement sonore}: un son isolé, ponctuel, dont les caractéristiques physiques varient au cours du temps;
+% \item {une texture sonore}: un son, isolé, long, dont les caractéristiques physiques restent stables au cours du temps \cite{saint1995classification}.
+% \end{itemize}
+
+Litterature usually distinguish between:
 \begin{itemize}
-\item {un événement sonore}: un son isolé, ponctuel, dont les caractéristiques physiques varient au cours du temps;
-\item {une texture sonore}: un son, isolé, long, dont les caractéristiques physiques restent stables au cours du temps \cite{saint1995classification}.
+\item {a sound event}: an isolated sound, sparsely ditrubuted whose acoustical characteristics may change with respect to time
+\item {a sound texture}: an isolated sound of long duration whose acoustical characteristics are stable with respect to time \cite{saint1995classification}.
 \end{itemize}
 
-L'outil de simulation \emph{Simscene} tient compte de cette distinction, et utilise deux banques de données distinctes : l'une regroupant des classes d’événements, l'autre des classes de textures. Événements et textures bénéficient de processus de simulation spécifiques.
+The simulation tool \emph{Simscene} follows this distinction and consider two disctint sound databases: one with the classes of events only and the other with classes of textures. These two types have specific simulation procedures.% et utilise deux banques de données distinctes : l'une regroupant des classes d’événements, l'autre des classes de textures. Événements et textures bénéficient de processus de simulation spécifiques.
 
-Les différences morphologiques entre événements et textures sonores ont des conséquences sur la perception des scènes.
+%Les différences morphologiques entre événements et textures sonores ont des conséquences sur la perception des scènes.
+
+We do so, because we assume that the morphological differences between those two classes have some important consequences on the percpetion of the scenes.
 
 Lorsque des événements émergent d'un environnement sonore, le cerveau traite l'information des différentes sources de manière séparée \cite{bregman1994auditory}. Plusieurs flux auditifs sont ainsi générés, \ie~un pour chaque séquence d'événements émis par la même source \cite{carlyon2004brain}. Inversement, quand le cerveau ne parvient pas à isoler des événements, les éléments constituants de la scène sont agglomérés dans un même flux.
 
