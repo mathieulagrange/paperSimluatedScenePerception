@@ -170,73 +170,117 @@ The simulation tool \emph{Simscene} follows this distinction and consider two di
 
 We do so, because we assume that the morphological differences between those two classes have some important consequences on the percpetion of the scenes.
 
-Lorsque des événements émergent d'un environnement sonore, le cerveau traite l'information des différentes sources de manière séparée \cite{bregman1994auditory}. Plusieurs flux auditifs sont ainsi générés, \ie~un pour chaque séquence d'événements émis par la même source \cite{carlyon2004brain}. Inversement, quand le cerveau ne parvient pas à isoler des événements, les éléments constituants de la scène sont agglomérés dans un même flux.
+%Lorsque des événements émergent d'un environnement sonore, le cerveau traite l'information des différentes sources de manière séparée \cite{bregman1994auditory}. Plusieurs flux auditifs sont ainsi générés, \ie~un pour chaque séquence d'événements émis par la même source \cite{carlyon2004brain}. Inversement, quand le cerveau ne parvient pas à isoler des événements, les éléments constituants de la scène sont agglomérés dans un même flux.
 
-Maffiolo \cite{maffiolo_caracterisation_1999} met en évidence deux processus de catégorisation distincts, engagés en fonction de la capacité de l'auditeur à identifier des événements sonores. Elle montre l'existence de deux catégories cognitives abstraites d'environnements sonores respectivement appelées: «~les séquences événementielles~» et «~les séquences amorphes~».
+According to the Auditory Scene Analysis (ASA) theory, the brain processes sperately events emerging from different sources of an sound environment \cite{bregman1994auditory}. Several auditory streams are created, one for each sequence of events emitted by the same source \cite{carlyon2004brain}. In this case, the source is a perceptual entity. Indeed, events that are not isolated are grouped into a stream.
 
-Les séquences événementielles sont des environnements composés d'événements saillants et identifiables (\emph{démarrage de voiture}, \emph{voix d'homme}). Elles profitent d'une analyse descriptive basée sur l'identification des sources sonores. Les séquences amorphes sont des environnements dont il est difficile d'isoler des éléments distincts («~brouhaha de rue~», «~brouhaha de trafic~»). Elles profitent, elles, d'une analyse holistique, effectuée à partir d'indicateurs acoustiques (objectifs) globaux. %Cette différence de traitement entre scènes événementielles et scènes amorphes est relevée également dans \cite{guastavino2006ideal,dubois2006cognitive}.
+%Maffiolo \cite{maffiolo_caracterisation_1999} met en évidence deux processus de catégorisation distincts, engagés en fonction de la capacité de l'auditeur à identifier des événements sonores. Elle montre l'existence de deux catégories cognitives abstraites d'environnements sonores respectivement appelées: «~les séquences événementielles~» et «~les séquences amorphes~».
 
-Pour ce qui est des textures, \ie~des sons possédants des caractéristiques stables au cours du temps, \cite{mcdermott2011sound,mcdermott2013summary} montrent que le cerveau peut décider sciemment de dégrader l'information physique perçue, en la résumant de manière statistique, faisant fi de toute autre représentation plus détaillée \cite{nelken2013ear}.
+Maffiolo \cite{maffiolo_caracterisation_1999} distinguish two distinct categorisation processes, that differentiate themselves with the capacity of the listener to identify sound events. She shows that those processes leads to two abstract cognitive category respectively termed ""~the event sequences ~" and "~ the amorphous sequences".
+
+%Les séquences événementielles sont des environnements composés d'événements saillants et identifiables (\emph{démarrage de voiture}, \emph{voix d'homme}). Elles profitent d'une analyse descriptive basée sur l'identification des sources sonores. Les séquences amorphes sont des environnements dont il est difficile d'isoler des éléments distincts («~brouhaha de rue~», «~brouhaha de trafic~»). Elles profitent, elles, d'une analyse holistique, effectuée à partir d'indicateurs acoustiques (objectifs) globaux. %Cette différence de traitement entre scènes événementielles et scènes amorphes est relevée également dans \cite{guastavino2006ideal,dubois2006cognitive}.
+
+The event sequences are composed of salient and identifiable events such as \emph{car start}, \emph{mal speech}. They arise from a descriptive analysis based on the identification of the sound sources. On contrary, the amorphous sequences are environments where distinct events can hardly be found, such as \emph{traffic hubhub}. They build upon an holistic analysis based on global acoustic features.
+
+%Pour ce qui est des textures, \ie~des sons possédants des caractéristiques stables au cours du temps, \cite{mcdermott2011sound,mcdermott2013summary} montrent que le cerveau peut décider sciemment de dégrader l'information physique perçue, en la résumant de manière statistique, faisant fi de toute autre représentation plus détaillée \cite{nelken2013ear}.
+
+Concerning sound textures, \ie~sounds that have stable caracteristics along time, \cite{mcdermott2011sound,mcdermott2013summary} demonstrate that the human brain can decide not to abstract the physical information available using some of the summary statistics discarding lower level information \cite{nelken2013ear}.
 
 Au regard de ces résultats, il apparaît que le processus de traitement de l'information sonore comprend une prise de décision quant à la nature des stimuli \cite{nelken2013ear,mcdermott2013summary}, laquelle va ensuite influer sur la manière d'extraire et d'analyser l'information.
 
-\subsubsection*{Taxonomie}
+At the light of those results, it appears that the processing of auditory information comprises some sort of decision concerning the nature of the stimuli \cite{nelken2013ear,mcdermott2013summary}. We thus consider in this study the soundscape as "skeleton of events on a bed of textures" as coined in \cite{nelken2013ear}.
+
+\subsubsection*{Taxonomy}
 
 \begin{figure}[t]
         \myfloatalign
         \includegraphics[width=.8\linewidth]{gfx/ch_4/3}
-       \caption{Organisation hiérarchique de la banque de sons isolés utilisée pour la simulation.}\label{fig:orgDb}
+       \caption{Hierachical organisation of the isolated sounds used ofr the simulation.}\label{fig:orgDb}
 \end{figure}
 
+%Nous nommons sample, un enregistrement d'un son isolé, événement ou texture. Chaque classe est alors comprise comme une collection de samples jugés perceptivement équivalents.
 
-Nous nommons sample, un enregistrement d'un son isolé, événement ou texture. Chaque classe est alors comprise comme une collection de samples jugés perceptivement équivalents.
+We term sample, a recording of an isolated sound, be it an event or a texture. Each sound class is implemented as a collection of samples percieved equivalently.
 
-Les classes de sons sont organisées suivant une structure hiérarchique (\cf~Figure~\ref{fig:orgDb}). Cette structure hiérarchique est largement inspirée de l'axe vertical de l'organisation catégorielle proposée par E. Rosch \cite{rosch1978cognition}, qui dresse une taxonomie des classes ou catégories \ie~plus le niveau d'abstraction de la classe est faible, plus la description de la classe est précise, et plus les sources sonores incluses dans cette classe sont semblables. Si le niveau d'abstraction d'une classe est tel que cette dernière possède des sous-classes, alors sa collection de samples est la somme des collections respectives de chacune des sous-classes.
+%Les classes de sons sont organisées suivant une structure hiérarchique (\cf~Figure~\ref{fig:orgDb}). Cette structure hiérarchique est largement inspirée de l'axe vertical de l'organisation catégorielle proposée par E. Rosch \cite{rosch1978cognition}, qui dresse une taxonomie des classes ou catégories \ie~plus le niveau d'abstraction de la classe est faible, plus la description de la classe est précise, et plus les sources sonores incluses dans cette classe sont semblables. Si le niveau d'abstraction d'une classe est tel que cette dernière possède des sous-classes, alors sa collection de samples est la somme des collections respectives de chacune des sous-classes.
 
-Nous établissons deux taxonomies, une pour les événements, une autre pour les textures (\cf~Annexe~\ref{app:taxonomie}). Pour les événements, nous considérons quatre niveaux d'abstraction allant des classes les plus générales (niveau d'abstraction 0), aux classes les plus spécifiques (niveau d'abstraction 3). Pour les textures, nous ne considérons que trois niveaux d'abstraction. Notons que la taxonomie des événements est proche de celle de \cite{Salamon14}, introduite postérieurement à notre étude.
+The sound classes are organized hierachically (\cf~Figure~\ref{fig:orgDb}) according to a structure close to the one of the vertical axis of the categorical organization proposed by E. Rosch \cite{rosch1978cognition}. In this taxonomy, the lower the level of abstraction, the more precise the description of the class and the more perceptually similar the sound sources. For class with high level of abstraction with sub classes, its collection of samples is the union of the collections of the sub classes.
 
-\subsubsection*{Acquisition des samples}
+%Nous établissons deux taxonomies, une pour les événements, une autre pour les textures (\cf~Annexe~\ref{app:taxonomie}). Pour les événements, nous considérons quatre niveaux d'abstraction allant des classes les plus générales (niveau d'abstraction 0), aux classes les plus spécifiques (niveau d'abstraction 3). Pour les textures, nous ne considérons que trois niveaux d'abstraction. Notons que la taxonomie des événements est proche de celle de \cite{Salamon14}, introduite postérieurement à notre étude.
 
-Sur la base des taxonomies précédemment établies, 483 sons isolés ont été collectés, dont 381 événements, et 102 textures. Parmi ces samples, 332 ont été enregistrés, et 151 proviennent de différentes banques de sons (\emph{SoundIdeas}\footnote{\emph{SoundIdeas}: \url{www.sound-ideas.com}} et \emph{Universal SoundBank}\footnote{\emph{Universal SoundBank}: \url{www.universal-soundbank.com}}).
+Accounting for the perceptual matters detailed previously, two taxonomies are built, one for event sounds and one for texture sounds. Four levels of abstraction are considered from the more generic one (level 0), to the more specific classe (level 3), leading to a taxonomy close to the one used in \cite{Salamon14}. Only three levels of abstraction are considered for the texture sounds.
 
-Tous les enregistrements ont été effectués à l’aide d'un micro canon \emph{AT8035}\footnote{\emph{Micro canon AT8035}: \url{eu.audio-technica.com}} relié à un enregistreur \emph{ZOOM H4n}\footnote{\emph{ZOOM H4n} : \url{www.zoom.co.jp/english/products/h4n}}. L’utilisation du micro canon nous permet d’isoler les événements sonores du bruit de fond urbain. Pour les textures, il nous permet d’éviter les événements sonores proches du preneur de son. Nous pouvons ainsi pointer des "zones sonores", en nous tenant à une certaine distance de ces dernières, afin de capter uniquement le bruit de fond émanant de la zone ciblée.
+\subsubsection*{Sound samples collection}
 
-Tous les sons ont été normalisés au même niveau $RMS$ de $-12$ $dB$ (FS), \ie. relativement à un niveau pleine échelle (\emph{relative to Full Scale}). Dans notre cas, ce niveau pleine échelle est de 1 Volt.
+%Sur la base des taxonomies précédemment établies, 483 sons isolés ont été collectés, dont 381 événements, et 102 textures. Parmi ces samples, 332 ont été enregistrés, et 151 proviennent de différentes banques de sons (\emph{SoundIdeas}\footnote{\emph{SoundIdeas}: \url{www.sound-ideas.com}} et \emph{Universal SoundBank}\footnote{\emph{Universal SoundBank}: \url{www.universal-soundbank.com}}).
 
-\subsection{Paramètres}
+483 isolated sounds are collected and organized with the two above discussed typologies, 381 events and 102 textures. Among those samples, 332 have been recorded and 151 have been taken from two sound libraries: \emph{SoundIdeas}\footnote{\emph{SoundIdeas}: \url{www.sound-ideas.com}} and \emph{Universal SoundBank}\footnote{\emph{Universal SoundBank}: \url{www.universal-soundbank.com}}.
+
+%Tous les enregistrements ont été effectués à l’aide d'un micro canon \emph{AT8035}\footnote{\emph{Micro canon AT8035}: \url{eu.audio-technica.com}} relié à un enregistreur \emph{ZOOM H4n}\footnote{\emph{ZOOM H4n} : \url{www.zoom.co.jp/english/products/h4n}}. L’utilisation du micro canon nous permet d’isoler les événements sonores du bruit de fond urbain. Pour les textures, il nous permet d’éviter les événements sonores proches du preneur de son. Nous pouvons ainsi pointer des "zones sonores", en nous tenant à une certaine distance de ces dernières, afin de capter uniquement le bruit de fond émanant de la zone ciblée.
+
+Orignal sounds have been recorded using a shotgun microphone \emph{AT8035}\footnote{\emph{Micro canon AT8035}: \url{eu.audio-technica.com}} relié à un enregistreur \emph{ZOOM H4n}\footnote{\emph{ZOOM H4n} : \url{www.zoom.co.jp/english/products/h4n}}. The use of such a microphone allowed us to isolate as much as possible sound events of interest from the urban background. Conversely, it allowed us to avoid dominant sound sources while recording texture sounds by pointing the microphone to distant eareas with no dominant sound sources.
+
+%Tous les sons ont été normalisés au même niveau $RMS$ de $-12$ $dB$ (FS), \ie. relativement à un niveau pleine échelle (\emph{relative to Full Scale}). Dans notre cas, ce niveau pleine échelle est de 1 Volt.
+
+All samples are normalised to the same $RMS$ level of $-12$ $dB$ FS, \ie. relative to Full Scale. In our case, the full scale level is of 1 Volt.
+
+\subsection{Parameters}
 \label{sec:simscene_parametre}
 
-Par choix de conception, l'outil de simulation ne permet pas d’interagir avec un sample en particulier, mais toujours avec une piste, \ie~une séquence de samples. Plusieurs paramètres permettent au sujet de contrôler la structure de chaque piste.
+%Par choix de conception, l'outil de simulation ne permet pas d’interagir avec un sample en particulier, mais toujours avec une piste, \ie~une séquence de samples. Plusieurs paramètres permettent au sujet de contrôler la structure de chaque piste.
+
+By design, the simulation tool do not allow the user to interect and control a specific sample. Interaction is done at the track level, a track being a sequence of samples. Several paramters are available to the subject to control the track:
+
+% \begin{itemize}
+% \item \emph{niveau sonore} ($dB$): pour chaque sample, les niveaux sont tirés aléatoirement à partir d'une distribution normale, paramétrée par le sujet en termes de moyenne et de variance;
+% \item \emph{espacement inter-onset} (seconde): (piste d'événements seulement) comme pour les niveaux, les espacements sont tirés aléatoirement à partir d'une distribution normale, paramétrée par le sujet en terme de moyenne et de variance;
+% \item \emph{début et fin} (seconde): le sujet fixe le début et la fin de chaque piste.
+% \end{itemize}
 
 \begin{itemize}
-\item \emph{niveau sonore} ($dB$): pour chaque sample, les niveaux sont tirés aléatoirement à partir d'une distribution normale, paramétrée par le sujet en termes de moyenne et de variance;
-\item \emph{espacement inter-onset} (seconde): (piste d'événements seulement) comme pour les niveaux, les espacements sont tirés aléatoirement à partir d'une distribution normale, paramétrée par le sujet en terme de moyenne et de variance;
-\item \emph{début et fin} (seconde): le sujet fixe le début et la fin de chaque piste.
+\item \emph{level} ($dB$): the levels are  randomly sampled according to a normal distribution parametrized by the subject in terms of mean value and variance;
+\item \emph{inter-onset spacing} (second): for the event's track only, the spacings arerandomly sampled according to a normal distribution parametrized by the subject in terms of mean value and variance;
+\item \emph{start and end time} (second): the subject set the first and last occurence of a sample of the selected class.
 \end{itemize}
 
-Afin de faciliter la simulation, deux paramètres supplémentaires sont proposés:
+%Afin de faciliter la simulation, deux paramètres supplémentaires sont proposés:
+
+To ease the simulation, two parameters are also proposed:
+
+% \begin{itemize}
+% \item \emph{fondu par événement} (seconde): (piste d'événements seulement) le sujet fixe une durée de fondu (entrée et sortie) appliquée à chaque sample;
+% \item \emph{fondu global} (seconde): le sujet fixe les durées de fondus pour l'entrée et la sortie de la piste. Ces fondus s'appliquent ainsi à l'ensemble des samples de la piste.
+% \end{itemize}
 
 \begin{itemize}
-\item \emph{fondu par événement} (seconde): (piste d'événements seulement) le sujet fixe une durée de fondu (entrée et sortie) appliquée à chaque sample;
-\item \emph{fondu global} (seconde): le sujet fixe les durées de fondus pour l'entrée et la sortie de la piste. Ces fondus s'appliquent ainsi à l'ensemble des samples de la piste.
+\item \emph{event's fades} (seconds): for the event's track only, the subject can set a fade in / fade out duration applied to each samples;
+\item \emph{global fades} (seconds): the subject set the duration of the fade in /fade out at the beginning and the end of the track.
 \end{itemize}
 
-Deux de ces paramètres ne s’appliquent que pour les pistes d'événements (\emph{fondu par événement}  et \emph{espacement inter-onset}), les samples des textures étant séquencés sans espacement.
+%Deux de ces paramètres ne s’appliquent que pour les pistes d'événements (\emph{fondu par événement}  et \emph{espacement inter-onset}), les samples des textures étant séquencés sans espacement.
 
-\subsection{Interface de sélection}
+The samples of texture are sequenced without time spacing, therefore the parameters \emph{event's fade} and \emph{inter-onset spacing} are not available ofr this kind of track.
+
+\subsection{Selection interface}
 \label{sec:simscene_ssf}
 
-La grande majorité des outils permettant de parcourir une banque de données propose une recherche textuelle sur la base de mots-clé. Dans le cadre d'une expérience sensorielle visant à objectiver la représentation interne du sujet, cette approche est problématique.
+%La grande majorité des outils permettant de parcourir une banque de données propose une recherche textuelle sur la base de mots-clé. Dans le cadre d'une expérience sensorielle visant à objectiver la représentation interne du sujet, cette approche est problématique.
 
-En effet la description verbale du son, si elle est accessible au sujet, peut potentiellement influencer sa sélection. Dans les faits, pour construire une scène environnementale «~calme~», le sujet sélectionne a priori les sons référencés sous le vocable \emph{parc}.
+%En effet la description verbale du son, si elle est accessible au sujet, peut potentiellement influencer sa sélection. Dans les faits, pour construire une scène environnementale «~calme~», le sujet sélectionne a priori les sons référencés sous le vocable \emph{parc}.
 
-Pour limiter l’influence de l’interface sur le sujet, il nous paraît nécessaire de libérer sa recherche de toute information textuelle. Nous proposons à l'utilisateur une interface graphique lui permettant d’explorer la banque de sons exclusivement à partir de l’écoute.
+Most of browsing tools are based on keyword indexing. For sensory experiment studying the objectivation of the mental representation of the subject, this mean is problematic as the availability of a verbal description of the sound can influence the choice of the subject. Indeed, the subject will select \textit{a priori} sound referenced belonging to \emph{park} to build a \emph{calm} soundscape.
 
-La figure~\ref{fig:ssf} présente l'interface pour la banque de données d'événements sonores. Visuellement, les classes du dernier palier (niveaux d'abstraction 3 pour les événements, 2 pour les textures) sont représentées par des cercles, et positionnées sur un plan. La disposition des cercles dans l'espace dépend de l’organisation hiérarchique de la base de données: les sous-classes appartenant à une même classe sont proches les unes des autres, et ainsi de suite jusqu'à atteindre les classes du dernier palier, les seules auxquelles le sujet peut accéder, des classes qui ne possèdent pas de sous-classes, et sont directement liées à une collection de samples.
+%Pour limiter l’influence de l’interface sur le sujet, il nous paraît nécessaire de libérer sa recherche de toute information textuelle. Nous proposons à l'utilisateur une interface graphique lui permettant d’explorer la banque de sons exclusivement à partir de l’écoute.
 
-Chaque classe du dernier palier possède un son prototype. Ces sons ont été choisis par les expérimentateurs. Lorsqu’on clique sur un cercle, le prototype associé à la classe est joué. Le sujet parcourt la banque de sons en cliquant sur les cercles.
+Therefore, the selection interface is text free and composed of spatially organized circles on a two dimensional plane.
 
-Cette interface a fait l'objet d'une étude approfondie dont les résultats sont publiés dans \cite{lafay2016JAES}.
+%La figure~\ref{fig:ssf} présente l'interface pour la banque de données d'événements sonores. Visuellement, les classes du dernier palier (niveaux d'abstraction 3 pour les événements, 2 pour les textures) sont représentées par des cercles, et positionnées sur un plan. La disposition des cercles dans l'espace dépend de l’organisation hiérarchique de la base de données: les sous-classes appartenant à une même classe sont proches les unes des autres, et ainsi de suite jusqu'à atteindre les classes du dernier palier, les seules auxquelles le sujet peut accéder, des classes qui ne possèdent pas de sous-classes, et sont directement liées à une collection de samples.
+
+The Figure~\ref{fig:ssf} shows the interface used for the selection of events. The classes of the higher level of abstraction are plotted with circles. The spatial location of the circles is chosen according to the hierarchical organization of the sound database: sub-classes belonging to the same class are close to each others, and so on until the user reaches the lower level classes displayed in grey which are directly linked to a collection of samples.
+
+%Chaque classe du dernier palier possède un son prototype. Ces sons ont été choisis par les expérimentateurs. Lorsqu’on clique sur un cercle, le prototype associé à la classe est joué. Le sujet parcourt la banque de sons en cliquant sur les cercles. Cette interface a fait l'objet d'une étude approfondie dont les résultats sont publiés dans \cite{lafay2016JAES}.
+
+Each of those classes have a representative sound chosen arbitrarily by the authors in order to provide the same sound each time the user clicks on the circle. The subject can browse the database by listening to those prototype sound. The efficiency of this interface compared to several others designs have been evaluated and the outcomes are discussed in \cite{lafay2016JAES}.
 
 \begin{figure}[t]
         \myfloatalign
@@ -244,14 +288,18 @@ Cette interface a fait l'objet d'une étude approfondie dont les résultats sont
         {\includegraphics[width=.8\columnwidth]{gfx/ch_4/SSF}\label{fig:ssf}} \par
         \subfloat[]
         {\includegraphics[width=\columnwidth]{gfx/ch_4/simscene}\label{fig:simscene}}
-       \caption{Les interfaces de sélection (a) et de simulation (b) de l'outil \emph{Simscene}.}
+       \caption{Visual interfaces for the selection of sound classes (a) and their sequencing (b) of the \emph{Simscene} tool.}
 \end{figure}
 
-\subsection{Interface de simulation}
+\subsection{Simulation interface}
 
-L'interface de simulation propose un rendu graphique schématisé de la scène en cours de création (\cf~Figure~\ref{fig:simscene}). La piste est représentée par une bande possédant un axe temporel. Sur cette bande, chaque sample est représenté par un rectangle. L'espacement entre les rectangles est fonction de l'espacement entre les samples. De même, la hauteur des rectangles est proportionnelle au niveau sonore des samples. Dans le cas d'une piste de texture, un unique rectangle apparaît sur toute la longueur de la piste, un son de texture ne pouvant être entrecoupé de silences. Les caractéristiques des rectangles évoluent en fonction des changements de paramètres de la piste. L'utilisateur a la possibilité, à tout moment, d'écouter la scène simulée.
+%L'interface de simulation propose un rendu graphique schématisé de la scène en cours de création (\cf~Figure~\ref{fig:simscene}). La piste est représentée par une bande possédant un axe temporel. Sur cette bande, chaque sample est représenté par un rectangle. L'espacement entre les rectangles est fonction de l'espacement entre les samples. De même, la hauteur des rectangles est proportionnelle au niveau sonore des samples. Dans le cas d'une piste de texture, un unique rectangle apparaît sur toute la longueur de la piste, un son de texture ne pouvant être entrecoupé de silences. Les caractéristiques des rectangles évoluent en fonction des changements de paramètres de la piste. L'utilisateur a la possibilité, à tout moment, d'écouter la scène simulée.
 
-La scène sonore est ainsi vue comme une somme de sources sonores, ou, si l'on admet la distinction opérée entre événements et textures sonores, «~un squelette d'événements sur un lit de textures~» \cite{nelken2013ear}. Cet outil de simulation est présenté en détail dans \cite{rossignol2015simscene}.
+As shown on Figure~\ref{fig:simscene}, the simulation interface displays a schematic of the scene under creation. Each track is represented as an horizontal band with a temporal axis. Each sample of this track is displayed by a rectangle whose height is proportional to the amplitude of the sample. For event's tracks, the horizontal spacing between those rectangles is a function of the time delay between their onsets. For tracks of texture, a unique rectangle is displayed as this kind of sounds do not allow spacing with silence. As actual amplitude and spacing values are drawn from random variables, each time the subject changes the value of a parameter, the location and height of the rectangles are updated to reflect the changes in the sequencing of the samples. The subject can listen to the resulting sound scene.
+
+%La scène sonore est ainsi vue comme une somme de sources sonores, ou, si l'on admet la distinction opérée entre événements et textures sonores, «~un squelette d'événements sur un lit de textures~» \cite{nelken2013ear}. Cet outil de simulation est présenté en détail dans \cite{rossignol2015simscene}.
+
+As such, the underlying model of the scene is a sum of sound sources, more precisely a "skeleton of events on a bed of textures" \cite{nelken2013ear}. Further details about the simulation interface can be found in \cite{rossignol2015simscene}.
 
 \section{Expérience 2 : modification de la composition sémantique}
 \label{sec:xp3}
