@@ -340,25 +340,43 @@ Though, as discussed before, the global amplitude level can only be considered a
 
 \subsubsection*{Stimuli}
 
-La banque de données de stimuli compte 144 séquences de 30 secondes. Ces 144 séquences comprennent:
+%La banque de données de stimuli compte 144 séquences de 30 secondes. Ces 144 séquences comprennent:
+% \begin{itemize}
+% \item \emph{72 am-scenes}: les 72 scènes précédemment simulées, avec les classes de marqueurs (am). Nous notons i/am-scènes, les 36 scènes idéales avec marqueurs, et ni/am-scènes les 36 scènes non-idéales avec marqueurs;
+% \item \emph{72 sm-scènes}: les 72 scènes précédemment simulées, régénérées sans les classes de marqueurs (sm). Nous notons i/sm-scènes, les 36 scènes idéales sans marqueurs, et ni/sm-scènes les 36 scènes non-idéales sans marqueurs.
+% \end{itemize}
+
+There are 144 stimuli of 30 seconds durations. More precisely:
 
 \begin{itemize}
-\item \emph{72 am-scènes}: les 72 scènes précédemment simulées, avec les classes de marqueurs (am). Nous notons i/am-scènes, les 36 scènes idéales avec marqueurs, et ni/am-scènes les 36 scènes non-idéales avec marqueurs;
-\item \emph{72 sm-scènes}: les 72 scènes précédemment simulées, régénérées sans les classes de marqueurs (sm). Nous notons i/sm-scènes, les 36 scènes idéales sans marqueurs, et ni/sm-scènes les 36 scènes non-idéales sans marqueurs.
+\item \emph{72 km-scenes}: the 72 scenes originally simulated by the subject of experiment 1.a where the sound classes identified as markers are kept. The 36 ideal scenes with markers are noted i/km-scenes, and the 36 non ideal scenes with markers are noted ni/km-scenes.
+\item \emph{72 rm-scènes}:  72 scenes where the sound classes identified as markers are removed. The 36 ideal scenes without markers are noted i/rm-scenes, and the 36 non ideal scenes without markers are noted ni/rm-scenes.
 \end{itemize}
 
-Nonobstant l'absence des marqueurs, les am- et sm-scènes sont en tout point semblables.
 
-Nombre de am-scènes sont composées, en majorité, de samples de marqueurs. Afin de ne pas dénaturer abusivement ces scènes, en créant notamment des temps de «~vide~», \ie~ne comprenant aucun sample, nous ne supprimons que les marqueurs des classes d'événements du premier niveau d'abstraction (\cf~Tableau~\ref{tab:markers}). Ces classes sont:
+%Nonobstant l'absence des marqueurs, les am- et sm-scènes sont en tout point semblables.
+
+Notwithstanding the presence or absence of markers, the km-scenes and rm-scenes are exactely the same.
+
+%Nombre de am-scènes sont composées, en majorité, de samples de marqueurs. Afin de ne pas dénaturer abusivement ces scènes, en créant notamment des temps de «~vide~», \ie~ne comprenant aucun sample, nous ne supprimons que les marqueurs des classes d'événements du premier niveau d'abstraction (\cf~Tableau~\ref{tab:markers}). Ces classes sont:
+
+In order to create km-scenes with still some sound diversity and no long duration absence of sound activity within the scene, only the sound classes of events of the first level of abstraction are removed, see Table~\ref{tab:markers}. Those classes are:
+
+% \begin{itemize}
+% \item \emph{cloche}, \emph{sonnette de vélo}, \emph{animaux} pour les i/sm-scènes;
+% \item \emph{sirène}, \emph{klaxon} pour les ni/sm-scènes.
+% \end{itemize}
 
 \begin{itemize}
-\item \emph{cloche}, \emph{sonnette de vélo}, \emph{animaux} pour les i/sm-scènes;
-\item \emph{sirène}, \emph{klaxon} pour les ni/sm-scènes.
+\item \emph{Church bell}, \emph{bicycle bell}, \emph{animals} pour les i/sm-scènes;
+\item \emph{siren}, \emph{car horn} pour les ni/sm-scènes.
 \end{itemize}
 
-Il est important de noter ici que tous les i- et ni-marqueurs ne sont donc pas supprimés dans les sm-scènes.
+%Il est important de noter ici que tous les i- et ni-marqueurs ne sont donc pas supprimés dans les sm-scènes.
 
-\subsubsection*{Procédure}
+Thus, only a fraction of the i-markers and ni-markers are removed in the rm-scenes.
+
+\subsubsection*{Experiment}
 
 Les sujets évaluent les 144 scènes. L'évaluation s'effectue sur une échelle sémantique bipolaire de 11 points allant de -5 (non-idéale/très désagréable) à +5 (idéale/très agréable). Avant de noter une scène, les sujets doivent obligatoirement en écouter les 20 premières secondes. Après la notation, ils sont libres de passer à la scène suivante.
 
@@ -366,31 +384,47 @@ Pour chaque sujet, les scènes sont présentées dans un ordre aléatoire. Les 1
 
 L'expérience est prévue pour durer 1 heure. Les sujets ne connaissent pas la nature des scènes.
 
-\subsubsection*{Dispositif expérimental}
+\subsubsection*{Experimental protocol}
 
-Tous les sujets passent l'expérience sur des machines identiques. L'audio est diffusé en monophonie, par le biais de casques audio semi-ouverts \emph{Beyer-Dynamic DT 990 Pro}. Toutes les scènes sonores ont été re-simulées sur la base des partitions obtenues lors de l'expérience de simulation. Le niveau sonore de sortie est identique pour tous les sujets.
+%Tous les sujets passent l'expérience sur des machines identiques. L'audio est diffusé en monophonie, par le biais de casques audio semi-ouverts \emph{Beyer-Dynamic DT 990 Pro}. Toutes les scènes sonores ont été re-simulées sur la base des partitions obtenues lors de l'expérience de simulation. Le niveau sonore de sortie est identique pour tous les sujets.
 
-Tous les sujets réalisent l'expérience simultanément, dans un environnement calme. Ils n'ont pas le droit de s'adresser la parole pendant l'expérience.
+All the subjects perform the test on the same type of computers . Thy listen to the stimuli with semi-open \emph{Beyer-Dynamic DT 990 Pro} headphones. The sound level is the same for all subjects.
 
-Un expérimentateur est présent durant la totalité de l'expérience, afin de contrôler le bon déroulement de cette dernière, et de répondre aux éventuelles questions des sujets.
+%Tous les sujets réalisent l'expérience simultanément, dans un environnement calme. Ils n'ont pas le droit de s'adresser la parole pendant l'expérience.
+
+All the subjects perform the test at the same time, in a quiet environment. They are not allowed to talk to each other during the experiment.
+
+%Un expérimentateur est présent durant la totalité de l'expérience, afin de contrôler le bon déroulement de cette dernière, et de répondre aux éventuelles questions des sujets.
+
+A supervisor is available during the whole duration of the experiment to ensure a smooth running of the latter and answer any questions the subjects may have.
 
 \subsubsection*{Participants}
 
-12 sujets (4 femmes) participent à l'expérience. Aucun d'entre eux n'a réalisé l'expérience de simulation, ni la première expérience d'évaluation. Les sujets sont âgés de 22 à 61 ans (moyenne: 29.5, écart-type: 14). Tous les sujets sont Nantais, et vivent dans cette ville depuis deux ans ou plus.
+%12 sujets (4 femmes) participent à l'expérience. Aucun d'entre eux n'a réalisé l'expérience de simulation, ni la première expérience d'évaluation. Les sujets sont âgés de 22 à 61 ans (moyenne: 29.5, écart-type: 14). Tous les sujets sont Nantais, et vivent dans cette ville depuis deux ans ou plus.Tous les sujets ont réalisé l'expérience avec succès.
 
-Tous les sujets ont réalisé l'expérience avec succès.
+12 subjects (4 womens) perform the test. None of them have performed experiments 1.a and 1.b. The subjects are 22 to 61 years old (average: 29.5, standard deviation: 14). All the subjects live in Nantes, France, for at least two years. All the subjects performed the test succesfully.
 
-\subsection{Données et méthodes d'analyses}
+\subsection{Data and analysis method}
 
-Les données analysées sont les mêmes que pour la première expérience. Nous invitons le lecteur à se référer à la section~\ref{sec:xp1_dataAna} pour plus de détails.
+%Les données analysées sont les mêmes que pour la première expérience. Nous invitons le lecteur à se référer à la section~\ref{sec:xp1_dataAna} pour plus de détails.
+
+The type of data analysed in this experiment have been considered for experiment 1.a, see Section~\ref{sec:xp1_dataAna} for details.
 
 Il s'agit ici de vérifier que la suppression des i- et ni-marqueurs impacte l'agrément perçu. Pour ce faire, nous utilisons l'analyse de variance. Nous considérons, comme variable dépendante, $\mathcal{A}_{sujet}$, et, comme variables indépendantes, le type d'environnement (i/ni), et la présence/absence de marqueurs (am/sm). Chaque sujet devant évaluer la totalité des stimuli, une ANOVA à mesures répétées à deux facteurs est utilisée afin vérifier s'il existe des différences significatives d'agrément perçu. Les deux variables indépendantes sont considérées comme des facteurs intra-sujet (\emph{within-subject}. Les facteurs n'étant composés que de deux niveaux chacun (type: i/ni; marqueur: am/sm), l'hypothèse de sphéricité n'a pas besoin d'être vérifiée. Les analyses \emph{post hoc} sont conduites en appliquant la procédure de Tukey-Kramer.
 
-Tous les tests de significativité sont effectués avec un seuil critique $\alpha=0.05$.
+To do so, we perform a variance analysis. We consider $\mathcal{A}_{sujet}$ as a dependant variable, and as independant variables, the type of envorinment (i/ni), and the presence/absence of markers (km/rm). As each subject evaluated the whole set of scenes, a two factors repeated measure ANOVA is used in order to verify the hypothesis that there exist a significant difference of percieved pleasantness between km-scenes and rm-scenes.
 
-\subsection{Résultats}
+(\emph{within-subject}.
 
-\subsubsection{Détection des valeurs extrêmes}
+\emph{post hoc} are done by following the Tukey-Kramer procedure.
+
+%Tous les tests de significativité sont effectués avec un seuil critique $\alpha=0.05$.
+
+All the significance tests are done using a critical threshold $\alpha=0.05$.
+
+\subsection{Results}
+
+\subsubsection{Outliers detection}
 
 Considérons $\mathcal{A}_{sujet}$ pour les am-scènes. Il apparaît que les réponses d'un des sujets diffèrent des autres. Ce dernier a évalué positivement près de la moitié des ni/am-scènes (\cf~Annexe~\ref{app:xp2} : sujet 7). Le sujet a donné à 58\% des ni/am-scènes une note supérieure à 0, contre une moyenne de 11\% pour les autres sujets. De plus, le sujet a utilisé l'ambitus maximal (-5 à 5) pour noter à la fois les i/ et ni/am-scènes. Ces faits n'ayant pas été observés pour les autres sujets, que l'on considère les expériences 2 ou 1.b, le sujet 7 est éliminé de l'analyse.
 
