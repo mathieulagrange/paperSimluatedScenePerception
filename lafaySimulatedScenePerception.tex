@@ -27,7 +27,6 @@ $^{2)}$ STMS Ircam-CNRS-UPMC Institut de Recherche et Coordination Acoustique/Mu
 \newcommand{\nm}[1]{\textcolor{magenta}{#1}}
 \newcommand{\ml}[1]{\textcolor{red}{#1}}
 \newcommand{\jlc}[1]{\textcolor{green}{#1}}
-
 \newcommand{\ie}{\emph{i.\,e.}}
 \newcommand{\Ie}{\emph{I.\,e.}}
 \newcommand{\cf}{cf.}
@@ -305,6 +304,525 @@ As shown on Figure~\ref{fig:simscene}, the simulation interface displays a schem
 %La scène sonore est ainsi vue comme une somme de sources sonores, ou, si l'on admet la distinction opérée entre événements et textures sonores, «~un squelette d'événements sur un lit de textures~» \cite{nelken2013ear}. Cet outil de simulation est présenté en détail dans \cite{rossignol2015simscene}.
 
 As such, the underlying model of the scene is a sum of sound sources, more precisely a "skeleton of events on a bed of textures" \cite{nelken2013ear}. Further details about the simulation interface can be found in \cite{rossignol2015simscene}.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%  Experience 1     %%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Expérience 1}
+\label{sec:xp1}
+
+\subsection{Objectif}
+
+% L'objectif est d'étudier les influences spécifiques des différentes sources sonores qui composent les environnements urbains sur la perception de l'agrément, en utilisant la simulation. Pour ce faire, nous planifions nos deux premières expériences (\cf~Figure~\ref{fig:xp1_2}):
+%
+% \begin{itemize}
+% \item \emph{expérience 1.a de simulation}: au cours de cette expérience, les sujets doivent simuler des environnements sonores urbains, en utilisant l'outil de simulation \emph{Simscene} (\cf~Section~\ref{sec:simscene}). Chacun compose deux environnements sonores, le premier idéal/agréable et le deuxième non-idéal/désagréable.
+%
+% \item \emph{expérience 1.b d'évaluation}: à l'issue de la simulation, nous n'avons, de fait, qu'une connaissance binaire des propriétés affectives des scènes simulées: idéale (i) et non-idéale (ni). Cette seconde étape a pour but d'affiner notre connaissance sur l'agrément. Pour ce faire, nous demandons à un deuxième groupe de sujets d'évaluer, à partir d'une échelle sémantique, l'agrément de chacune des scènes simulées. L'expérience d'évaluation sert deux buts:
+%
+% \begin{enumerate}
+% \item évaluer l'influence respective des différentes sources sur l'agrément, pour chaque type d'environnement (i ou ni);
+% \item détecter la présence de cas extrêmes ou ambigus (\emph{outlier}) dans les scènes simulées. Pour le reste de notre étude, les qualités hédoniques imposées (i et ni) servent de référence, de vérité terrain. Il nous faut donc garantir qu'il n'y ait pas d’ambiguïté entre les cas extrêmes des i- et ni-scènes, \ie~que la note d'agrément la plus basse des i-scènes reste supérieure à la note la plus haute des ni-scènes.
+% \end{enumerate}
+%
+% \end{itemize}
+%
+% Notre analyse s'appuie sur les données produites par les deux expériences.
+
+Experiment 1 aims at using the simulation paradigm to investigate the specific influences of the various sound sources constituting urban soundscapes on the perceived pleasantness. For that, two first experiments are planned (\cf~Figure~\ref{fig:xp1_2}):
+\begin{itemize}
+\item \emph{experiment 1.a (simulation)}: during this experiment, participants have to create urban sound environments, using the simulation tool \emph{Simscene}, see Section~\ref{sec:simscene}. Each of them creates two environments: one ideal / pleasant and the other one, non ideal / unpleasant.
+\item \emph{experiment 2.a (evaluation)}: actually, after the simulation phase, we only have a binary information on the emotional properties of the respective scenes: ideal (i) and non ideal (ni). This second experimental step aims at investigating our knowledge on pleasantness. For that, a second goup of participants are asked to evaluate the pleasantness of each simulated scene, on a semantic scale. This evaluation protocol has two goals:
+\begin{enumerate}
+\item to evaluate the respective influence on the pleasantness of the various sources composing the scenes (i or ni)
+\item to detect the presence of \emph{outliers} or ambiguous samples. For the remainder of the study, the defined hedonic properties (i and ni) are used as ground truth. Then, we must have to be sure that no ambiguity exists between extreme cases of i and ni scenes; i.e that the lower i-scene is really above the upper ni-scene,  in terms of pleasantness rating.
+\end{enumerate}
+\end{itemize}
+
+Our analysis is based on the data collected by these two experiments (1.a, 1.b)
+
+\begin{figure}[t]
+        \myfloatalign
+        \includegraphics[width=\linewidth]{gfx/ch_5/5}
+        \caption{Experimental protocol of the simulation experiment (1.a) and the pleasantness evaluation experiment (1.b)}\label{fig:xp1_2}
+\end{figure}
+
+\subsection{Planning of Experiment 1.a}
+\label{sec:xp1a_plan}
+
+\subsubsection*{Procedure}
+
+% Les sujets doivent simuler deux environnements sonores urbains, chacune des scènes devant durer 1 minute. Ils doivent se conformer aux consignes suivantes:
+%
+% \begin{itemize}
+% \item première simulation: simuler un paysage sonore \textbf{urbain plausible} qui, selon vous, est idéal (où vous aimeriez vivre);
+% \item deuxième simulation: simuler un paysage sonore \textbf{urbain plausible} qui, selon vous, est non-idéal (où vous n'aimeriez pas vivre).
+% \end{itemize}
+%
+% Tous commencent par simuler l'environnement idéal. Ils ne prennent connaissance de la deuxième consigne qu'à la fin de la première simulation.
+%
+% Les sujets sont totalement libres dans le choix des sons, et des paramètres. Ils doivent cependant se soumettre à deux contraintes:
+%
+% \begin{itemize}
+% \item le sujet doit prendre le point de vue d’un auditeur fixe;
+% \item le paysage sonore doit être réaliste, au sens de physiquement plausible. Le sujet peut très bien réunir 10 chiens dans un paysage sonore. Il ne peut en introduire 1 qui aboierait toutes les 10 millisecondes.
+% \end{itemize}
+%
+% Ces contraintes font partie de la consigne. Aucun contrôle n'est fait \emph{a priori} dans l'interface de simulation.
+
+The participants have to simulate two urban sound environments of 1 minute each. They have to follow the instructions below:
+\begin{itemize}
+\item  1st simulation: create a \textbf{plausible urban soundscape} which is ideal, according to you (where you would like to live);
+\item 2nd simulation: create a \textbf{plausible urban soundscape} which is non ideal, according to you (where you would not like to live);
+\end{itemize}
+
+All the participants start by working on the ideal environment; they read the second set of instruction at the end of the first experiment. Participants are completely free of their choice concerning sounds and synthesis parameters. They must nevertheless respect the two following constraints :
+\begin{itemize}
+\item the listening point of view is the one of a fixed listener;
+\item  the soundscape must be realistic, i.e. physically plausible.
+\end{itemize}
+For instance, the participant can insert ten dogs in the soundscape but he/she can’t insert one dog barking every 10 milliseconds.
+These constraints are notified in the instructions; no control is done \emph{a priori} in the simulation user interface.
+
+
+% Chaque processus de simulation comprend deux parties :
+%
+% \begin{enumerate}
+% \item la réalisation de la simulation: cette étape se décompose en trois temps:
+% \begin{itemize}
+% \item sélectionner les classes de sons
+% \item nommer les classes de sons sélectionnées
+% \item paramétrer les pistes (\cf~Section~\ref{sec:simscene_parametre}) relatives aux classes de sons sélectionnées
+% \end{itemize}
+% \item la production d'un commentaire libre du paysage sonore simulé
+% \end{enumerate}
+%
+% En complément, et une fois les deux scènes sonores réalisées, les sujets sont invités à:
+%
+% \begin{itemize}
+% \item indiquer les sources sonores qu'ils voulaient mettre, mais qu'ils n'ont pas trouvées;
+% \item commenter l’ergonomie du logiciel de simulation;
+% \item commenter l’ergonomie de l'interface de sélection.
+% \end{itemize}
+%
+% Avant de commencer la première simulation, un tutoriel de 20 minutes est proposé aux sujets, afin qu'ils se familiarisent avec le logiciel de simulation, et la banque de données. L'expérience est prévue pour durer 2h30.
+
+Each simulation process contains two parts :
+\begin{enumerate}
+\item composition of the simulation: this step is split in three steps
+\begin{itemize}
+  \item  select the class of sounds
+	\item  give a name to the selected class of sounds
+	\item  set the parameters of the tracks related to the selected class of sounds, see Section~\ref{sec:simscene_parametre}.
+\end{itemize}
+\item production of a free verbalization of the composed soundscape
+\end{enumerate}
+
+In addition, once the two sound scenes have been realized, participants are invited to
+\begin{itemize}
+\item  point out the sound sources that were missing for the composition
+\item  give a comment about the ergonomics of the simulation environment
+\item   give a comment about the ergonomics of the selection tool
+\end{itemize}
+
+Before starting the first simulation, a 20-minute tutorial is given to the participants in order to familiarize them with the simulation environment and the sound database. The experiment is planned to last about two hours and a half, including breaks that could be taken by the participants.
+
+\subsubsection*{Apparatus}
+
+% Tous les sujets passent l'expérience sur des machines identiques. L'audio est diffusé en diotique, par le biais de casques audio. Pendant le tutoriel, les sujets doivent ajuster le niveau sonore à un volume confortable. Ils ne peuvent le modifier par la suite.
+%
+% Tous les sujets réalisent l'expérience simultanément. Ils sont répartis de manière égale dans trois pièces identiques, toutes possédant un environnement calme. Ils n'ont pas le droit de s'adresser la parole pendant l'expérience.
+%
+% Trois expérimentateurs, un dans chaque pièce, sont présents durant la totalité de l'expérience, afin de contrôler le bon déroulement de cette dernière, et de répondre aux éventuelles questions des sujets.
+
+All the participants do the experiment on similar computers. The audio files are played in diotic conditions by headphones. During the tutorial, participants are asked to adjust the sound level in order to be comfortable; they can’t modify it in the following of the experiment.
+All the participants do the experiment simultaneously. They are equally split in three identical quiet rooms. They can’t talk together during the experiment.
+Three experimenters (one in each room) are present during the whole duration of the experiment in order to check that everything goes well and possibly to answer questions.
+
+\subsubsection*{Participants}
+
+% 44 étudiants (14 femmes) de L’École Centrale de Nantes ont participé à l'expérience. Ils ont tous sensiblement le même âge (moyenne: 21.6, écart-type: 2). Tous les sujets sont Nantais, et vivent dans cette ville depuis deux ans ou plus.
+%
+% Sur les 44 sujets, 40 réalisent l'expérience avec succès, produisant au final 80 scènes sonores simulées, dont 40 scènes idéales, et 40 scènes non idéales. 4 sont éliminés pour non respect ou incompréhension des consignes, d'une part, et dépassement du temps, d'autre part.
+
+44 students (14 females - mean age 21.6, SD = 2.0) from Ecole Centrale de Nantes took part to the experiment. They are all living in Nantes downtown since 2 years or more.
+Among the 44 participants, 40 succeeded in doing the experiment, producing in the end, 80 simulated sound scenes (40 ideal scenes, 40 non ideal scenes). 4 participants were excluded from the process for not having respect or understand the instructions, or for exceeding the maximum duration of the experiment.
+
+\subsection{Planning of experiment 1.b}
+\label{sec:xp1b_plan}
+
+\subsubsection*{Procedure}
+
+% En raison de contraintes temporelles, les sujets n'évaluent que des séquences de 30 secondes des scènes simulées, chacune de ces séquences commençant à la seconde 15, et finissant à le seconde 45 de la scène d'une durée initiale de 1 minute.
+%
+% L'évaluation s'effectue sur une échelle sémantique bipolaire de 7 points, allant de -3 (non-idéale/très désagréable) à +3 (idéale/très agréable). Avant de noter une scène, les sujets doivent obligatoirement écouter les 20 premières secondes de cette dernière. Après la notation, ils sont libres de passer à la scène suivante.
+%
+% Pour chaque sujet, les scènes sont présentées dans un ordre aléatoire. Les 10 premières scènes permettent au sujet de calibrer ses notes. Elles sont obligatoirement composées de 5 scènes idéales, et de 5 scènes non-idéales. Ces 10 premières scènes sont rejouées à la fin de l'expérience, et seules les notes données à la deuxième occurrence sont prises en compte.
+%
+% L'expérience est prévue pour durer 30 minutes. Les sujets ne connaissent pas la nature des scènes.
+
+Due to temporal constraints, participants only assess 30 seconds of the initial 1-minute simulated scenes composed in Exp. 1.a (from sec. 15 to sec. 45).
+The assessment is done in a 7-point Likert scale going from -3 (non ideal / unpleasant) to +3 (ideal / pleasant). Before evaluating a scene, participants must listen to the first 2à seconds of the scene. After the evaluation, they are free to switch to the next scene.
+For each participant, sound scenes are played in a random order. The first 10 scenes allow the participants to calibrate their marks; they imperatively gather 5 ideal scenes and 5 non ideal scenes. These first 10 scenes are played back again at the end of the experiment and the corresponding evaluations are the ones that are only taken into account in the results.
+The experiment is planned to last 30 minutes. The participants don’t know anything beforehand about the nature of the sound scenes.
+
+\subsubsection*{Apparatus}
+
+% Tous les sujets passent l'expérience sur des machines identiques. L'audio est diffusé en monophonie, par le biais de casques audio semi-ouverts \emph{Beyer-Dynamic DT 990 Pro}. Toutes les scènes sonores ont été re-simulées sur la base des partitions obtenues lors de l'expérience de simulation. Le niveau sonore de sortie est identique pour tous les sujets.
+%
+% Tous les sujets réalisent l'expérience simultanément, dans un environnement calme. Ils n'ont pas le droit de s'adresser la parole pendant l'expérience.
+%
+% Un expérimentateur est présent durant la totalité de l'expérience, afin de contrôler le bon déroulement de celle-ci, et de répondre aux éventuelles questions des sujets.
+
+All the participants do the experiment on similar computers. The audio files are played in diotic conditions by semi-open headphones \emph{Beyerdynamic DT 990 Pro}. All the sound scenes have been re-composed on the basis of the scores obtained in the simulation experiment (Exp. 1.a). The output sound level is the same for all the participants.
+All the participants do the experiment simultaneously. They can’t talk together during the experiment.
+An experimenter is present during the whole duration of the experiment in order to check that everything goes well and possibly to answer questions.
+
+
+\subsubsection*{Participants}
+
+% 10 étudiants (2 femmes) de L’École Centrale de Nantes ont participé à l'expérience. Aucun d'entre eux n'a réalisé l'expérience de simulation. Tous les sujets ont sensiblement le même âge (moyenne: 23.1, écart-type: 1.8). Tous les sujets sont Nantais, et vivent dans cette ville depuis deux ans ou plus.
+%
+% Tous les sujets ont réalisé l'expérience avec succès.
+
+10 students (2 females - mean age 23.1, SD = 1.8) from Ecole Centrale de Nantes took part to the experiment. They are all living in Nantes since 2 years or more. None of them took part to the previous simulation experiment (Exp. 1.a).
+All the participants succeeded in doing the experiment.
+
+\subsection{Data and analysis methods}
+\label{sec:xp1_dataAna}
+
+% A chaque scène est associé un groupe de descripteurs. C'est sur ces descripteurs que nous pratiquons l'analyse. Un résumé de ces derniers, ainsi que des acronymes les désignant, est présenté dans le Tableau~\ref{tab:acronyme}. Afin de rester cohérent avec l’expérience 1.b d'évaluation, les descripteurs ne sont pas calculés sur la durée totale des scènes, mais sur la version réduite de 30 secondes (\cf~Section~\ref{sec:xp1b_plan}).
+%
+% Pour chaque scène sonore, trois types de descripteurs sont considérés:
+%
+% \begin{itemize}
+% \item \emph{perceptif}: il s'agit de l'agrément perçu de la scène simulée, évalué sur une échelle sémantique de 7 points. Nous notons $\mathcal{A}_{scene}$ l'agrément moyen d'une scène, obtenu en moyennant les notes de tous les sujets. De même, nous notons $\mathcal{A}_{sujet}$ l'agrément par sujet, en moyennant l'ensemble des notes de chacun. Compte tenu du faible nombre de sujets, nous faisons le choix, dans cette étude, de ne pas normaliser les notes d'agrément;
+% \item \emph{sémantique}: il s'agit d'un vecteur booléen noté $S=(x_1,x_2,\ldots,x_n)$, indiquant les classes de sons présentes dans la scène. Chaque point $x$ de ce vecteur correspond à une classe de sons particulière: $x=1$ si la classe est présente dans la scène, et $x=0$ autrement. La dimension $n$ des vecteurs dépend du niveau d'abstraction considéré, \eg~pour le niveau d'abstraction 1, qui comprend $44$ classes de sons, cette dimension sera de $n=44$.
+% \item \emph{structurel}: il s'agit du \emph{niveau Sonore}. Pour représenter le niveau sonore, nous nous inspirons de la mesure $L_{Aeq}$. Dans notre cas, il s'agit d'un scalaire calculé sur le signal en volts, et non en pression, et donné en décibels, en prenant un référentiel de 1 Volt. Le niveau est obtenu en calculant, toutes les secondes, la moyenne quadratique du signal, et en moyennant sur la durée de la scène. Un filtrage de type A est opéré avant le calcul des moyennes quadratiques. Nous notons $L$, $L(E)$ et $L(T)$ les niveaux calculés en tenant compte respectivement de l'ensemble des samples, des samples d'événements et de textures.
+% \end{itemize}
+
+
+A set of features is attached to each sound scene. The analysis is done on the basis of these features. A summary of these features (and the corresponding acronyms) is presented in Table ~\ref{tab:acronyme}. In order to stay coherent with the evaluation experiment 1.b, features are not computed in the whole duration of the sequences but only on their 30-second reduced version, see Section \ref{sec:xp1b_plan}.
+For each sound scene, three types of features are considered :
+\begin{itemize}
+\item \emph{perceptual}: the perceived pleasantness of the composed scene, assessed on a 7-point Likert scale. $\mathcal{A}_{scene}$ is the mean pleasantness for one scene, as the average of the marks of all the participants. In the same idea, $\mathcal{A}_{subject}$ is the mean pleasantness for each participant, as the average of all the marks of each participant. Given the low number of participants in Exp. 1.b, we decide not to normalize the values of pleasantness marks.
+\item \emph{semantic}: boolean vector $S = (x_1, x_2, \ldots, x_n)$ that indicates the class of sounds involved in the scene. Each point $x$ of this vector corresponds to a specific class of sounds: $x = 1$ if the class is present in the scene, and $x = 0$ otherwise. The vector dimension ($n$) depends on the level of abstraction that is considered. For instance, for the abstraction level 1, including 44 classes of sounds, $n = 44$.
+\item \emph{structural}: related to \emph{sound level}. To figure out the sound level, we take the $L_{Aeq}$ feature as a conceptual reference. In our case, it is a scalar computed from the  signal (in Volt and not in Pascal), and converted in deciBels, with a reference of 1 Volt. The level is obtained by computing every second the quadratic mean of the signal and by averaging over the total duration of the scene. An A-filtering module processes the data before the quadratic means are computed. We note $L$, $L(E)$ and $L(T)$ the computed levels by respectively considering the whole set of samples, only the set of event samples and only the set of texture samples.
+\end{itemize}
+
+In order to evaluate the specific impact of the various sound sources on the perceived pleasantness, we put the data to the five following tests of significativity:
+
+\begin{itemize}
+\item \emph{checking the pleasantness of the simulated sound scene}: to check that the emotional difference produced by the i- and ni- scenes is also present in terms of perceived pleasantness, we look at the existence of differences between $\mathcal{A}_{scene}$ and $\mathcal{A}_{subject}$ with regards to the two types of scene. the significativity is evaluated by a Student test on two independant populations for $\mathcal{A}_{scene}$ and by a Student test on two paired populations for $\mathcal{A}_{subject}$ ;
+\item \emph{analysis of the structural features}: in order to evaluate wether the emotional difference forced to the i- and ni- scenes has a significative influence \ie, if significative differences exist between structural features and perceived pleasantness, we measure this significativity with a Student test on two populations;
+\item \emph{study of the influence of the structural features on the perceived pleasantness}: in order to evaluate a possible impact of the structural features on the perceived pleasantness, we look at linear correlations between these features and $\mathcal{A}_{scene}$. For that, we use the Pearson correlation coefficient, on the basis of the standard methodology used in multidimensional studies;
+\item \emph{analysis of the semantic features}: in order to determine if the forced emotional difference has an influence on the scenes composition in terms of sound sources, or if specific souns classes are more frequently used to simulate a given environment (i or ni), we apply a V-test. This test is done at every level of abstraction, and separately, for texture and event classes. For each class $j$ , and each environment type $k$ ($k=\lbrace i,ni\rbrace$), the value $V_{jk}$ is computed as follows:
+
+\begin{equation*}
+V_{jk}=\dfrac{c_{jk}-c_k\frac{c_j}{c}}{\sqrt{c_k\frac{c-c_k}{c-1}\frac{c_j}{c}(1-\frac{c_j}{c})}}
+\end{equation*}
+
+where $c$ is the number of available classes, $c_k$ the number of classes for a given type of environment $k$, $c_j$ the number of  $j$ classes, and $c_{jk}$ the number of $j$ classes used for an environment $k$. The V-test tests the null hypothesis that the ratio $\frac{c_{jk}}{c}$ is not significatively different from the ratio $\frac{c_{jk}}{c_k}$. For a given environment $k$, and class $j$, if the hypothesis is rejected, the class $j$ is said to be typical with respect to environment $k$. The typical classes are called \textbf{sound markers};
+
+\item \emph{Study of the representation spaces induced by the semantic features}: in order to determine if a representation only based on the presence / absence of sound sources allows to split the two types of environment, we investigate the space induced by the semantic features $S$. $S$ is a boolean vector and the distance between two scenes is computed with the Hamming distance. Considering two n-dimension vectors $S_1=(x_{1,1},x_{1,2},\ldots,x_{1,n})$, where $S_2=(x_{2,1},x_{2,2},\ldots,x_{2,n})$ is of cardinality $n$, with $x=\lbrace 0,1\rbrace$, the Hamming distance $d_{ham}$ measures the proportion of coordinates that differ between two vectors, as follows:
+
+\begin{equation*}
+d_{ham}(S_1,S_2)=\dfrac{1}{n}\sum_{i=1}^{n} (x_{1,i} \bigoplus x_{2,i})
+\end{equation*}
+
+where $\bigoplus$ is the \emph{exclusive-or} The more the two scenes are similar, the closer they are. The use of Hamming distance allows to take into account equally the present and absent classes. For measuring the intrinsic ability of the space to split the i- and ni- scene, we use a ranking metric named $k$- precision ($P@k$) . The $P@k$ computes the precision obtained after $k$ items have been found. Formally, for each $s_i$ scene, we compute the ratio between the number of $s_j$ scenes taken among the k nearest neighbors of $s_i$ and sharing the same label than $s_i$ with regards to the $k$ items to be found. the $P@k$ is then the mean of this ratio along all the items;
+
+\item \emph{influence of the sound markers on the perceived pleasantness}: in order to assess the specific contributions of some sound sources, we again estimate the possible impact of the structural features on the perceived pleasantness, but this time, by only taking into account the sound markers for the computation of these features.
+\end{itemize}
+
+Except for the V-test, all the statistical test of significativity are done with a critical threshold of $\alpha=0.05$. For the V-test, considering that a great number of classes is tested, a Bonferroni correction is applied. For the $p$-value, if $p\geq0.05$, the value is reported. If $0.01\leq p<0.05$, we only report $p<0.05$, otherwise we report $p<0.01$.
+
+\begin{table}[t]
+\centering
+\begin{tabular}{c c}
+Termes                         & Acronyms              \\
+\hline
+Niveau                         & $L$                    \\
+Niveau (événements)            & $L(E)$                 \\
+Niveau (textures)              & $L(T)$                 \\
+Agrément moyen (par scène)     & $\mathcal{A}_{scene}$  \\
+Agrément moyen (par sujet)     & $\mathcal{A}_{sujet}$  \\
+                               &                        \\
+idéale/agréable                & i                      \\
+non-idéale/désagréable         & ni                     \\
+scène idéale/agréable          & i-scene                \\
+scène non-idéale/désagréable   & ni-scene               \\
+\hline
+\end{tabular}
+\vspace{0.5mm}
+\caption{Acronyme des variables utilisées dans le cadre des expériences sensorielles.}
+\label{tab:acronyme}
+\end{table}
+
+\subsection{Results}
+
+\subsubsection*{Cheking of the pleasantness of the synthesized scenes}
+
+First, in order to ensure the coherence of the data, wr check that none of the ni- scenes gets a $\mathcal{A}_{scene}$ higher than one of a i- scene. Four ni- scenes don’t respect that rule: they are removed, together with their corresponding i- scenes. 36 i -scenes and 36 ni -scenes remain for analysis. Secondly, we want to be sure that participants really perceived a difference in terms of pleasantness between i- and ni -scenes. For that, we investigate the mean pleasantness score for each participant $\mathcal{A}_{subject}$, computed separately for each type of environment. It appears that the i- scenes were perceived significatively more pleasant ($p < 0.01$) than the ni- scenes.
+
+\subsubsection*{Analysis of the structural features}
+
+First, we focus on the sound level. Figures ~\ref{fig:soundlevela},~\ref{fig:soundlevelb} and~\ref{fig:soundlevelc} depict the levels $L$, $L(E)$ and $L(T)$. There is a significative difference in terms of sound level between i- and ni -scenes ($L$: $p<0.01$), with a standard deviation of -7 $dB$. This difference is siginificant for events ($L(E)$: $p<0.01$, STD: -7 $dB$) and textures ($L(T)$: $p<0.01$, STD: -6 $dB$).
+
+As expected, we verify that the sound sources sound level is indeed a pleasantness indicator, the ni -scenes tending to be louder - what also comes out from a large number of related works. We also notice that this difference of sound level is equally true for events or textures.
+
+It appears that the biggest influence on the global sound level comes from the events, the gap between $L$ and $L(E)$ being only 1 $dB$ for i- and ni- scenes. This observation is in agreement with the results obtained by Kuwano~\al~\cite{kuwano_memory_2003}. During their experiment, the authors ask to their participants to assess a set of soundscapes at a global level and then to do the same judgement at the moments when each of them detect a sound source. The study shows that there is no significative difference between global and averaged instantaneous judgements. In our case, the result can be interpreted as if the participants had unconsciously integrated this perceptual reality when composing the scenes, by assigning the global sound level to well identified short sounds, \ie the events.
+
+The level alone is not enough to differentiate the different types of environment. In fact, $20\%$ of the i- scenes hast got a sound level higher than the nominal level of the ni- scenes, while there is no overlap when considering the perceived pleasantness $\mathcal{A}_{scene}$.
+
+\begin{figure}[t]
+        \myfloatalign
+        \subfloat[]
+        {\includegraphics[width=.33\linewidth]{gfx/ch_5/xp_soundlevel_1}\label{fig:soundlevela}}
+        \subfloat[]
+        {\includegraphics[width=.33\linewidth]{gfx/ch_5/xp_soundlevel_3}\label{fig:soundlevelb}}
+        \subfloat[]
+        {\includegraphics[width=.33\linewidth]{gfx/ch_5/xp_soundlevel_5}\label{fig:soundlevelc}}\par
+        \subfloat[]
+        {\includegraphics[width=.33\linewidth]{gfx/ch_5/xp_soundlevel_2}\label{fig:soundleveld}}
+        \subfloat[]
+        {\includegraphics[width=.33\linewidth]{gfx/ch_5/xp_soundlevel_4}\label{fig:soundlevele}}
+        \subfloat[]
+        {\includegraphics[width=.33\linewidth]{gfx/ch_5/xp_soundlevel_6}\label{fig:soundlevelf}}
+       \caption{Distributions of the structural features $L$ (a, d), $L(E)$ (b, e) et $L(T)$ (c, f), with respect to scene type (a, b, c) and perceived pleasantness $\mathcal{A}_{scene}$ of experiments 1.b (d, e, f).}
+\end{figure}
+
+\subsubsection*{Influence of the structural features on the perceived pleasantness}
+
+In this section, we analyse the deep relationships that could exist between structural features and perceived pleasantness. Contrary to the previous section, we don’t consider the emotional property of a scene on a binary mode (i vs. ni): here, we consider the mean pleasantness $\mathcal{A}_{scene}$ as a perceptual feature. The aim is to investigate the level of correlation between structural features and $\mathcal{A}_{scene}$. The linear correlation coefficients computed between $\mathcal{A}_{scene}$ \vs~$L$, $L(E)$, $L(T)$ are shown on Table~\ref{tab:corrStructA}. Relationships between $\mathcal{A}_{scene}$ and the structural features are depicted in Figure~\ref{fig:soundleveld},~\ref{fig:soundlevele} and ~\ref{fig:soundlevelf}.
+
+COncerning $L$, we can observe a strong negative correlation ($r=-0.77$, $p<0.01$) with $\mathcal{A}_{scene}$, indicating that the higher the sound level is, the more unpleasant the scene is perceived. Nevertheless, Figure~\ref{fig:soundleveld} suggests that this relationship doesn’t occurr in the same way for i- and ni- scenes. In fact, the correlation between $L$ and $\mathcal{A}_{scene}$, remains high for ni- scenes ($r=-0.78$, $p<0.01$), but is quasi null for i-scenes.
+
+When considering the whole set of scenes, this result can be explained by the fact the i- scenes tends to be softer than the ni- scenes, deluding that the negative correlation observed for the ni- scenes is extended.
+
+We thus conclude that $L$:
+
+\begin{itemize}
+\item allows to differentiate between i- and ni- scenes,
+\item allows a fine characterization of the perceived pleasantness for ni- scenes,
+\item is not a relevant feature for the perceived pleasantness for a priori pleasant soundscapes (i- scene)
+\end{itemize}
+
+The same conclusions can be drawn for $L(E)$ (\cf~Figure~\ref{fig:soundlevele}). For $L(T)$ (\cf~Figure~\ref{fig:soundlevelf}), the moderate correlation observed for the whole set of scenes disappears when separate scenes are considered (i-scenes: $r=-0.33$, $p=0.05$, ni-scenes: $r=-0.00$, $p=0.99$). One can suppose that the negative correlation coming from the whole is an artefact due to the level difference between the two types of scenes (i- scenes tend to be softer than ni - scenes). Thus, the sound events keep a relative ability to predict the pleasantness of the ni- scenes, but the level of the textures doesn’t bring a lot of information whatever the type of environment is.
+
+To sum up, for an unpleasant environment, sound levels - especially those of the events - negatively influence the perceived pleasantness. On the contrary, for a pleasant environment, none of the structural features considered in the study seem to influence the perceived pleasantness.
+
+Those first outcomes tend to show that two modes of perception exists depending on the nature of the environment (i- or ni-), and each involve independent features. The fact that $L$ is not able to characterize the pleasantness of the i- scenes can lead us to think that all the sound sources don’t equally contribute to the perception of pleasantness, but that only the level of some of them can influence this percept. In order to go deeper in that direction, in the next section, we analyse these scenes on a semantic point of view, \ie we take an interest in the nature of the sources they are made of.
+
+\begin{table}[t]
+\centering
+\begin{tabular}{l c c c}
+               & i-scenes                   & ni-scenes    \\
+\hline
+$L$            & -0.32 ($p=0.06$)           & \textbf{-0.78} ($p<0.01$)\\
+$L(E)$         & -0.20 ($p=0.24$)           & \textbf{-0.75} ($p<0.01$)\\
+$L(T)$         & -0.33 ($p=0.05$)           &  -0.00 ($p=0.99$) \\
+\hline
+\end{tabular}
+\vspace{0.5mm}
+\caption{Linear correlation coefficients computed between mean perceived pleasantness $\mathcal{A}_{scene}$ of experiment 1.b and structural features.}
+\label{tab:corrStructA}
+\end{table}
+
+\subsubsection*{Analysis of the semantic features}
+
+We analyse the composition of the scenes by counting the number of participants who used a given class of sounds to simulate the environment. Results are shown on Figure~\ref{fig:soundsourcea} for events and on Figure~\ref{fig:soundsourceb} for textures. For sake of clarity, we chose a transitional level of abstraction between level 0 and 1, named $0+$, to depict classes, see ~Figure~\ref{fig:taxonomie}.
+
+We observe a significant difference between i- and ni- scenes for the choise of classes. The distribution of the classes is very similar to to the one obtained in a related work on ideal urban soundscapes \cite{guastavino2006ideal}, \ie~lasses involving human presence and nature are prevailing in the i- scenes, and on the opposite, classes involving mechanical sounds and/or public works are prevailing in the ni- scenes. These results confirm a previously observed fact: the semantic nature of the sound sources play an important role in the assessment of the environment \cite{raimbault2005urban,dubois2006cognitive}.
+
+Nevertheless, we notice some differences with \cite{guastavino2006ideal}: Guastavino’s results show that sounds of \emph{public transportation} are specific of ideal urban soundscapes. The authors interpret this by the fact that the perception of pleasantness is, among other things, due to socio-cultural factors. In our representation of the world, sounds of public transportation are positively connoted and tend to be more accepted than sounds of personal vehicles.
+
+To a certain extent, our results are in contradiction with this assumption. In fact,  Figure~\ref{fig:soundsourcea} show \emph{public transportation} classes (\emph{bus} and \emph{train}, \cf~Figure~\ref{fig:soundsourcec}) have been used by the participants for $28\%$ of the i-scenes, and for $42\%$ of the ni-scenes. the results don’t re-evaluate the fact that sounds of \emph{public transportation} are well accepted: $25\%$ of the subjects used \emph{bus} pour les i-scenes, a level that is comparable to the of the \emph{bike} class, and much higher than all the personal vehicles classes. Though, \emph{public transport} classes are also strongly present in the ni-scenes, for instance more than \emph{light vehicle} or \emph{trucks} classes. On the basis of our results, the public transportation class can’t be considered as typical of an ideal urban soundscape.
+
+This difference can be explained by the nature of the experimental protocol used in the two studies. As in our case, Guastavino asks the participants for describing an environment; but in that case, they work from their memories whereas, in our case, participants do that task using sound samples. The fact that participants in our experiment are faced to the acoustic reality of the sounds for composing the environment may have decreased the socio-cultural impact. Other works using sounds as stimuli have shown that the \emph{bus} class can have a negative influence on the assessment of the environment \cite{lavandier2006contribution}.
+
+\begin{figure}[t]
+        \myfloatalign
+        \subfloat[]
+        {\includegraphics[width=1\linewidth]{gfx/ch_5/xp1_class_1_cam}\label{fig:soundsourcea}} \par
+        \subfloat[]
+        {\includegraphics[width=.4\linewidth]{gfx/ch_5/xp1_class_2_cam}\label{fig:soundsourceb}}
+        \subfloat[]
+        {\includegraphics[width=.4\linewidth]{gfx/ch_5/xp1_class_3_cam}\label{fig:soundsourcec}}
+       \caption{Proportion of synthesized scenes (i or ni) involving a specific class of sounds: (a) event classes at an abstraction level $0+$, (b) texture classes at an abstraction level $0$, (c) event sub-classes at an abstraction level $1$ belonging to \emph{traffic} and \emph{public transportation} classes of the abstraction level $0$.}\label{fig:soundsource}
+\end{figure}
+
+\subsubsection*{Marqueurs sonores}
+
+Nous avons mis en évidence que, qualitativement, la composition des sources sonores des scènes diffère selon les types d'environnement (i ou ni). Nous essayons de voir maintenant si, parmi ces classes, certaines sont typiques d'un environnement en particulier. Pour ce faire, nous utilisons le V-test (\cf~Section~\ref{sec:xp1_dataAna}), en considérant séparément chaque niveau d'abstraction. Les résultats sont présentés dans le tableau~\ref{tab:markers}.
+
+Concernant les événements sonores, 9 marqueurs sont identifiés sur l'ensemble des niveaux d'abstraction. Comme la figure~\ref{fig:soundsource} le laissait présager, les classes relatives à la présence humaine (\emph{pas homme béton}, \emph{sonnette vélo}), et à la nature (\emph{animaux, oiseaux}, \emph{chants d'oiseaux}) sont des marqueurs de i-scènes. Nous notons également la présence de la classe \emph{cloche} dans les marqueurs d'un environnement idéal. Ce fait est possiblement dû au \emph{background} socio-culturel des sujets, dans leur grande majorité, des citoyens européens. En effet, selon Schafer, un son reconnu par un individu comme faisant partie intégrante de son environnement est bien accepté. Les marqueurs de ni-scènes sont des classes faisant référence à des sons de travaux (\emph{travaux}), ou suggérant un trafic dense (\emph{klaxon}, \emph{sirène}).
+
+Concernant les textures sonores, 5 marqueurs sont identifiés. Pour les i-scènes, il s'agit de classes faisant référence à des ambiances amorphes, calmes, (\emph{cour-intérieur} et \emph{parc}). Pour les ni-scènes, il s'agit, comme pour les événements, de classes faisant référence à des bruits de travaux (\emph{travaux} et \emph{véhicule de travaux}), ainsi que d'une classe faisant référence au trafic (\emph{carrefour}).
+
+Bien que l'ensemble des marqueurs identifiés soient intuitifs, aucune des classes d'événements faisant directement référence aux bruits de véhicules motorisés n'est un marqueur, exception faite de la classe de textures \emph{carrefour}. Pour représenter un trafic désagréable, les sujets ont porté leurs choix sur les classes \emph{klaxon} et \emph{sirène}. On peut supposer que les sons isolés de véhicules sont compris comme faisant partie intégrante de l'environnement urbain, et ne sont donc pas particulièrement associés à un environnement désagréable.
+
+\begin{table}[t]
+ \setlength{\tabcolsep}{0.2pt}
+ \centering
+  {\renewcommand{\arraystretch}{0.9}
+\begin{tabular}{c c c c}
+Niveau        & \multicolumn{2}{c}{Marqueurs sonores événements} \\
+d'abstraction & i-scènes & ni-scènes \\
+\hline
+0  &                          & travaux (3.78)  \\
+\hline
+  & cloche  (4.5)             & klaxon  (3.9) \\
+1 & sonnette vélo  (4.3)      & sirène (3.9)\\
+  & animal (4.2)              &       \\
+   \hline
+  & oiseau        (4.8)       & klaxon  (4.0)\\
+2 & cloche  (4.4)             & sirène (4.0)\\
+  & sonnette vélo    (4.2)             &       \\
+   \hline
+  & chant oiseau (4.8)        & klaxon  (4.1)\\
+3 & cloche   (4.3)            & sirène (4.0)\\
+  & sonnette vélo     (4.2)   &       \\
+  & pas chaussure  (3.6)      &  \\
+  &                           & \\
+  & \multicolumn{2}{c}{Marqueurs sonores textures}      \\
+  & i-scènes & ni-scènes \\
+\hline
+0 &     cour int./parc (4.1) &  travaux (3.9)  \\
+\hline
+1 &     parc (3.65)          &  carrefour (3.6)  \\
+  &                          &  travaux véhicule (3.3)  \\
+\hline
+2 &     parc (3.64)          &  carrefour (3.56)  \\
+\hline
+\end{tabular}
+}
+\vspace{0.5mm}
+\caption{Classes d'événements et de textures identifiées comme étant des marqueurs sonores. Dans chaque cellule, les marqueurs sont ordonnés par ordre décroissant de valeur $V$.}
+\label{tab:markers}
+\end{table}
+
+\subsubsection*{Espaces de représentation induits par les descripteurs sémantiques}
+
+Dans cette partie, nous évaluons la capacité d'une représentation sémantique à séparer les deux types d'environnement. Pour ce faire, nous calculons une précision au rang 5 ($p@5$) sur l'espace induit par les descripteurs sémantiques $S$, et ce pour chaque niveau d'abstraction (\cf~Section~\ref{sec:xp1_dataAna}). Les vecteurs $S$ sont construits en utilisant toutes les classes ($ET$), les classes d'événements ($E$), les classes de textures ($T$), les classes d'événements ne considérant que les marqueurs sonores ($E_m$), les classes d'événements ne considérant pas les marqueurs sonores $E_{w/o,m}$. Nous ne considérons pas les classes de marqueurs de textures, ces dernières étant trop peu nombreuses. Pour les mêmes raisons nous ne considérons pas les classes de marqueurs d'événements du niveau d'abstraction $0$. Les résultats sont affichés sur la figure~\ref{fig:pa5}.
+
+En ce qui concerne $ET$, la $p@5$ est de $76\%$ pour le niveau d'abstraction 0, et reste supérieure à $86\%$ à partir du niveau d'abstraction 1. Ces résultats confirment qu'il est possible de clairement distinguer les deux types d'environnement en se basant seulement sur la présence ou l'absence des classes de sons. Nous notons également que, plus le niveau d'abstraction est élevé, plus la capacité de séparer les environnements est importante. En d'autres termes, plus nous sommes précis dans notre description de la composition des scènes, plus nous sommes à même d'établir une distinction claire entre les i- et ni-scènes.
+
+En considérant séparément $E$ et $T$, il apparaît 1) que la $p@5$ obtenue avec $E$ est similaire à celle obtenue avec $ET$, 2) que la $p@5$ obtenue avec $T$ est systématiquement inférieure d'environ $10$ à $15\%$ à celle de $E$. Ces résultats indiquent que l'information sémantique permettant de séparer les deux environnements est principalement portée par les événements. Ces résultats font, par ailleurs, écho aux travaux de  \cite{maffiolo_caracterisation_1999}, qui montrent que nous analysons de manière descriptive (en identifiant les sources) les scènes événementielles, \ie~composées d'événements sonores (\cf~Section~\ref{sec:simscene_sampleDataSet}).
+
+Enfin, il apparaît que la $p@5$ obtenue avec $E_{m}$ est égale, voire supérieure à celles obtenues avec $E$ et $ET$, et ce bien qu'une information partielle soit utilisée dans ce cas pour décrire les scènes. La dimension des vecteurs de description $S$ pour $E_m$ est en effet inférieure à la dimension des vecteurs $S$ pour $E$, qui est elle même inférieure à celle obtenue dans le cas où toutes les classes sont utilisées ($ET$). De plus, dans le cas où les marqueurs ne sont pas pris en compte pour la description ($E_{w/o,m}$), les résultats chutent, passant même en dessous de ceux obtenus en ne considérant que les textures. Cela confirme que la majorité de l'information sémantique permettant de faire la distinction entre i-scènes et ni-scènes est incluse dans les marqueurs.
+
+En résumé, nous déduisons de cette analyse les points suivants:
+
+\begin{enumerate}
+\item contrairement à ce que nous avions constaté avec les descripteurs structurels, une description sémantique de la composition des scènes, en terme de présence/absence de sources sonores, permet de bien distinguer les deux types d'environnement (i ou ni);
+\item l'information sémantique est majoritairement portée par les classes d'événements sonores;
+\item parmi les classes d'événements, seule une partie, \ie~les marqueurs sonores, est nécessaire pour faire la distinction entre les i- et ni-scènes.
+\end{enumerate}
+
+Maintenant que nous avons isolé les classes typiques des i- et ni-scènes, et vérifié que la distinction entre ces environnements dépendait de la présence de ces classes, il reste à voir si une description structurelle des scènes, basée uniquement sur ces marqueurs sonores, permet de caractériser l'agrément perçu, mieux qu'une description structurelle globale.
+
+\begin{figure}[t]
+        \myfloatalign
+        \includegraphics[width=\linewidth]{gfx/ch_5/pa5_1}
+       \caption{$P@5$ obtenues en considérant la matrice de dissimilarité résultant des distances par paires de Hamming calculées entre les vecteurs des descripteurs sémantiques des scènes. Les vecteurs sont construits en utilisant toutes les classes ($ET$), les classes d'événements ($E$), les classes de textures ($T$), les classes d'événements ne considérant que les marqueurs sonores ($E_m$), les classes d'événements ne considérant pas les marqueurs sonores $E_{w/o,m}$.}\label{fig:pa5}
+\end{figure}
+
+\subsubsection*{Influence des marqueurs sonores sur l'agrément perçu}
+
+Nous évaluons les corrélations entre $\mathcal{A}_{scene}$ et les descripteurs structurels. Pour cette section, les descripteurs structurels sont calculés en tenant compte des marqueurs sonores précédemment identifiés. Nous définissons $X_m$ le descripteur $X$ calculé en ne prenant en compte que les sons des marqueurs. A l'inverse, nous définissons $X_b$ ($b$: pour «~bruit~») le descripteur $X$ calculé en prenant en compte toutes les classes de sons, excepté les marqueurs. Lorsque le descripteur caractérise une i-scène (idem pour une ni-scène), nous ne considérons, pour le calcul, que les marqueurs identifiés pour les i-scènes (ou pour les ni-scènes), que nous nommons i-marqueurs (ou ni-marqueurs). Les résultats sont affichés sur le tableau~\ref{tab:corrMarkers}.
+
+Concernant les niveaux sonores (\cf~Figures~\ref{fig:soundlevelMarkera} et~\ref{fig:soundlevelMarkerd}), les mêmes tendances sont observées entre $L_m$, $L(E)_m$ et $L(T)_m$, d'une part, et $L$, $L(E)$ et $L(T)$, d'autre part. Que l'on considère uniquement les marqueurs, ou l'ensemble des classes, il s'avère que :
+
+\begin{enumerate}
+\item il existe une différence significative entre les niveaux des i- et ni-scènes ($L_m$, $L(E)_m$ et $L(T)_m$: $p<0.01$);
+\item le niveau sonore des scènes est majoritairement porté par les événements sonores, comparé aux textures sonores;
+\item le niveau sonore des événements a une influence sur la perception de l'agrément pour les ni-scènes, mais pas pour les i-scènes;
+\item le niveau sonore des textures ne joue aucun rôle dans la perception de l'agrément.
+\end{enumerate}
+
+En conclusion, le niveau des ni-marqueurs a une influence négative sur l'agrément pour les ni-scènes. En revanche le niveau des i-marqueurs n’impacte pas l'agrément perçu pour les i-scènes.
+
+En considérant maintenant les classes non marqueurs (\cf~Figures~\ref{fig:soundlevelNoisea} et~\ref{fig:soundlevelNoised}), nous remarquons, sur les i-scènes, une corrélation négative modérée/faible pour $L_b$  ($r=-52$, $p<0.01$) et $L(E)_b$ ($r=-51$, $p<0.01$). C'est la première fois qu'un indicateur objectif nous permet de préciser l'agrément des environnements agréables. Ceci nous amène à conclure que le niveau des classes de sons n'étant pas typiques d'un environnement agréable a un impact négatif sur l'agrément.
+
+Par ailleurs, alors que $L(T)$ ne présentait pas de corrélation pour les ni-scènes, une corrélation négative forte est observée pour $L(T)_b$ ($r-0.73$, $p<0.01$). Ce fait indique que les niveaux des classes de textures n'étant pas des marqueurs n'affectent pas l'agrément perçu de la même manière pour les i- et ni-scènes. Les niveaux semblent avoir un effet négatif pour les ni-scènes, alors que pour les i-scènes, aucun effet n'est relevé.
+
+Pour finir, nous considérons un dernier groupe de descripteurs, nommément $L_m-L_b$, $L(E)_m-L(E)_b$ et $L(T)_m-L(T)_b$ (\cf~Figures~\ref{fig:soundlevelMarkerDiffa} et~\ref{fig:soundlevelMarkerDiffd}). Ces descripteurs expriment la différence entre les niveaux des marqueurs, et ceux des autres classes de sons. Ils traduisent l'émergence des marqueurs par rapport à la mixture sonore.
+
+Pour les i-scènes, une corrélation modérée et positive est observée pour $L_m-L_b$ ($r=0.67$, $p<0.01$) et $L(E)_m-L(E)_b$ ($r=0.66$, $p<0.01$). Pour les ni-scènes, aucune corrélation n'est observée. Dans le cas des i-scènes, ce n'est donc pas le niveau absolu des marqueurs qui importe, mais leur niveau relatif, par rapport aux autres sons qui composent la scène. On observe donc pour les environnements idéaux un double mécanisme perceptif:
+
+\begin{itemize}
+\item plus le niveau absolu des sons n'étant pas des i-marqueurs est élevé, plus l'agrément est faible,
+\item plus le niveau relatif des i-marqueurs, par rapport aux autres sons, est élevé, plus l'agrément est élevé.
+\end{itemize}
+
+Pour les ni-scènes, le fait que nous observions des corrélations pour $L_m$ et $L(E)_m$, et aucune pour $L_m-L_b$ et $L(E)_m-L(E)_b$, montre que c'est bien le niveau absolu qui importe.
+
+\begin{table}[t]
+\setlength{\tabcolsep}{3pt}
+\centering
+{\renewcommand{\arraystretch}{1}
+\centering
+\begin{tabular}{l r r}
+                  &   i-scenes                  & ni-scenes \\
+\hline
+$L_m$              & 0.03  ($p=0.88$)           & \textbf{-0.75} ($p<0.01$) \\
+$L(E)_m$           & 0.08  ($p=0.66$)           & \textbf{-0.71} ($p<0.01$) \\
+$L(T)_m$           & -0.11 ($p=0.66$)           & -0.17 ($p=0.37$) \\
+$L_b$              & \textbf{-0.52} ($p<0.01$)  & -0.32 ($p=0.06$) \\
+$L(E)_b$           & \textbf{-0.51} ($p<0.01$)  & -0.30 ($p=0.07$) \\
+$L(T)_b$           & -0.32 ($p=0.05$)           & \textbf{-0.73} ($p<0.01$) \\
+$L_m-L_b$          & \textbf{0.67} ($p<0.01$)   & -0.31 ($p=0.07$) \\
+$L(E)_m-L(E)_b$    & \textbf{0.66} ($p<0.01$)   & -0.28 ($p=0.10$) \\
+$L(T)_m-L(T)_b$    & 0.16 ($p=0.54$)            & 0.21 ($p=0.28$) \\
+\hline
+\end{tabular}
+}
+\vspace{0.5mm}
+\caption{Coefficients de corrélation linéaire calculés entre l'agrément perçu moyen $\mathcal{A}_{scene}$ de l'expérience 1.b et les descripteurs structurels relatifs à la présence des marqueurs sonores.}
+\label{tab:corrMarkers}
+\end{table}
+
+\begin{figure}[t]
+        \myfloatalign
+        \subfloat[]
+        {\includegraphics[width=.33\linewidth]{gfx/ch_5/xp_soundlevel_7}\label{fig:soundlevelMarkera}}
+        \subfloat[]
+        {\includegraphics[width=.33\linewidth]{gfx/ch_5/xp_soundlevel_9}\label{fig:soundlevelNoisea}}
+        \subfloat[]
+        {\includegraphics[width=.33\linewidth]{gfx/ch_5/xp_soundlevel_19}\label{fig:soundlevelMarkerDiffa}}\par
+        \subfloat[]
+        {\includegraphics[width=.33\linewidth]{gfx/ch_5/xp_soundlevel_8}\label{fig:soundlevelMarkerd}}
+        \subfloat[]
+        {\includegraphics[width=.33\linewidth]{gfx/ch_5/xp_soundlevel_10}\label{fig:soundlevelNoised}}
+        \subfloat[]
+        {\includegraphics[width=.33\linewidth]{gfx/ch_5/xp_soundlevel_20}\label{fig:soundlevelMarkerDiffd}}
+        \caption{Dispersions des descripteurs structurels de niveaux sonores relatifs à la présence des marqueurs $L_m$ (a, d), $L(E)_m$ (b, e) et $L(T)_m$ (c, f), en fonction du type de scènes (a, b, c) et de l'agrément perçu $\mathcal{A}_{scene}$ de l'expérience 1.b (d, e, f).}\label{fig:soundlevelMarker}
+\end{figure}
+
+\subsection{Discussions}
+
+De cette analyse, nous retenons les points suivants:
+
+\begin{itemize}
+\item \emph{distinguer les i- et ni-scènes}: les descripteurs sémantiques, ainsi que les descripteurs structurels globaux ($L$, $L(E)$ et $L(T)$), permettent de faire la distinction entre les i-scènes et les ni-scènes. La description sémantique semble être plus performante;
+\item \emph{événements ou textures}: que ce soit pour les descripteurs sémantiques ou structurels, ce sont majoritairement les événements qui permettent de distinguer les deux types d'environnement, les textures n'apportant, au mieux, qu'une information limitée;
+\item \emph{prédire l'agrément}: si l'on considère les corrélations entre les descripteurs structurels et l'agrément, il semble que la manière de percevoir la qualité de l'environnement diffère en fonction de la nature de ce dernier (i ou ni). Il n'apparaît pas envisageable de considérer un même jeu de descripteurs pour prédire, à la fois, l'agrément des i-scènes, et l'agrément des ni-scènes :
+
+\begin{itemize}
+
+\item \emph{pour les ni-scènes}, ce sont le niveau global ($L$ et $L(E)$), ou le niveau des marqueurs sonores ($L_m$ et $L(E)_{m}$), qui impactent négativement l'agrément. On note ici que prendre en compte les contributions de différentes sources n'améliore pas la capacité de prédiction de l'agrément, par rapport à une analyse holistique de l'environnement.
+
+\item \emph{pour les i-scènes}, par contre, prédire l'agrément requiert d'étudier, de manière séparée, les caractéristiques des marqueurs sonores, et celles de l'ensemble des autres sons. Ainsi, le niveau des marqueurs pris relativement au bruit ($L(E)_m-L(E)_b$ et $L_m-L_b$) est positivement corrélé à l'agrément, alors que le niveau du bruit ($L_b$ et $L(E)_b$) est, lui, négativement corrélé.
+\end{itemize}
+\end{itemize}
+
+Le fait que l'agrément des i-scènes ne se corrèle pas avec des descripteurs physiques holistiques, contrairement à l'agrément des ni-scènes, a récemment été déjà observé \cite{gozalo2015relationship}.
+
+L'existence de deux modes de perception, mobilisant différents types de descripteurs, et dépendant de la nature (dans notre cas hédonique) des stimuli, est un phénomène qui se rapproche de celui observé pour la perception des textures (\cf~Section~\ref{sec:simscene_sampleDataSet}). Le cerveau adapte sa manière de traiter l'information (résumé statistique pour les textures, description fine pour les événements) suite à une prise de décision antérieure quant à la nature du stimulus (à savoir «~est-ce un événement ou une texture ?~»). De la même manière, les indicateurs actifs dans le jugement de l'agrément dépendent, eux aussi, d'une identification préalable de la nature hédonique globale de l'environnement (idéale ou non idéale).
+
 
 \section{Experiment 2: modification of the semantic content}
 \label{sec:xp3}
