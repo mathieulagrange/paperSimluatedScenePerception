@@ -198,7 +198,7 @@ At the light of those results, it appears that the processing of auditory inform
 
 \begin{figure}[t]
         \myfloatalign
-        \includegraphics[width=.8\linewidth]{gfx/ch_4/3}
+        \includegraphics[width=.8\linewidth]{gfx/ch_4/3.png}
        \caption{Hierachical organisation of the isolated sounds used ofr the simulation.}\label{fig:orgDb}
 \end{figure}
 
@@ -345,7 +345,7 @@ Our analysis is based on the data collected by these two experiments (1.a, 1.b)
 
 \begin{figure}[t]
         \myfloatalign
-        \includegraphics[width=\linewidth]{gfx/ch_5/5}
+        \includegraphics[width=\linewidth]{gfx/ch_5/5.png}
         \caption{Experimental protocol of the simulation experiment (1.a) and the pleasantness evaluation experiment (1.b)}\label{fig:xp1_2}
 \end{figure}
 
@@ -577,7 +577,7 @@ It appears that the biggest influence on the global sound level comes from the e
 
 The level alone is not enough to differentiate the different types of environment. In fact, $20\%$ of the i- scenes hast got a sound level higher than the nominal level of the ni- scenes, while there is no overlap when considering the perceived pleasantness $\mathcal{A}_{scene}$.
 
-\begin{figure}[t]
+\begin{figure*}[t]
         \myfloatalign
         \subfloat[]
         {\includegraphics[width=.33\linewidth]{gfx/ch_5/xp_soundlevel_1}\label{fig:soundlevela}}
@@ -592,7 +592,7 @@ The level alone is not enough to differentiate the different types of environmen
         \subfloat[]
         {\includegraphics[width=.33\linewidth]{gfx/ch_5/xp_soundlevel_6}\label{fig:soundlevelf}}
        \caption{Distributions of the structural features $L$ (a, d), $L(E)$ (b, e) et $L(T)$ (c, f), with respect to scene type (a, b, c) and perceived pleasantness $\mathcal{A}_{scene}$ of experiments 1.b (d, e, f).}
-\end{figure}
+\end{figure*}
 
 \subsubsection*{Influence of the structural features on the perceived pleasantness}
 
@@ -646,11 +646,11 @@ This difference can be explained by the nature of the experimental protocol used
 \begin{figure}[t]
         \myfloatalign
         \subfloat[]
-        {\includegraphics[width=1\linewidth]{gfx/ch_5/xp1_class_1_cam}\label{fig:soundsourcea}} \par
+        {\includegraphics[width=1\linewidth]{gfx/ch_5/xp1_class_1}\label{fig:soundsourcea}} \par
         \subfloat[]
-        {\includegraphics[width=.4\linewidth]{gfx/ch_5/xp1_class_2_cam}\label{fig:soundsourceb}}
+        {\includegraphics[width=.4\linewidth]{gfx/ch_5/xp1_class_2}\label{fig:soundsourceb}}
         \subfloat[]
-        {\includegraphics[width=.4\linewidth]{gfx/ch_5/xp1_class_3_cam}\label{fig:soundsourcec}}
+        {\includegraphics[width=.4\linewidth]{gfx/ch_5/xp1_class_3}\label{fig:soundsourcec}}
        \caption{Proportion of synthesized scenes (i or ni) involving a specific class of sounds: (a) event classes at an abstraction level $0+$, (b) texture classes at an abstraction level $0$, (c) event sub-classes at an abstraction level $1$ belonging to \emph{traffic} and \emph{public transportation} classes of the abstraction level $0$.}\label{fig:soundsource}
 \end{figure}
 
@@ -664,7 +664,7 @@ Regarding the textures, 5 markers are identified. For the i- scenes, they are cl
 
 Although the whole set of identified markers are intuitive, none of the event classes related to the noise of the motor vehicles is a marker, except for the texture class \emph{crossroad}. To simulate an unpleasant traffic, participants chose the classes \emph{horn} or \emph{siren}. One can suppose that isolated motor vehicle sounds are understood as taking fully part of the urban environment, and thus are not especially linked to an unpleasant soundscape.
 
-\begin{table}[t]
+\begin{table*}[t]
  \setlength{\tabcolsep}{0.2pt}
  \centering
   {\renewcommand{\arraystretch}{0.9}
@@ -702,7 +702,7 @@ level & i-scenes & ni-scenes \\
 \vspace{0.5mm}
 \caption{Event and texture classes identified as sound markers. In each cell, markers are ranked in the decreasing order of $V$ value.}
 \label{tab:markers}
-\end{table}
+\end{table*}
 
 \subsubsection*{Representation space induced by semantic features}
 
@@ -726,8 +726,8 @@ Since we have extracted the typical classes of the i- and ni- scenes and verifie
 
 \begin{figure}[t]
         \myfloatalign
-        \includegraphics[width=\linewidth]{gfx/ch_5/pa5_1}
-       \caption{$P@5$ obtained by considering the dissimilarity matrix computed from the paired Hamming distances of the semantic features vectors. The vectors are built by using all the classes ($ET$), only the event classes ($E$), only the texture classes ($T$), only the event classes corresponding to sound markers ($E_m$), or only the event classes excluding sound markers $E_{w/o,m}$.}\label{fig:pa5}
+        \includegraphics[width=\linewidth]{gfx/ch_5/pa5_1_en}
+       \caption{$P@5$ obtained by considering the dissimilarity matrix computed from the paired Hamming distances of the semantic features vectors as a function of the abstraction level. The vectors are built by using all the classes ($ET$), only the event classes ($E$), only the texture classes ($T$), only the event classes corresponding to sound markers ($E_m$), or only the event classes excluding sound markers $E_{w/o,m}$.}\label{fig:pa5}
 \end{figure}
 
 \subsubsection*{Influence of the sound markers on the perceived pleasantness}
@@ -793,7 +793,7 @@ $L(T)_m-L(T)_b$    & 0.16 ($p=0.54$)            & 0.21 ($p=0.28$) \\
 \label{tab:corrMarkers}
 \end{table}
 
-\begin{figure}[t]
+\begin{figure*}[t]
         \myfloatalign
         \subfloat[]
         {\includegraphics[width=.33\linewidth]{gfx/ch_5/xp_soundlevel_7}\label{fig:soundlevelMarkera}}
@@ -808,7 +808,7 @@ $L(T)_m-L(T)_b$    & 0.16 ($p=0.54$)            & 0.21 ($p=0.28$) \\
         \subfloat[]
         {\includegraphics[width=.33\linewidth]{gfx/ch_5/xp_soundlevel_20}\label{fig:soundlevelMarkerDiffd}}
         \caption{Distribution of the relative sound levels structural features related to the presence of markers $L_m$ (a, d), $L(E)_m$ (b, e) and $L(T)_m$ (c, f), versus scene type (a, b, c) and perceived pleasantness $\mathcal{A}_{scene}$ of experiment 1.b (d, e, f).}\label{fig:soundlevelMarker}
-\end{figure}
+\end{figure*}
 
 \subsection{Discussion}
 
@@ -1123,7 +1123,7 @@ Research project partly funded by ANR-11-JS03-005-01. The authors would like to 
         {\includegraphics[width=.5\columnwidth]{gfx/ch_5/texture_1}\label{fig:taxonomieTexturea}}
         \subfloat[]
         {\includegraphics[width=.5\columnwidth]{gfx/ch_5/texture_2}\label{fig:taxonomieTextureb}}
-       \caption{Taxonomies des classes de sons utilisées pour la simulation des environnements sonores urbains : (a,b) événements sonores et (c,d) textures sonores.}
+       \caption{Taxonomy of sound classes used for the simulation urban soundscapes: events (a,b) and textures (c,d).}
        \label{fig:taxonomie}
 \end{figure}
 
@@ -1133,31 +1133,31 @@ Research project partly funded by ANR-11-JS03-005-01. The authors would like to 
 
 \begin{figure}[h]
         \myfloatalign
-        \subfloat[sujet 1]
+        \subfloat[subject 1]
         {\includegraphics[width=.24\linewidth]{gfx/ch_5/xp4_note_1}\label{fig:xp4_note_1a}}
-        \subfloat[sujet 2]
+        \subfloat[subject 2]
         {\includegraphics[width=.24\linewidth]{gfx/ch_5/xp4_note_2}\label{fig:xp4_note_1b}}
-        \subfloat[sujet 3]
+        \subfloat[subject 3]
         {\includegraphics[width=.24\linewidth]{gfx/ch_5/xp4_note_3}\label{fig:xp4_note_1c}}
-        \subfloat[sujet 4]
+        \subfloat[subject 4]
         {\includegraphics[width=.24\linewidth]{gfx/ch_5/xp4_note_4}\label{fig:xp4_note_1d}} \par
-        \subfloat[sujet 5]
+        \subfloat[subject 5]
         {\includegraphics[width=.24\linewidth]{gfx/ch_5/xp4_note_5}\label{fig:xp4_note_1e}}
-        \subfloat[sujet 6]
+        \subfloat[subject 6]
         {\includegraphics[width=.24\linewidth]{gfx/ch_5/xp4_note_6}\label{fig:xp4_note_1f}}
-        \subfloat[sujet 7]
+        \subfloat[subject 7]
         {\includegraphics[width=.24\linewidth]{gfx/ch_5/xp4_note_7}\label{fig:xp4_note_1g}}
-        \subfloat[sujet 8]
+        \subfloat[subject 8]
         {\includegraphics[width=.24\linewidth]{gfx/ch_5/xp4_note_8}\label{}} \par
-        \subfloat[sujet 9]
+        \subfloat[subject 9]
         {\includegraphics[width=.24\linewidth]{gfx/ch_5/xp4_note_9}\label{fig:xp4_note_1i}}
-        \subfloat[sujet 10]
+        \subfloat[subject 10]
         {\includegraphics[width=.24\linewidth]{gfx/ch_5/xp4_note_10}\label{fig:xp4_note_1j}}
-        \subfloat[sujet 11]
+        \subfloat[subject 11]
         {\includegraphics[width=.24\linewidth]{gfx/ch_5/xp4_note_11}\label{fig:xp4_note_1z}}
-        \subfloat[sujet 12]
+        \subfloat[subject 12]
         {\includegraphics[width=.24\linewidth]{gfx/ch_5/xp4_note_12}\label{fig:xp4_note_1l}}
-        \caption{Dispersions des notes données par les sujets lors de l'expérience 2 aux i/am-scènes (vert) et ni/am-scènes (rouge).}\label{fig:xp4_note_1}
+        \caption{Distribution of scores given par the subjects during experiment 2 for i/am-scenes (green) et ni/am-scenes (red).}\label{fig:xp4_note_1}
 \end{figure}
 
 \end{document}
