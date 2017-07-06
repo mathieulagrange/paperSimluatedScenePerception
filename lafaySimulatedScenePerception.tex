@@ -112,7 +112,7 @@ In our approach, the simulator developed for this study\footnote{simScene, avail
 
 %Le papier comprend 5 sections: Introduction, L'outil de simulation \emph{SimScene}, Expérience 1 .a \emph{simulation} et .b \emph{évaluation de l'agrément}, Expérience 2 \emph{évaluation de l'agrément après modification des scènes}, et Conclusions et perspectives.
 
-The remaining of the paper is organized as follows: the soundscape simulator \emph{simScene} is introduced in Section \ref{sec:simulator}. The three experiments,  1.a \emph{simulation}, 1.b \emph{pleasantness evaluation}, and 2 \emph{pleasantness evaluation after modification of the scenes} are respectively presented in Sections \ref{sec:simulation}, \ref{sec:evaluation}, and \ref{sec:modification}. Conclusions and discussion about future work follow in Section \ref{sec:conclusion}. Experiment 1.a is based on a pilot study described in \cite{lafay2014new}.
+The remaining of the paper is organized as follows: the soundscape simulator \emph{simScene} is introduced in Section \ref{sec:simulator}. The experiments  1.a \emph{simulation} and  1.b \emph{pleasantness evaluation} are presented in Section \ref{sec:simulation}. Experiment 2 \emph{pleasantness evaluation after modification of the scenes} is presented in Section \ref{sec:modification}. Conclusions and discussion about future work follow in Section \ref{sec:conclusion}. Experiment 1.a is based on a pilot study described in \cite{lafay2014new}.
 
 %Dans le cadre de cette communication, nous ne présentons de \emph{SimScene} que les fonctionnalités pertienentes pour notre étude. Pour plus de détails, se référer à \cite{rossignol2015simscene,lafay2016JAES}.
 
@@ -125,7 +125,7 @@ The remaining of the paper is organized as follows: the soundscape simulator \em
 
 
 \section{The simulator}
-\label{sec:simscene}
+\label{sec:simulator}
 
 %\emph{Simscene} est un environnement de travail audio-numérique dont la première version a été développée dans le cadre du projet HOULE\footnote{\emph{Projet HOULE} : \url{houle.ircam.fr}}. Il est prévu pour fonctionner sur les navigateurs internet \emph{Chrome} et \emph{Firefox}. L'outil a été développé en javascript à l'aide de la bibliothèque \emph{angular.js}\footnote{\emph{angular.js} : \url{angularjs.org}} et du standard \emph{web-audio}\footnote{\emph{web-audio} : \url{www.w3.org/TR/webaudio}}. L'interface de sélection (\cf~Section~\ref{sec:simscene_ssf}) a été développée à l'aide de la bibliothèque \emph{D3.js} \cite{d32011}.
 
@@ -310,10 +310,10 @@ As such, the underlying model of the scene is a sum of sound sources, more preci
 %%%%%%%%%%%%%%%%%%%  Experience 1     %%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Expérience 1}
-\label{sec:xp1}
+\section{Experiment 1}
+\label{sec:simulation}
 
-\subsection{Objectif}
+\subsection{Objective}
 
 % L'objectif est d'étudier les influences spécifiques des différentes sources sonores qui composent les environnements urbains sur la perception de l'agrément, en utilisant la simulation. Pour ce faire, nous planifions nos deux premières expériences (\cf~Figure~\ref{fig:xp1_2}):
 %
@@ -333,7 +333,7 @@ As such, the underlying model of the scene is a sum of sound sources, more preci
 
 Experiment 1 aims at using the simulation paradigm to investigate the specific influences of the various sound sources constituting urban soundscapes on the perceived pleasantness. For that, two first experiments are planned (\cf~Figure~\ref{fig:xp1_2}):
 \begin{itemize}
-\item \emph{experiment 1.a (simulation)}: during this experiment, participants have to create urban sound environments, using the simulation tool \emph{Simscene}, see Section~\ref{sec:simscene}. Each of them creates two environments: one ideal / pleasant and the other one, non ideal / unpleasant.
+\item \emph{experiment 1.a (simulation)}: during this experiment, participants have to create urban sound environments, using the simulation tool \emph{Simscene}, see Section~\ref{sec:simulator}. Each of them creates two environments: one ideal / pleasant and the other one, non ideal / unpleasant.
 \item \emph{experiment 2.a (evaluation)}: actually, after the simulation phase, we only have a binary information on the emotional properties of the respective scenes: ideal (i) and non ideal (ni). This second experimental step aims at investigating our knowledge on pleasantness. For that, a second group of participants are asked to evaluate the pleasantness of each simulated scene, on a semantic scale. This evaluation protocol has two goals:
 \begin{enumerate}
 \item to evaluate the respective influence on the pleasantness of the various sources composing the scenes (i or ni)
@@ -542,22 +542,22 @@ Except for the V-test, all the statistical test of significativity are done with
 \begin{table}[t]
 \centering
 \begin{tabular}{c c}
-Termes                         & Acronyms              \\
+Terms                         & Acronyms              \\
 \hline
-Niveau                         & $L$                    \\
-Niveau (événements)            & $L(E)$                 \\
-Niveau (textures)              & $L(T)$                 \\
-Agrément moyen (par scène)     & $\mathcal{A}_{scene}$  \\
-Agrément moyen (par sujet)     & $\mathcal{A}_{sujet}$  \\
+Level                        & $L$                    \\
+Level (events)            & $L(E)$                 \\
+Level (textures)              & $L(T)$                 \\
+Average pleasantness (per scene)     & $\mathcal{A}_{scene}$  \\
+Average pleasantness (per subject)     & $\mathcal{A}_{sujet}$  \\
                                &                        \\
-idéale/agréable                & i                      \\
-non-idéale/désagréable         & ni                     \\
-scène idéale/agréable          & i-scene                \\
-scène non-idéale/désagréable   & ni-scene               \\
+ideal/pleasant                & i                      \\
+non-ideal/unpleasant         & ni                     \\
+scene ideal/pleasant          & i-scene                \\
+scene non-ideal/unpleasant   & ni-scene               \\
 \hline
 \end{tabular}
 \vspace{0.5mm}
-\caption{Acronyme des variables utilisées dans le cadre des expériences sensorielles.}
+\caption{Acronyms of features used in the analysis of the sensory experiments.}
 \label{tab:acronyme}
 \end{table}
 
@@ -712,14 +712,14 @@ Concerning $ET$, the $p@5$ is $76\%$ for the abstraction level $0$, and stay abo
 
 Considering $E$ and $T$ separately, ir appears: 1) that the $p@5$ obtained with $E$ is similar to the one obtained with $ET$ ; 2) that the $p@5$ obtained with $T$ is systematically lower than the one obtained with $E$, by $10\%$ or $15\%$. Those results indicate that the semantic information allowing to split the two environments is mainly contained in the events. Moreover, these results are in line with the work done in \cite{maffiolo_caracterisation_1999} showing that we analyze in a causal manner (i.e. by identifying the sources) the event scenes which are composed of several sound events, see Section~\ref{sec:simscene_sampleDataSet}.
 
-Finally, it appears that the $p@5$ obtained with $E_m$ is equal – or above – to the ones obtained with $E$ or $ET$, although a partial information is used in that case to describe the scenes. The dimension of the vectors $S$ for $E_m$ is lower than the dimension of vector $S$ for $E$, itself lower than the dimension of vector S obtained when all the classes are considered ($ET$). Moreover, in the case when the sound markers are not taken into account for the description ($E_{w/o,m}$), the results fall even going under those obtained with only the textures. This confirms that most of the semantic information allowing to differentiate between i- and ni- scenes is included in the markers.
+Lastly, it appears that the $p@5$ obtained with $E_m$ is equal – or above – to the ones obtained with $E$ or $ET$, although a partial information is used in that case to describe the scenes. The dimension of the vectors $S$ for $E_m$ is lower than the dimension of vector $S$ for $E$, itself lower than the dimension of vector S obtained when all the classes are considered ($ET$). Moreover, in the case when the sound markers are not taken into account for the description ($E_{w/o,m}$), the results fall even going under those obtained with only the textures. This confirms that most of the semantic information allowing to differentiate between i- and ni- scenes is included in the markers.
 
 To sum up, we deduce the following points from this analysis:
 
 \begin{enumerate}
-\item contrairement à ce que nous avions constaté avec les descripteurs structurels, une description sémantique de la composition des scènes, en terme de présence/absence de sources sonores, permet de bien distinguer les deux types d'environnement (i ou ni);
-\item l'information sémantique est majoritairement portée par les classes d'événements sonores;
-\item parmi les classes d'événements, seule une partie, \ie~les marqueurs sonores, est nécessaire pour faire la distinction entre les i- et ni-scènes.
+\item unlike what we outlined with the structural features, a semantic description of the scenes constitution in terms of presence / absence of sound sources, allows to differentiate the two types of environments (i or ni);
+\item the semantic information is mainly contained in the event sound classes;
+\item only a part of the event classes, i.e. the sound markers, are useful to differentiate the i- and ni- scenes.
 \end{enumerate}
 
 Since we have extracted the typical classes of the i- and ni- scenes and verified that the distinction between them was dependent to the presence of these classes, we have now to investigate whether a structural description of the scenes only based on sound markers could allow us to characterize the perceived pleasantness, perhaps better than a global structural description.
@@ -832,7 +832,7 @@ The fact that the pleasantness of the i- scenes is not correlated to global phys
 We thus observe two perceptual modes that involve different types of features, and that rely on the hedonic nature  of the stimuli. A phenomenon similar is observed for the perception of textures, see Section~\ref{sec:simscene_sampleDataSet}. It seems that the brain adapts its way to encode the information (statistic summary for textures, fine description for events) following a previous decision making with regards to the nature of the stimuli, (()\ie is it an event or a texture ?). Similarly, features that are considered for the pleasantness judgment also depends on a preliminary judgment of the global hedonic nature of the environment (ideal or non ideal).
 
 \section{Experiment 2: modification of the semantic content}
-\label{sec:xp3}
+\label{sec:modification}
 
 \subsection{Objective}
 
@@ -1007,8 +1007,8 @@ The i-markers do have a positive impact on the perception of an environment. The
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\section{Outcomes for sounscape perception}
-
+\section{Outcomes for soundscape perception}
+\label{sec:conclusion}
 %Les expériences ont montré que la majorité des descripteurs utilisés, qu'ils soient sémantiques ou structurels, permettent de faire la distinction entre une scène idéale et une scène non-idéale.
 
 This series of three experiments showed that most of the descriptors used in this study, be they semantic or compositional, allows us to distinguish between a said ideal scene and a non ideal one.
@@ -1110,7 +1110,7 @@ Research project partly funded by ANR-11-JS03-005-01. The authors would like to 
 \onecolumn
 
 \appendix
-\section{Taxonomies des classes de sons}
+\section{Taxonomy of sound classes}
 \label{app:taxonomie}
 
 \begin{figure}[h]
@@ -1128,7 +1128,7 @@ Research project partly funded by ANR-11-JS03-005-01. The authors would like to 
 \end{figure}
 
 \newpage
-\section{Dispersions des notes données par les sujets lors de l'expérience 2}
+\section{Distribution of scores given par the subjects during experiment 2}
 \label{app:xp2}
 
 \begin{figure}[h]
