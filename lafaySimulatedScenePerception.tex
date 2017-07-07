@@ -514,13 +514,11 @@ For each sound scene, three types of features are considered :
 
 In order to evaluate the specific impact of the various sound sources on the perceived pleasantness, we put the data to the five following tests of significativity:
 
-///
-
 \begin{itemize}
-\item \emph{checking the pleasantness of the simulated sound scene}: to check that the emotional difference produced by the i- and ni- scenes is also present in terms of perceived pleasantness, we look at the existence of differences between $\mathcal{A}_{scene}$ and $\mathcal{A}_{subject}$ with regards to the two types of scene. the significativity is evaluated by a Student test on two independent populations for $\mathcal{A}_{scene}$ and by a Student test on two paired populations for $\mathcal{A}_{subject}$ ;
-\item \emph{analysis of the structural features}: in order to evaluate whether the emotional difference forced to the i- and ni- scenes has a significative influence \ie, if significative differences exist between structural features and perceived pleasantness, we measure this significativity with a Student test on two populations;
-\item \emph{study of the influence of the structural features on the perceived pleasantness}: in order to evaluate a possible impact of the structural features on the perceived pleasantness, we look at linear correlations between these features and $\mathcal{A}_{scene}$. For that, we use the Pearson correlation coefficient, on the basis of the standard methodology used in multidimensional studies;
-\item \emph{analysis of the semantic features}: in order to determine if the forced emotional difference has an influence on the scenes composition in terms of sound sources, or if specific  classes are more frequently used to simulate a given environment (i or ni), we apply a V-test. This test is done at every level of abstraction, and separately, for texture and event classes. For each class $j$ , and each environment type $k$ ($k=\lbrace i,ni\rbrace$), the value $V_{jk}$ is computed as follows:
+\item \emph{checking the pleasantness of the simulated sound scene}: to check that the emotional difference produced by the i- and ni- scenes is also present in terms of perceived pleasantness, we look at the existence of differences between $\mathcal{A}_{scene}$ and $\mathcal{A}_{subject}$ with respect to the two types of scenes. The significativity is evaluated by a Student test on two independent populations for $\mathcal{A}_{scene}$ and by a Student test on two paired populations for $\mathcal{A}_{subject}$;
+\item \emph{analysis of the structural features}: in order to evaluate whether the affective difference between  the i- and ni- scenes has a significative influence  on the nature of the scenes \ie if significative differences exist between structural features and perceived pleasantness. The significativity is measured with a Student test on two populations;
+\item \emph{study of the influence of the structural features on the perceived pleasantness}: in order to evaluate a possible impact of the structural features on the perceived pleasantness, linear correlations between these features and $\mathcal{A}_{scene}$ are considered. The Pearson correlation coefficient is used for that purpose, on the basis of the standard methodology used in multidimensional studies;
+\item \emph{analysis of the semantic features}: in order to determine if the affective difference between  the i- and ni- scenes has an influence on the scenes composition in terms of sound sources, or if specific classes are more frequently used to simulate a given environment (i or ni), a V-test is considered. Testing is done at every level of abstraction, and separately for texture and event classes. For each class $j$, and each environment type $k$ ($k=\lbrace i,ni\rbrace$), the value $V_{jk}$ is computed as follows:
 
 \begin{equation*}
 V_{jk}=\dfrac{c_{jk}-c_k\frac{c_j}{c}}{\sqrt{c_k\frac{c-c_k}{c-1}\frac{c_j}{c}(1-\frac{c_j}{c})}}
@@ -528,18 +526,18 @@ V_{jk}=\dfrac{c_{jk}-c_k\frac{c_j}{c}}{\sqrt{c_k\frac{c-c_k}{c-1}\frac{c_j}{c}(1
 
 where $c$ is the number of available classes, $c_k$ the number of classes for a given type of environment $k$, $c_j$ the number of  $j$ classes, and $c_{jk}$ the number of $j$ classes used for an environment $k$. The V-test tests the null hypothesis that the ratio $\frac{c_{jk}}{c}$ is not significatively different from the ratio $\frac{c_{jk}}{c_k}$. For a given environment $k$, and class $j$, if the hypothesis is rejected, the class $j$ is said to be typical with respect to environment $k$. The typical classes are called \textbf{sound markers};
 
-\item \emph{Study of the representation spaces induced by the semantic features}: in order to determine if a representation only based on the presence / absence of sound sources allows to split the two types of environment, we investigate the space induced by the semantic features $S$. $S$ is a boolean vector and the distance between two scenes is computed with the Hamming distance. Considering two n-dimension vectors $S_1=(x_{1,1},x_{1,2},\ldots,x_{1,n})$, where $S_2=(x_{2,1},x_{2,2},\ldots,x_{2,n})$ is of cardinality $n$, with $x=\lbrace 0,1\rbrace$, the Hamming distance $d_{ham}$ measures the proportion of coordinates that differ between two vectors, as follows:
+\item \emph{Study of the representation spaces induced by the semantic features}: in order to determine if a representation only based on the presence / absence of sound sources allows us to distinguish between the two types of environment, we investigate the space induced by the semantic features $S$. $S$ is a boolean vector and the distance between two scenes is computed with the Hamming distance. Considering two $n$-dimension vectors $S_1=(x_{1,1},x_{1,2},\ldots,x_{1,n})$, where $S_2=(x_{2,1},x_{2,2},\ldots,x_{2,n})$ is of cardinality $n$, with $x=\lbrace 0,1\rbrace$, the Hamming distance $d_{ham}$ measures the proportion of coordinates that differ between two vectors, ans is defined as follows:
 
 \begin{equation*}
 d_{ham}(S_1,S_2)=\dfrac{1}{n}\sum_{i=1}^{n} (x_{1,i} \bigoplus x_{2,i})
 \end{equation*}
 
-where $\bigoplus$ is the \emph{exclusive-or} The more the two scenes are similar, the closer they are. The use of Hamming distance allows to take into account equally the present and absent classes. For measuring the intrinsic ability of the space to split the i- and ni- scene, we use a ranking metric named $k$- precision ($P@k$) . The $P@k$ computes the precision obtained after $k$ items have been found. Formally, for each $s_i$ scene, we compute the ratio between the number of $s_j$ scenes taken among the k nearest neighbors of $s_i$ and sharing the same label than $s_i$ with regards to the $k$ items to be found. the $P@k$ is then the mean of this ratio along all the items;
+where $\bigoplus$ is the \emph{exclusive-or}. The more the comosition of the two scenes are similar, the closer they are in this space. The use of Hamming distance allows us to take into account equally the presence and absence of classes. For measuring the intrinsic ability of the space to split the i- and ni- scene, we use a ranking metric named the precision at rank $k$ ($P@k$) . The $P@k$ computes the precision obtained after the $k$ closest items of a given seed item have been found. Formally, for each $s_i$ scene (considered as seed), we compute the ratio between the number of $s_j$ scenes taken among the $k$ nearest neighbors of $s_i$ and sharing the same label than $s_i$ versus $k$. the $P@k$ is then the average of this ratio for all the items considered as search seeds;
 
-\item \emph{influence of the sound markers on the perceived pleasantness}: in order to assess the specific contributions of some sound sources, we again estimate the possible impact of the structural features on the perceived pleasantness, but this time, by only taking into account the sound markers for the computation of these features.
+\item \emph{influence of the sound markers on the perceived pleasantness}: in order to assess the specific contributions of some sound sources, we again estimate the impact of the structural features on the perceived pleasantness by taking into account only the sound markers for the computation of those features.
 \end{itemize}
 
-Except for the V-test, all the statistical test of significativity are done with a critical threshold of $\alpha=0.05$. For the V-test, considering that a great number of classes is tested, a Bonferroni correction is applied. For the $p$-value, if $p\geq0.05$, the value is reported. If $0.01\leq p<0.05$, we only report $p<0.05$, otherwise we report $p<0.01$.
+Except for the V-test, the statistical test of significativity are done with a critical threshold of $\alpha=0.05$. For the V-test, considering that a great number of classes is tested, a Bonferroni correction is applied. For the $p$-value, if $p\geq0.05$, the value is reported. If $0.01\leq p<0.05$, we only report $p<0.05$, otherwise we report $p<0.01$.
 
 \begin{table}[t]
 \centering
@@ -563,9 +561,11 @@ scene non-ideal/unpleasant   & ni-scene               \\
 \label{tab:acronyme}
 \end{table}
 
+///
+
 \subsection{Results}
 
-\subsubsection*{Cheking of the pleasantness of the synthesized scenes}
+\subsubsection*{Checking of the pleasantness of the synthesized scenes}
 
 First, in order to ensure the coherence of the data, we check that none of the ni- scenes gets a $\mathcal{A}_{scene}$ higher than one of a i- scene. Four ni- scenes don’t respect that rule: they are removed, together with their corresponding i- scenes. 36 i -scenes and 36 ni -scenes remain for analysis. Secondly, we want to be sure that participants really perceived a difference in terms of pleasantness between i- and ni -scenes. For that, we investigate the mean pleasantness score for each participant $\mathcal{A}_{subject}$, computed separately for each type of environment. It appears that the i- scenes were perceived significatively more pleasant ($p < 0.01$) than the ni- scenes.
 
