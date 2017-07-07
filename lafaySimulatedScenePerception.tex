@@ -233,7 +233,7 @@ All samples are normalized to the same $RMS$ level of $-12$ $dB$ FS, \ie relativ
 
 %Par choix de conception, l'outil de simulation ne permet pas d’interagir avec un sample en particulier, mais toujours avec une piste, \ie~une séquence de samples. Plusieurs paramètres permettent au sujet de contrôler la structure de chaque piste.
 
-By design, the simulation tool do not allow the user to interact and control a specific sample. Interaction is done at the track level, a track being a sequence of samples. Several parameters are available to the subject to control the track:
+By a volountary design choice, the simulation tool do not allow the user to interact and control a specific sample. Interaction is done at the track level, a track being a sequence of samples. Several parameters are available to the subject to control the track:
 
 % \begin{itemize}
 % \item \emph{niveau sonore} ($dB$): pour chaque sample, les niveaux sont tirés aléatoirement à partir d'une distribution normale, paramétrée par le sujet en termes de moyenne et de variance;
@@ -249,7 +249,7 @@ By design, the simulation tool do not allow the user to interact and control a s
 
 %Afin de faciliter la simulation, deux paramètres supplémentaires sont proposés:
 
-To ease the simulation, two parameters are also proposed:
+To improve simulation quality, two parameters are also proposed:
 
 % \begin{itemize}
 % \item \emph{fondu par événement} (seconde): (piste d'événements seulement) le sujet fixe une durée de fondu (entrée et sortie) appliquée à chaque sample;
@@ -272,7 +272,7 @@ The samples of texture are sequenced without time spacing, therefore the paramet
 
 %En effet la description verbale du son, si elle est accessible au sujet, peut potentiellement influencer sa sélection. Dans les faits, pour construire une scène environnementale «~calme~», le sujet sélectionne a priori les sons référencés sous le vocable \emph{parc}.
 
-Once the typology and the set sound are available, an important design question that remains is to find a suitable way of presenting the data to the user. Most of browsing tools are based on keyword indexing. However, for sensory experiment that study the objectivation of the mental representation of the subject, this mean is problematic as the availability of a verbal description of the sound can influence the choice of the subject. Indeed, the subject may select \textit{a priori} sound referenced belonging to \emph{park} to build a \emph{calm} soundscape.
+Once the typology and the set of sounds are available, an important design issue os the need of a suitable way to display the sound dataset to the user. Most browsing tools are based on keyword indexing. However, for sensory experiment that study the objectivation of the mental representation of the subject, this mean is problematic as the availability of a verbal description of the sound can influence the choice of the subject and potenitally induce biases in the analysis conclusions. Indeed, the subject may select \textit{a priori} sounds referenced as belonging to \emph{park} to build a \emph{calm} soundscape.
 
 %Pour limiter l’influence de l’interface sur le sujet, il nous paraît nécessaire de libérer sa recherche de toute information textuelle. Nous proposons à l'utilisateur une interface graphique lui permettant d’explorer la banque de sons exclusivement à partir de l’écoute.
 
@@ -284,7 +284,7 @@ The Figure~\ref{fig:ssf} shows the interface used for the selection of events. T
 
 %Chaque classe du dernier palier possède un son prototype. Ces sons ont été choisis par les expérimentateurs. Lorsqu’on clique sur un cercle, le prototype associé à la classe est joué. Le sujet parcourt la banque de sons en cliquant sur les cercles. Cette interface a fait l'objet d'une étude approfondie dont les résultats sont publiés dans \cite{lafay2016JAES}.
 
-Each of those classes have a representative sound chosen arbitrarily by the authors in order to provide the same sound each time the user clicks on the circle. The subject can browse the database by listening to those prototype sound. The efficiency of this interface compared to several others designs have been evaluated and the outcomes are discussed in \cite{lafay2016JAES}.
+Each of those classes have a representative sound chosen arbitrarily by the authors in order to provide the same sound each time the user clicks on the circle. The subject can browse the database by listening to those prototype sounds. The efficiency of this interface compared to several others designs have been evaluated and the outcomes are discussed in \cite{lafay2016JAES}.
 
 \begin{figure}[t]
         \myfloatalign
@@ -331,17 +331,17 @@ As such, the underlying model of the scene is a sum of sound sources, more preci
 %
 % Notre analyse s'appuie sur les données produites par les deux expériences.
 
-Experiment 1 aims at using the simulation paradigm to investigate the specific influences of the various sound sources constituting urban soundscapes on the perceived pleasantness. For that, two first experiments are planned (\cf~Figure~\ref{fig:xp1_2}):
+Experiment 1 aims at using a simulation paradigm to investigate the specific influences of the various sound sources constituting urban soundscapes on the perceived pleasantness. For that, the two first experiments are planned as follows (\cf~Figure~\ref{fig:xp1_2}):
 \begin{itemize}
-\item \emph{experiment 1.a (simulation)}: during this experiment, participants have to create urban sound environments, using the simulation tool \emph{Simscene}, see Section~\ref{sec:simulator}. Each of them creates two environments: one ideal / pleasant and the other one, non ideal / unpleasant.
-\item \emph{experiment 2.a (evaluation)}: actually, after the simulation phase, we only have a binary information on the emotional properties of the respective scenes: ideal (i) and non ideal (ni). This second experimental step aims at investigating our knowledge on pleasantness. For that, a second group of participants are asked to evaluate the pleasantness of each simulated scene, on a semantic scale. This evaluation protocol has two goals:
+\item \emph{experiment 1.a (simulation)}: during this experiment, participants are asked to create urban sound environments, using the simulation tool \emph{Simscene}, see Section~\ref{sec:simulator}. Each of them creates two environments: one ideal / pleasant and the other one, non ideal / unpleasant.
+\item \emph{experiment 2.a (evaluation)}: after the simulation phase, only a binary information on the pleasantness property of the respective scenes: respectively ideal (i) or non ideal (ni). Furthermore, this information is given by the creator of the scene. The second experimental step aims at investigating more deeply and more broadly our knowledge on pleasantness. For that, a second group of participants are asked to evaluate the pleasantness of each simulated scene, on a semantic scale. This experiment has two goals:
 \begin{enumerate}
-\item to evaluate the respective influence on the pleasantness of the various sources composing the scenes (i or ni)
-\item to detect the presence of \emph{outliers} or ambiguous samples. For the remainder of the study, the defined hedonic properties (i and ni) are used as ground truth. Then, we must have to be sure that no ambiguity exists between extreme cases of i and ni scenes; i.e that the lower i-scene is really above the upper ni-scene,  in terms of pleasantness rating.
+\item evaluate the respective influence on the pleasantness of the various sources composing the scenes (i or ni)
+\item detect the presence of \emph{outliers} or ambiguous samples. For the remainder of the study, the defined hedonic properties (i and ni) are used as references. We thus need to ensure beforehand that no ambiguity exists between extreme cases of i and ni scenes; i.e that the lower i-scene is really above the upper ni-scene,  in terms of percieved pleasantness.
 \end{enumerate}
 \end{itemize}
 
-Our analysis is based on the data collected by these two experiments (1.a, 1.b)
+Our analysis is based on the data collected by these two experiments: 1.a and 1.b.
 
 \begin{figure}[t]
         \myfloatalign
@@ -372,18 +372,18 @@ Our analysis is based on the data collected by these two experiments (1.a, 1.b)
 %
 % Ces contraintes font partie de la consigne. Aucun contrôle n'est fait \emph{a priori} dans l'interface de simulation.
 
-The participants have to simulate two urban sound environments of 1 minute each. They have to follow the instructions below:
+The participants have to simulate two urban sound environments of one minute each. They follow the instructions below:
 \begin{itemize}
-\item  1st simulation: create a \textbf{plausible urban soundscape} which is ideal, according to you (where you would like to live);
-\item 2nd simulation: create a \textbf{plausible urban soundscape} which is non ideal, according to you (where you would not like to live);
+\item  first simulation: create a \textbf{plausible urban soundscape} which is ideal, according to you (where you would like to live);
+\item second simulation: create a \textbf{plausible urban soundscape} which is non ideal, according to you (where you would not like to live);
 \end{itemize}
 
-All the participants start by working on the ideal environment; they read the second set of instruction at the end of the first experiment. Participants are completely free of their choice concerning sounds and synthesis parameters. They must nevertheless respect the two following constraints :
+All the participants start by desiging the ideal environment; they read the second set of instruction at the end of the first experiment. Participants are completely free of their choice concerning sounds and synthesis parameters. They must nevertheless respect the two following constraints :
 \begin{itemize}
 \item the listening point of view is the one of a fixed listener;
-\item  the soundscape must be realistic, i.e. physically plausible.
+\item the soundscape must be realistic, i.e. physically plausible.
 \end{itemize}
-For instance, the participant can insert ten dogs in the soundscape but he/she cannot insert one dog barking every 10 milliseconds.
+For instance, the participant can insert ten dogs in the soundscape but she cannot insert one dog barking every 10 milliseconds.
 These constraints are notified in the instructions; no control is done \emph{a priori} in the simulation user interface.
 
 
@@ -409,9 +409,9 @@ These constraints are notified in the instructions; no control is done \emph{a p
 %
 % Avant de commencer la première simulation, un tutoriel de 20 minutes est proposé aux sujets, afin qu'ils se familiarisent avec le logiciel de simulation, et la banque de données. L'expérience est prévue pour durer 2h30.
 
-Each simulation process contains two parts :
+Each simulation process contains two parts:
 \begin{enumerate}
-\item composition of the simulation: this step is split in three steps
+\item composition of the simulation: this step is split in three steps:
 \begin{itemize}
   \item  select the class of sounds
 	\item  give a name to the selected class of sounds
@@ -420,7 +420,7 @@ Each simulation process contains two parts :
 \item production of a free verbalization of the composed soundscape
 \end{enumerate}
 
-In addition, once the two sound scenes have been realized, participants are invited to
+In addition, once the two sound scenes are done, participants are invited to
 \begin{itemize}
 \item  point out the sound sources that were missing for the composition
 \item  give a comment about the ergonomics of the simulation environment
@@ -437,9 +437,9 @@ Before starting the first simulation, a 20-minute tutorial is given to the parti
 %
 % Trois expérimentateurs, un dans chaque pièce, sont présents durant la totalité de l'expérience, afin de contrôler le bon déroulement de cette dernière, et de répondre aux éventuelles questions des sujets.
 
-All the participants do the experiment on similar computers. The audio files are played in diotic conditions by headphones. During the tutorial, participants are asked to adjust the sound level in order to be comfortable; they can’t modify it in the following of the experiment.
-All the participants do the experiment simultaneously. They are equally split in three identical quiet rooms. Theyare not allowed to talk to each other during the experiment.
-Three experimenters (one in each room) are present during the whole duration of the experiment in order to check that everything goes well and possibly to answer questions.
+All the participants do the experiment on desktop computers with the same hardware and software configurations. The audio files are played in diotic conditions by headphones. During the tutorial, participants are asked to adjust the sound level in order to be comfortable. Once set, they are not allowed to modify it in the remaining of the experiment.
+All the participants do the experiment at the same time. They are equally split in three identical quiet rooms. They are not allowed to talk to each other during the experiment.
+Three experimenters (one in each room) are present during the whole duration of the experiment in order to assist participants with potential hardware and software issues and to answer questions.
 
 \subsubsection*{Participants}
 
@@ -447,8 +447,8 @@ Three experimenters (one in each room) are present during the whole duration of 
 %
 % Sur les 44 sujets, 40 réalisent l'expérience avec succès, produisant au final 80 scènes sonores simulées, dont 40 scènes idéales, et 40 scènes non idéales. 4 sont éliminés pour non respect ou incompréhension des consignes, d'une part, et dépassement du temps, d'autre part.
 
-44 students (14 females - mean age 21.6, SD = 2.0) from Ecole Centrale de Nantes took part to the experiment. They are all living in Nantes downtown since 2 years or more.
-Among the 44 participants, 40 succeeded in doing the experiment, producing in the end, 80 simulated sound scenes (40 ideal scenes, 40 non ideal scenes). 4 participants were excluded from the process for not having respect or understand the instructions, or for exceeding the maximum duration of the experiment.
+44 students (14 females - mean age 21.6, SD = 2.0) from Ecole Centrale de Nantes took part to the experiment. They are all living in downtown Nantes since 2 years or more.
+Among the 44 participants, 40 succeeded, producing in the end 80 simulated sound scenes (40 ideal scenes, 40 non ideal scenes). the 4 other participants were excluded from the process due to a lack of respect or understanding of the instructions, or for exceeding the maximum duration of the experiment.
 
 \subsection{Planning of experiment 1.b}
 \label{sec:xp1b_plan}
@@ -463,9 +463,9 @@ Among the 44 participants, 40 succeeded in doing the experiment, producing in th
 %
 % L'expérience est prévue pour durer 30 minutes. Les sujets ne connaissent pas la nature des scènes.
 
-Due to temporal constraints, participants only assess 30 seconds of the initial 1-minute simulated scenes composed in Exp. 1.a (from sec. 15 to sec. 45).
-The assessment is done in a 7-point Likert scale going from -3 (non ideal / unpleasant) to +3 (ideal / pleasant). Before evaluating a scene, participants must listen to the first 20 seconds of the scene. After the evaluation, they are free to switch to the next scene.
-For each participant, sound scenes are played in a random order. The first 10 scenes allow the participants to calibrate their marks; they imperatively gather 5 ideal scenes and 5 non ideal scenes. These first 10 scenes are played back again at the end of the experiment and the corresponding evaluations are the ones that are only taken into account in the results.
+Due to temporal constraints, participants only assess 30 seconds of the initial 1-minute simulated scenes composed in Experiment 1.a (from sec. 15 to sec. 45).
+The assessment is done with a 7-point Likert scale going from -3 (non ideal / unpleasant) to +3 (ideal / pleasant). Before evaluating a scene, participants must listen to the first 20 seconds of the stimuli. After the evaluation, they are free to switch to the next scene.
+For each participant, sound scenes are played in a random order. The first 10 scenes allow the participants to calibrate their scores; as they are always composed of 5 ideal scenes and 5 non ideal scenes. These first 10 scenes are played back again at the end of the experiment and the last evaluations are the ones that are only taken into account in the results.
 The experiment is planned to last 30 minutes. The participants do not know anything beforehand about the nature of the sound scenes.
 
 \subsubsection*{Apparatus}
@@ -476,9 +476,9 @@ The experiment is planned to last 30 minutes. The participants do not know anyth
 %
 % Un expérimentateur est présent durant la totalité de l'expérience, afin de contrôler le bon déroulement de celle-ci, et de répondre aux éventuelles questions des sujets.
 
-All the participants do the experiment on similar computers. The audio files are played in diotic conditions by semi-open headphones \emph{Beyerdynamic DT 990 Pro}. All the sound scenes have been re-composed on the basis of the scores obtained in the simulation experiment (Exp. 1.a). The output sound level is the same for all the participants.
+All the participants do the experiment on computers with equal hardware and software configurations. The audio files are played in diotic conditions by semi-open headphones \emph{Beyerdynamic DT 990 Pro}. All the sound scenes have been re-composed on the basis of the scores obtained in the simulation experiment (Exp. 1.a). The output sound level is the same for all the participants.
 All the participants do the experiment simultaneously. They are not allowed to talk to each other during the experiment.
-An experimenter is present during the whole duration of the experiment in order to check that everything goes well and possibly to answer questions.
+An experimenter is present during the whole duration of the experiment in order to assist participants and possibly answer questions.
 
 
 \subsubsection*{Participants}
@@ -487,7 +487,7 @@ An experimenter is present during the whole duration of the experiment in order 
 %
 % Tous les sujets ont réalisé l'expérience avec succès.
 
-10 students (2 females - mean age 23.1, SD = 1.8) from Ecole Centrale de Nantes took part to the experiment. They are all living in Nantes since 2 years or more. None of them took part to the previous simulation experiment (Exp. 1.a).
+10 students (2 females - mean age 23.1, SD = 1.8) from Ecole Centrale de Nantes took part to the experiment. All are living in downtown Nantes for 2 years or more. None of them took part to the previous simulation experiment (Exp. 1.a).
 All the participants succeeded in doing the experiment.
 
 \subsection{Data and analysis methods}
