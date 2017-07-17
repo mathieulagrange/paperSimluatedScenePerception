@@ -712,17 +712,17 @@ Concerning $ET$, the $p@5$ is $76\%$ for the abstraction level $0$, and stay abo
 
 Considering $E$ and $T$ separately, it appears that: 1) the $p@5$ obtained with $E$ is similar to the one obtained with $ET$ ; 2) the $p@5$ obtained with $T$ is systematically lower than the one obtained with $E$, by $10\%$ or $15\%$. Those results indicate that the discriminative semantic information is mainly contained in the events. These results are in line with the work done in \cite{maffiolo_caracterisation_1999} showing that humans analyze the event scenes which are composed of several sound events in a causal manner, \ie by identifying the sources, as discussed in Section~\ref{sec:simscene_sampleDataSet}.
 
-Lastly, it appears that the $p@5$ obtained with $E_m$ is equal – or above – to the ones obtained with $E$ or $ET$, although a partial information is used in that case to describe the scenes. The dimension of the vectors $S$ for $E_m$ is lower than the dimension of vector $S$ for $E$, itself lower than the dimension of vector S obtained when all the classes are considered ($ET$). Moreover, in the case when the sound markers are not taken into account for the description ($E_{w/o,m}$), the results fall even going under those obtained with only the textures. This confirms that most of the semantic information allowing to differentiate between i- and ni- scenes is included in the markers.
+The dimension of the vectors $S$ for $E_m$ is lower than the dimension of vector $S$ for $E$, itself lower than the dimension of vector $S$ obtained when all the classes are considered ($ET$). Despite this, it appears that the $p@5$ obtained with $E_m$ is equal – or above – to the ones obtained with $E$ or $ET$, although a partial information is used in that case to describe the scenes. Moreover, in the case when the sound markers are not taken into account for the description ($E_{w/o,m}$), the performance is under those obtained with only the textures as features. This confirms that most of the semantic information allowing to differentiate between i- and ni- scenes is included in the markers.
 
 To sum up, we deduce the following points from this analysis:
 
 \begin{enumerate}
-\item unlike what we outlined with the structural features, a semantic description of the scenes constitution in terms of presence / absence of sound sources, allows to differentiate the two types of environments (i or ni);
+\item unlike what we outlined with the structural features, a semantic description of the scenes constitution in terms of presence / absence of sound sources, allows us to differentiate the two types of environments (i or ni);
 \item the semantic information is mainly contained in the event sound classes;
-\item only a part of the event classes, i.e. the sound markers, are useful to differentiate the i- and ni- scenes.
+\item only a part of the event classes, i.e. the sound markers, are useful to differentiate between the i- and ni- scenes.
 \end{enumerate}
 
-Since we have extracted the typical classes of the i- and ni- scenes and verified that the distinction between them was dependent to the presence of these classes, we have now to investigate whether a structural description of the scenes only based on sound markers could allow us to characterize the perceived pleasantness, perhaps better than a global structural description.
+Since we have extracted the typical classes of the i- and ni- scenes and verified that the distinction between them was largely dependent on the presence of these classes, we shall now investigate whether a structural description of the scenes only based on sound markers could characterize the perceived pleasantness, perhaps better than a global structural description.
 
 \begin{figure}[t]
         \myfloatalign
@@ -732,9 +732,9 @@ Since we have extracted the typical classes of the i- and ni- scenes and verifie
 
 \subsubsection*{Influence of the sound markers on the perceived pleasantness}
 
-We evaluate the correlations between $\mathcal{A}_{scene}$ and the structural features. In this section, the structural features are computed by taking into account of the sound markers previously identified. We define $Xm$, the $X$ feature computed by taking into account only the sound markers. On the opposite, we define $X_b$, the $X$ feature computed by taking into account all the sound classes, except the sound markers. When the feature characterize an i- scene (idem for a ni- scene), we consider for the computation only the markers identified for the i- scenes (or the ni- scenes); we named them, i- markers (or ni- markers). Results are shown in Table~\ref{tab:corrMarkers}.
+We evaluate the correlations between $\mathcal{A}_{scene}$ and the structural features. In this section, the structural features are computed by taking into account only the previously identified sound markers. We define $Xm$, the $X$ feature computed by taking into account only the sound markers. On the opposite, we define $X_b$, the $X$ feature computed by taking into account all the sound classes, except the sound markers. When the feature characterizes an i- scene (idem for a ni- scene),  only the markers identified for the i- scenes (or the ni- scenes) are considered; we named them, i- markers (or ni- markers). Results are shown in Table~\ref{tab:corrMarkers}.
 
-Concerning the sound levels (\cf~Figures~\ref{fig:soundlevelMarkera} et~\ref{fig:soundlevelMarkerd}), the same trends are measured between $L_m$, $L(E)_m$ and $L(T)_m$ on one side, and $L$, $L(E)$ et $L(T)$ on the other side. Whether all the classes or only the markers ae considered, it appears that:
+Concerning the sound levels, the same trends are measured between $L_m$, $L(E)_m$ and $L(T)_m$ on one side, and $L$, $L(E)$ et $L(T)$ on the other side, see~Figures~\ref{fig:soundlevelMarkera} and~\ref{fig:soundlevelMarkerd}, respectively. No matter whether all the classes or only the markers are considered, it appears that:
 
 \begin{enumerate}
 \item a significative difference between levels of i- and ni- scenes exists ($L_m$, $L(E)_m$ et $L(T)_m$: $p<0.01$);
@@ -747,7 +747,7 @@ In conclusion, the level of ni- markers has a negative influence on the pleasant
 
 % En considérant maintenant les classes non marqueurs (\cf~Figures~\ref{fig:soundlevelNoisea} et~\ref{fig:soundlevelNoised}), nous remarquons, sur les i-scènes, une corrélation négative modérée/faible pour $L_b$  ($r=-52$, $p<0.01$) et $L(E)_b$ ($r=-51$, $p<0.01$). C'est la première fois qu'un indicateur objectif nous permet de préciser l'agrément des environnements agréables. Ceci nous amène à conclure que le niveau des classes de sons n'étant pas typiques d'un environnement agréable a un impact négatif sur l'agrément.
 
-Considering the non markers classes (see~Figures~\ref{fig:soundlevelNoisea} et~\ref{fig:soundlevelNoised}), we can observe on the i- scenes results, a weak negative correlation for $L_b$  ($r=-52$, $p<0.01$) et $L(E)_b$ ($r=-51$, $p<0.01$). It is the first time that an objective feature allows us to define the pleasantness of the pleasant environments. This leads us to conclude that the level of non-typical sound classes of a pleasant environment has a negative influence on the pleasantness.
+Considering the non markers classes, we can observe on the i- scenes results, a weak negative correlation for $L_b$  ($r=-52$, $p<0.01$) et $L(E)_b$ ($r=-51$, $p<0.01$), see Figures~\ref{fig:soundlevelNoisea}  and ~\ref{fig:soundlevelNoised}. It is the first time that an objective feature allows us to define the pleasantness of the pleasant environments. This leads us to conclude that the level of non-typical sound classes of a pleasant environment has a negative influence on the pleasantness.
 
 % Par ailleurs, alors que $L(T)$ ne présentait pas de corrélation pour les ni-scènes, une corrélation négative forte est observée pour $L(T)_b$ ($r-0.73$, $p<0.01$). Ce fait indique que les niveaux des classes de textures n'étant pas des marqueurs n'affectent pas l'agrément perçu de la même manière pour les i- et ni-scènes. Les niveaux semblent avoir un effet négatif pour les ni-scènes, alors que pour les i-scènes, aucun effet n'est relevé.
 
@@ -755,7 +755,7 @@ Besides, whereas $L(T)$ did not show any significative correlation for ni- scene
 
 % Pour finir, nous considérons un dernier groupe de descripteurs, nommément $L_m-L_b$, $L(E)_m-L(E)_b$ et $L(T)_m-L(T)_b$ (\cf~Figures~\ref{fig:soundlevelMarkerDiffa} et~\ref{fig:soundlevelMarkerDiffd}). Ces descripteurs expriment la différence entre les niveaux des marqueurs, et ceux des autres classes de sons. Ils traduisent l'émergence des marqueurs par rapport à la mixture sonore.
 
-We consider a last group of features, namely $L_m-L_b$, $L(E)_m-L(E)_b$ et $L(T)_m-L(T)_b$ (\cf~Figures~\ref{fig:soundlevelMarkerDiffa} et~\ref{fig:soundlevelMarkerDiffd}).  These features describe the difference between the markers level and those of the other sound classes. They express the saliency of the markers with regards to the sound mixture.
+We consider a last group of features, namely $L_m-L_b$, $L(E)_m-L(E)_b$ et $L(T)_m-L(T)_b$.  These features describe the difference between the markers level and those of the other sound classes, see ~Figures~\ref{fig:soundlevelMarkerDiffa} and~\ref{fig:soundlevelMarkerDiffd}). They express the saliency of the markers with respect to the sound mixture.
 
 % Pour les i-scènes, une corrélation modérée et positive est observée pour $L_m-L_b$ ($r=0.67$, $p<0.01$) et $L(E)_m-L(E)_b$ ($r=0.66$, $p<0.01$). Pour les ni-scènes, aucune corrélation n'est observée. Dans le cas des i-scènes, ce n'est donc pas le niveau absolu des marqueurs qui importe, mais leur niveau relatif, par rapport aux autres sons qui composent la scène. On observe donc pour les environnements idéaux un double mécanisme perceptif:
 
@@ -766,7 +766,7 @@ For the i- scenes, a moderate positive correlation is observed for $L_m-L_b$ ($r
 \item the higher the relative level of i- markers is, with regards to the other sounds, the higher the pleasantness.
 \end{itemize}
 
-For the ni -scenes, the fact that we observe significative correlations for Lm and $L(E)_m$ and no correlation for $L_m-L_b$ and $L(E)_m$ - $L(E)_b$ shows that this is indeed the absolute level that matters.
+For the ni -scenes, the fact that we observe significative correlations for $L_m$ and $L(E)_m$ and no correlation for $L_m-L_b$ and $L(E)_m$ - $L(E)_b$ shows that this is indeed the absolute level that matters.
 
 \begin{table}[t]
 \setlength{\tabcolsep}{3pt}
@@ -812,24 +812,24 @@ $L(T)_m-L(T)_b$    & 0.16 ($p=0.54$)            & 0.21 ($p=0.28$) \\
 
 \subsection{Discussion}
 
-From this analysis, we can outline the following points:
+From this analysis, the following points can be outlined:
 
 \begin{itemize}
 \item \emph{differentiating the i- and ni-scenes}: the semantic features, and the global structural features ($L$, $L(E)$ et $L(T)$), allow us to differentiate between i- and ni- scenes. The semantic description seems to be more powerful;
-\item \emph{events or textures}: whatever semantic or structural features, events are mainly useful to differentiate the two types of events; textures bring a limited amount of information;
-\item \emph{pleasantness prediction}: if we consider the correlations between structural features and pleasantness, it seems that the way to perceive the quality of a given environment depends on its nature (i or ni). It is not conceivable to consider a same set of features to predict the pleasantness of i- and ni- scenes in the same time:
+\item \emph{events or textures}: whatever the feature type, be it semantic or structural, events are mainly useful to differentiate the two types of events; textures bring a limited amount of information;
+\item \emph{pleasantness prediction}: considering the correlation between structural features and pleasantness, it seems that the way subjects perceived the quality of a given environment depends on its nature (i or ni). From the data gathred in those experiments, it is not conceivable to consider the same set of features to predict the pleasantness of i- and ni- scenes in the same time:
 
 \begin{itemize}
 
-\item \emph{for ni-scenes}, global levels ($L$ et $L(E)$), or level of sound markers ($L_m$ et $L(E)_{m}$), have a negative influence on pleasantness. We can notice here that taking into account the contribution of each the different sources of the scene does not improve the prediction performance, wit regards to a global analysis of the environment.
+\item \emph{for ni-scenes}, global levels ($L$ et $L(E)$), or level of sound markers ($L_m$ et $L(E)_{m}$), have a negative influence on pleasantness. We can notice here that taking into account the contribution of each of the different sources of the scene does not improve the prediction performance compared to a global analysis of the environment.
 
-\item \emph{for i-scenes}, on the contrary, the pleasantness prediction needs to study separately the sound markers characteristics and those of the other sounds. Thus, the markers level, relative to the noise ($L(E)_m-L(E)_b$ et $L_m-L_b$) is positively correlated to the pleasantness, whereas the noise level ($L_b$ et $L(E)_b$)is negatively correlated.
+\item \emph{for i-scenes}, on contrary, the pleasantness prediction needs to consider separately the sound markers characteristics and those of the other sounds. Thus, the markers level, relative to the noise ($L(E)_m-L(E)_b$ and $L_m-L_b$) is positively correlated to the pleasantness, whereas the noise level ($L_b$ and $L(E)_b$) is negatively correlated.
 \end{itemize}
 \end{itemize}
 
 The fact that the pleasantness of the i- scenes is not correlated to global physical features, contrary to pleasantness of ni- scenes has been studied recently \cite{gozalo2015relationship}.
 
-We thus observe two perceptual modes that involve different types of features, and that rely on the hedonic nature  of the stimuli. A phenomenon similar is observed for the perception of textures, see Section~\ref{sec:simscene_sampleDataSet}. It seems that the brain adapts its way to encode the information (statistic summary for textures, fine description for events) following a previous decision making with regards to the nature of the stimuli, (()\ie is it an event or a texture ?). Similarly, features that are considered for the pleasantness judgment also depends on a preliminary judgment of the global hedonic nature of the environment (ideal or non ideal).
+We thus observe two perceptual modes of operation that involve different types of features, and that rely on the hedonic nature  of the stimuli. A phenomenon similar is observed for the perception of textures, see Section~\ref{sec:simscene_sampleDataSet}. It seems that the brain adapts its way to encode the information (statistic summary for textures, fine description for events) following a previous decision making with regards to the nature of the stimuli, \ie is it an event or a texture ?. Similarly, in the light of this study, it appears that the features considered for the pleasantness judgment also depends on a preliminary judgment of the global hedonic nature of the environment (ideal or non ideal).
 
 \section{Experiment 2: modification of the semantic content}
 \label{sec:modification}
