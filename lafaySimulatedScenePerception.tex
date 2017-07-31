@@ -1,5 +1,4 @@
-\documentclass[twoside,twocolumn]{article}
-\usepackage{acta}
+\documentclass[preprint,12pt]{elsarticle}
 \usepackage{url}
 \usepackage[utf8]{inputenc}
 \usepackage{setspace}
@@ -7,21 +6,11 @@
 \usepackage{subfig}
 \usepackage{caption}
 \usepackage{sectsty}
-
+\usepackage{amsmath}
 
 \allsectionsfont{\bfseries}
 
 \newtheorem{mydef}{Définition}
-
-\begin{document}
-\Eingang{00}{00}{0000} \Annahme{00}{00}{0000} \Sachgebiet{1}
-\PACS{43.50.Lj, 43.50.Rq, 43.50.Qp, 43.66.Lj, 43.66.Ba}
-\Band{0} \Jahr{0000} \Heft{} \Ersteseite{1} \Letzteseite{}
-
-\AuthorsI{G. Lafay$^{1)}$, M. Rossignol$^{2)}$, N. Misdariis$^{2)}$, M. Lagrange$^{1)}$, J.F. Petiot$^{1)}$}
-\AddressI{$^{1)}$ Laboratoire des Sciences du Numérique, Nantes, France.\\
-\hspace*{8pt}mathieu.lagrange@cnrs.fr\\
-$^{2)}$ STMS Ircam-CNRS-UPMC Institut de Recherche et Coordination Acoustique/Musique, Paris, France}
 
 \newcommand{\gl}[1]{\textcolor{blue}{GL : #1}}
 \newcommand{\nm}[1]{\textcolor{magenta}{#1}}
@@ -39,15 +28,37 @@ $^{2)}$ STMS Ircam-CNRS-UPMC Institut de Recherche et Coordination Acoustique/Mu
 \newcommand{\etc}{\emph{etc.}}
 \newcommand{\myfloatalign}{\centering}
 
-\Englishtitle{Investigating soundscapes perception through acoustic scenes simulation.} \Germanorfrenchtitle{}
+\journal{Nuclear Physics}
 
-\Kolumnentitel{Lafay et al. : Approaching mental representations}
+\begin{document}
 
-\Englishabstract{This paper introduces a new experimental protocol to study mental representations of urban soundscapes through a simulation process. Subjects are asked to create a full soundscape by means of a dedicated software tool, coupled with a structured sound data set. This paradigm is used to characterize urban sound environment representations by analyzing the sound classes that were used to simulate the auditory scenes. A rating experiment of the soundscape pleasantness using a 7-points Likert scale is conducted to further refine the analysis of the simulated urban acoustic scenes. Results show that 1) a semantic characterization in terms of presence~/ absence of sound sources is an effective way to characterize urban soundscapes pleasantness, and 2) physical descriptors computed for specific sound sources better characterize the appraisal than global descriptors.}
-\Germanorfrenchabstract{}
+\begin{frontmatter}
 
-\ScientificPaper
 
+    \author{G. Lafay$^{1)}$, M. Rossignol$^{2)}$, N. Misdariis$^{2)}$, M. Lagrange$^{1)}$, J.F. Petiot$^{1)}$}
+
+    \address{$^{1)}$ Laboratoire des Sciences du Numérique, Nantes, France.\\
+    \hspace*{8pt}mathieu.lagrange@cnrs.fr\\
+    $^{2)}$ STMS Ircam-CNRS-UPMC Institut de Recherche et Coordination Acoustique/Musique, Paris, France}
+
+
+    \title{Investigating soundscapes perception through acoustic scenes simulation.}
+
+  \begin{abstract}
+    This paper introduces a new experimental protocol to study mental representations of urban soundscapes through a simulation process. Subjects are asked to create a full soundscape by means of a dedicated software tool, coupled with a structured sound data set. This paradigm is used to characterize urban sound environment representations by analyzing the sound classes that were used to simulate the auditory scenes. A rating experiment of the soundscape pleasantness using a 7-points Likert scale is conducted to further refine the analysis of the simulated urban acoustic scenes. Results show that 1) a semantic characterization in terms of presence~/ absence of sound sources is an effective way to characterize urban soundscapes pleasantness, and 2) physical descriptors computed for specific sound sources better characterize the appraisal than global descriptors.
+  \end{abstract}
+
+  \begin{keyword}
+  %% keywords here, in the form: keyword \sep keyword
+  toto \sep toto
+  %% PACS codes here, in the form: \PACS code \sep code
+
+  %% MSC codes here, in the form: \MSC code \sep code
+  %% or \MSC[2008] code \sep code (2000 is the default)
+
+  \end{keyword}
+
+\end{frontmatter}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -520,17 +531,17 @@ In order to evaluate the specific impact of the various sound sources on the per
 \item \emph{study of the influence of the structural features on the perceived pleasantness}: in order to evaluate a possible impact of the structural features on the perceived pleasantness, linear correlations between these features and $\mathcal{A}_{scene}$ are considered. The Pearson correlation coefficient is used for that purpose, on the basis of the standard methodology used in multidimensional studies;
 \item \emph{analysis of the semantic features}: in order to determine if the affective difference between  the i- and ni- scenes has an influence on the scenes composition in terms of sound sources, or if specific classes are more frequently used to simulate a given environment (i or ni), a V-test is considered. Testing is done at every level of abstraction, and separately for texture and event classes. For each class $j$, and each environment type $k$ ($k=\lbrace i,ni\rbrace$), the value $V_{jk}$ is computed as follows:
 
-\begin{equation*}
+\begin{equation}
 V_{jk}=\dfrac{c_{jk}-c_k\frac{c_j}{c}}{\sqrt{c_k\frac{c-c_k}{c-1}\frac{c_j}{c}(1-\frac{c_j}{c})}}
-\end{equation*}
+\end{equation}
 
 where $c$ is the number of available classes, $c_k$ the number of classes for a given type of environment $k$, $c_j$ the number of  $j$ classes, and $c_{jk}$ the number of $j$ classes used for an environment $k$. The V-test tests the null hypothesis that the ratio $\frac{c_{jk}}{c}$ is not significatively different from the ratio $\frac{c_{jk}}{c_k}$. For a given environment $k$, and class $j$, if the hypothesis is rejected, the class $j$ is said to be typical with respect to environment $k$. The typical classes are called \textbf{sound markers};
 
 \item \emph{Study of the representation spaces induced by the semantic features}: in order to determine if a representation only based on the presence / absence of sound sources allows us to distinguish between the two types of environment, we investigate the space induced by the semantic features $S$. $S$ is a boolean vector and the distance between two scenes is computed with the Hamming distance. Considering two $n$-dimension vectors $S_1=(x_{1,1},x_{1,2},\ldots,x_{1,n})$, where $S_2=(x_{2,1},x_{2,2},\ldots,x_{2,n})$ is of cardinality $n$, with $x=\lbrace 0,1\rbrace$, the Hamming distance $d_{ham}$ measures the proportion of coordinates that differ between two vectors, ans is defined as follows:
 
-\begin{equation*}
+\begin{equation}
 d_{ham}(S_1,S_2)=\dfrac{1}{n}\sum_{i=1}^{n} (x_{1,i} \bigoplus x_{2,i})
-\end{equation*}
+\end{equation}
 
 where $\bigoplus$ is the \emph{exclusive-or}. The more the comosition of the two scenes are similar, the closer they are in this space. The use of Hamming distance allows us to take into account equally the presence and absence of classes. For measuring the intrinsic ability of the space to split the i- and ni- scene, we use a ranking metric named the precision at rank $k$ ($P@k$) . The $P@k$ computes the precision obtained after the $k$ closest items of a given seed item have been found. Formally, for each $s_i$ scene (considered as seed), we compute the ratio between the number of $s_j$ scenes taken among the $k$ nearest neighbors of $s_i$ and sharing the same label than $s_i$ versus $k$. the $P@k$ is then the average of this ratio for all the items considered as search seeds;
 
@@ -1101,8 +1112,8 @@ Research project partly funded by ANR-11-JS03-005-01. The authors would like to 
 %%%%%%%%%%%%%%%%    Bibliography    %%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\References{}{Bibliography}{actalit}
-
+\bibliographystyle{elsarticle-num}
+\bibliography{Bibliography}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%    APPENDICES   %%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
