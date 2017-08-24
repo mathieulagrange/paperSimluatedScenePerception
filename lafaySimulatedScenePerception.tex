@@ -1,4 +1,4 @@
-\documentclass[preprint,12pt]{elsarticle}
+\documentclass[12pt]{elsarticle}
 \usepackage{url}
 \usepackage[utf8]{inputenc}
 \usepackage{setspace}
@@ -29,7 +29,7 @@
 \newcommand{\etc}{\emph{etc.}}
 \newcommand{\myfloatalign}{\centering}
 
-\journal{Nuclear Physics}
+\journal{Behavior Research Methods}
 
 \begin{document}
 
@@ -209,11 +209,9 @@ At the light of those results, it appears that the processing of auditory inform
 
 \subsubsection*{Taxonomy}
 
-\ml{fix trim and check why figures goes offline}
-
-\begin{figure}[t]
+\begin{figure}
         \myfloatalign
-        \includegraphics[trim={5cm 0 0 0},clip,width=.8\linewidth]{gfx/ch_4/3.png}
+        \includegraphics[trim={0 0 0 2.5cm},clip,width=.8\linewidth]{gfx/ch_4/3.png}
        \caption{Hierarchical organisation of the isolated sounds used in the simulation.}\label{fig:orgDb}
 \end{figure}
 
@@ -301,12 +299,11 @@ The Figure~\ref{fig:ssf} shows the interface used for the selection of events. T
 
 Each of those classes have a representative sound chosen arbitrarily by the authors in order to provide the same sound each time the user clicks on the circle. The subject can browse the database by listening to those prototype sounds. The efficiency of this interface compared to several others designs have been evaluated and the outcomes are discussed in \cite{lafay2016JAES}.
 
-\begin{figure}[t]
-        \myfloatalign
+\begin{figure}
         \subfloat[]
-        {\includegraphics[width=.8\columnwidth]{gfx/ch_4/SSF}\label{fig:ssf}} \par
+        {\includegraphics[width=.8\linewidth]{gfx/ch_4/SSF}\label{fig:ssf}} \par
         \subfloat[]
-        {\includegraphics[width=\columnwidth]{gfx/ch_4/simscene}\label{fig:simscene}}
+        {\includegraphics[width=\linewidth]{gfx/ch_4/simscene}\label{fig:simscene}}
        \caption{Graphical interfaces for the selection of sound classes (a) and their sequencing (b) of the \emph{simScene} tool.}
 \end{figure}
 
@@ -358,8 +355,7 @@ Experiment 1 aims at using a simulation paradigm to investigate the specific inf
 
 Our analysis is based on the data collected by these two experiments: 1.a and 1.b.
 
-\begin{figure}[t]
-        \myfloatalign
+\begin{figure}
         \includegraphics[width=\linewidth]{gfx/ch_5/5.png}
         \caption{Experimental protocol of the simulation experiment (1.a) and the pleasantness evaluation experiment (1.b)}\label{fig:xp1_2}
 \end{figure}
@@ -602,8 +598,7 @@ It appears that the biggest influence on the global sound level comes from the e
 
 Though, the level alone is not sufficient to differentiate the type of environment. In fact, $20\%$ of the i-scenes have a sound level higher than the nominal level of the ni-scenes, while there is no overlap when considering the perceived pleasantness $\mathcal{A}_{scene}$.
 
-\begin{figure*}[t]
-        \myfloatalign
+\begin{figure*}
         \subfloat[]
         {\includegraphics[width=.33\linewidth]{gfx/ch_5/xp_soundlevel_1}\label{fig:soundlevela}}
         \subfloat[]
@@ -669,14 +664,13 @@ To a certain extent, our results are in contradiction with this assumption. In f
 
 This difference may be explained by the nature of the experimental protocol used in the two studies. As in our study, Guastavino asks the participants for describing an environment starting from their memories whereas, in our case, participants perform the same task using actual sound samples. The fact that participants in our experiment are faced to the acoustic reality of the sounds for composing the environment may have decreased the socio-cultural impact. Other works using sounds as stimuli have shown that the \emph{bus} class can have a negative influence on the assessment of the environment \cite{lavandier2006contribution}.
 
-\begin{figure}[t]
-        \myfloatalign
+\begin{figure}
         \subfloat[]
         {\includegraphics[width=1\linewidth]{gfx/ch_5/xp1_class_1}\label{fig:soundsourcea}} \par
         \subfloat[]
-        {\includegraphics[width=.4\linewidth]{gfx/ch_5/xp1_class_2}\label{fig:soundsourceb}}
+        {\includegraphics[width=.5\linewidth]{gfx/ch_5/xp1_class_2}\label{fig:soundsourceb}}
         \subfloat[]
-        {\includegraphics[width=.4\linewidth]{gfx/ch_5/xp1_class_3}\label{fig:soundsourcec}}
+        {\includegraphics[width=.5\linewidth]{gfx/ch_5/xp1_class_3}\label{fig:soundsourcec}}
        \caption{Proportion of synthesized scenes (i or ni) involving a specific class of sounds: (a) event classes at an abstraction level $0+$, (b) texture classes at an abstraction level $0$, (c) event sub-classes at an abstraction level $1$ belonging to \emph{traffic} and \emph{public transportation} classes of the abstraction level $0$.}\label{fig:soundsource}
 \end{figure}
 
