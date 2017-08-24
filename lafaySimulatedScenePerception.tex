@@ -7,15 +7,16 @@
 \usepackage{caption}
 \usepackage{sectsty}
 \usepackage{amsmath}
+\usepackage{color}
 
 \allsectionsfont{\bfseries}
 
 \newtheorem{mydef}{Définition}
 
-\newcommand{\gl}[1]{\textcolor{blue}{GL : #1}}
+\newcommand{\gl}[1]{\textcolor{magenta}{GL : #1}}
 \newcommand{\nm}[1]{\textcolor{magenta}{#1}}
 \newcommand{\ml}[1]{\textcolor{red}{#1}}
-\newcommand{\jfp}[1]{\textcolor{green}{JFP : #1}}
+\newcommand{\jfp}[1]{\textcolor{blue}{JFP : #1}}
 \newcommand{\ie}{\emph{i.\,e.}}
 \newcommand{\Ie}{\emph{I.\,e.}}
 \newcommand{\cf}{cf.}
@@ -534,9 +535,8 @@ In order to evaluate the specific impact of the various sound sources on the per
 \item \emph{checking the pleasantness of the simulated sound scene}: to check that the emotional difference produced by the i- and ni-scenes is also present in terms of perceived pleasantness, we look at the existence of differences between the average $\mathcal{A}_{scene}$ and the average $\mathcal{A}_{subject}$ for each type of scenes (i or ni). The significance is evaluated by a Student test on two independent populations for $\mathcal{A}_{scene}$ and by a Student test on two paired populations for $\mathcal{A}_{subject}$;
 \jfp{ce qu'est Ascene dans ce paragraphe n'est pas clair :
 A scene est défini comme la moyenne des scores d'une scène donnée pour tous les participants.
-
 le test, lui, porte sur la moyenne des Ascene pour les deux catégories
-même chose pour les sujets}
+meme chose pour les sujets}
 \item \emph{analysis of the structural features}: in order to evaluate whether the affective difference between  the i- and ni-scenes has a significative influence  on the structural features of the scenes \ie~ if significative differences exist between structural features and perceived pleasantness. The significance is measured with a Student test on two populations \jfp{je ne comprends pas bien ce test}
 \item \emph{study of the influence of the structural features on the perceived pleasantness}: in order to evaluate a possible impact of the structural features on the perceived pleasantness, linear correlations between these features and $\mathcal{A}_{scene}$ are considered. The Pearson correlation coefficient is used for that purpose, on the basis of the standard methodology used in multidimensional studies;
 \item \emph{analysis of the semantic features}: in order to determine if the affective difference between  the i- and ni-scenes has an influence on the scenes composition in terms of sound sources, or if specific classes are more frequently used to simulate a given environment (i or ni), a V-test is considered. Testing is done at every level of abstraction, and separately for texture and event classes. For each class $j$, and each environment type $k$ ($k=\lbrace i,ni\rbrace$), the value $V_{jk}$ is computed as follows:
@@ -546,13 +546,7 @@ V_{jk}=\dfrac{c_{jk}-c_k\frac{c_j}{c}}{\sqrt{c_k\frac{c-c_k}{c-1}\frac{c_j}{c}(1
 \end{equation}
 
 where $c$ is the number of available classes, $c_k$ the number of classes for a given type of environment $k$, $c_j$ the number of  $j$ classes, and $c_{jk}$ the number of $j$ classes used for an environment $k$. \jfp{il faudrait donner une référence pour ce test : bouquin Lebart, Morineau, Piron, STATISTIQUE EXPLORATOIRE MULTIDIMENSIONNELLE
-peut être donner les bornes de variations de Vjk pour aider le lecteur à comprendre cet indicateur} \ml{y pas une ref en Anglais ?} The V-test tests the null hypothesis that the ratio $\frac{c_{jk}}{c}$ is not significatively different from the ratio $\frac{c_{jk}}{c_k}$. For a given environment $k$, and class $j$, if the hypothesis is rejected, the class $j$ is said to be typical with respect to environment $k$. The typical classes are called \textbf{sound markers};\jfp{on ne comprend pas bien l'hypothèse alternative du test.
-
-VOIR BOUQUIN LEBART page 184
-ou bien article de Morineau sur le sujet
-
-Vjk est une estimation approchée de la valeur test
-}
+peut être donner les bornes de variations de Vjk pour aider le lecteur à comprendre cet indicateur} \ml{y pas une ref en Anglais ?} The V-test tests the null hypothesis that the ratio $\frac{c_{jk}}{c}$ is not significatively different from the ratio $\frac{c_{jk}}{c_k}$. For a given environment $k$, and class $j$, if the hypothesis is rejected, the class $j$ is said to be typical with respect to environment $k$. The typical classes are called \textbf{sound markers};\jfp{on ne comprend pas bien l'hypothèse alternative du test. VOIR BOUQUIN LEBART page 184 ou bien article de Morineau sur le sujet Vjk est une estimation approchée de la valeur test}
 
 \item \emph{Study of the representation spaces induced by the semantic features}: in order to determine if a representation only based on the presence / absence of sound sources allows us to distinguish between the two types of environment, we investigate the space induced by the semantic features $S$. $S$ is a boolean vector and the distance between two scenes is computed with the Hamming distance. Considering two $n$-dimension vectors $S_1=(x_{1,1},x_{1,2},\ldots,x_{1,n})$, where $S_2=(x_{2,1},x_{2,2},\ldots,x_{2,n})$ is of cardinality $n$, with $x \in\lbrace 0,1\rbrace$, the Hamming distance $d_{ham}$ measures the proportion of coordinates that differ between two vectors, ans is defined as follows:
 
@@ -732,9 +726,7 @@ level & i-scenes & ni-scenes \\
 \end{tabular}
 }
 \vspace{0.5mm}
-\caption{Event and texture classes identified as sound markers. In each cell, markers are ranked in the decreasing order of V-test value.\jfp{a partir de quelle valeur de V-test le marker est présent dans ce tableau ?
-
-mettre la p-value , non ? }}
+\caption{Event and texture classes identified as sound markers. In each cell, markers are ranked in the decreasing order of V-test value.\jfp{a partir de quelle valeur de V-test le marker est présent dans ce tableau ? mettre la p-value , non ? }}
 \label{tab:markers}
 \end{table*}
 
@@ -982,14 +974,8 @@ The type of data analyzed in this experiment have been considered for experiment
 
 %Il s'agit ici de vérifier que la suppression des i- et ni-marqueurs impacte l'agrément perçu. Pour ce faire, nous utilisons l'analyse de variance. Nous considérons, comme variable dépendante, $\mathcal{A}_{sujet}$, et, comme variables indépendantes, le type d'environnement (i/ni), et la présence/absence de marqueurs (am/sm). Chaque sujet devant évaluer la totalité des stimuli, une ANOVA à mesures répétées à deux facteurs est utilisée afin vérifier s'il existe des différences significatives d'agrément perçu. Les deux variables indépendantes sont considérées comme des facteurs intra-sujet (\emph{within-subject}. Les facteurs n'étant composés que de deux niveaux chacun (type: i/ni; marqueur: am/sm), l'hypothèse de sphéricité n'a pas besoin d'être vérifiée. Les analyses \emph{post hoc} sont conduites en appliquant la procédure de Tukey-Kramer.
 
-The aim here is to validate the hypothesis that the removal of i-markers and ni-markers have an impact on the perceived pleasantness. To do so, we perform a an Analysis of Variance. We consider $\mathcal{A}_{subject}$ as a dependent variable \jfp{je crois que la défintion de la variable dépendante, Asubject, n'est pas la bonne
-
-A subject a a été définit avant comme "Asubject is
-the average pleasantness for each participant"
-l'ANOVA à deux facteurs à mesures répétées ne porte pas sur la valeur moyenne mais sur la valeur de l'évaluation pour une scene donnée
-
-il faut donc définir une notation appropriée
-}, and as independent variables, the type of environment (i/ni), and the presence/absence of markers (km/rm). As each subject evaluated the whole set of scenes, a two factors repeated measure ANOVA is used to check the validity of the hypothesis that there exist a significant difference of perceived pleasantness between km-scenes and rm-scenes. The two independent variables are considered as \emph{within-subject} factors. The factors being of only two levels each (type: i/ni,  marker: km/rm), the sphericity hypothesis does not need to be checked. \emph{Post hoc} analyses are done using the Tukey-Kramer procedure.
+The aim here is to validate the hypothesis that the removal of i-markers and ni-markers have an impact on the perceived pleasantness. To do so, we perform a an Analysis of Variance. We consider $\mathcal{A}_{subject}$ as a dependent variable \jfp{je crois que la défintion de la variable dépendante, Asubject, n'est pas la bonne. A subject a a été définit avant comme "Asubject is
+the average pleasantness for each participant". l'ANOVA à deux facteurs à mesures répétées ne porte pas sur la valeur moyenne mais sur la valeur de l'évaluation pour une scene donnée. il faut donc définir une notation appropriée}, and as independent variables, the type of environment (i/ni), and the presence/absence of markers (km/rm). As each subject evaluated the whole set of scenes, a two factors repeated measure ANOVA is used to check the validity of the hypothesis that there exist a significant difference of perceived pleasantness between km-scenes and rm-scenes. The two independent variables are considered as \emph{within-subject} factors. The factors being of only two levels each (type: i/ni,  marker: km/rm), the sphericity hypothesis does not need to be checked. \emph{Post hoc} analyses are done using the Tukey-Kramer procedure.
 
 %Tous les tests de significativité sont effectués avec un seuil critique $\alpha=0.05$.
 
@@ -1013,9 +999,7 @@ In this section, we study the scores given by the subject while listening to the
 
 %The \emph{post hoc} montre, quant à elle, des différences significatives entre tous les groupes d'observations, notamment entre les i/am- et i/sm-scenes ($p<0.05$) et les ni/am- et ni/sm-scenes ($p<0.01$).
 
-The \emph{post hoc} analysis exhibits significative differences between all the groups of observations, notably between the i/km-scenes ($p<0.05$) and the i/rm-scenes ($p<0.01$). \jfp{je ne comprends pas les 2 p-value
-
-il ne peut y a voir qu'une seule p-value lorsqu'on compare deux conditions expérimentales
+The \emph{post hoc} analysis exhibits significative differences between all the groups of observations, notably between the i/km-scenes ($p<0.05$) and the i/rm-scenes ($p<0.01$). \jfp{je ne comprends pas les 2 p-value. il ne peut y a voir qu'une seule p-value lorsqu'on compare deux conditions expérimentales
 }
 
 %Ces résultats indiquent que la suppression des événements a effectivement modifié la perception des scènes par les sujets. Nos deux hypothèses sont ainsi vérifiées:
