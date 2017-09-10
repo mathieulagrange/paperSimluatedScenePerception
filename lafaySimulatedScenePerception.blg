@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: lafaySimulatedScenePerception.aux
+The style file: elsarticle-num.bst
+Database file #1: Bibliography.bib
+Warning--empty pages in defreville2004aactivity
+Warning--empty pages in nilsson2007soundscape
+Warning--empty pages in bruce2009development
+Warning--can't use both volume and number fields in niessen2010categories
+Warning--empty pages in Salamon14
+Warning--empty pages in rossignol2015simscene
+Warning--empty pages in lafay2014new
+You've used 39 entries,
+            2937 wiz_defined-function locations,
+            909 strings with 12804 characters,
+and the built_in function-call counts, 11052 in all, are:
+= -- 1033
+> -- 372
+< -- 4
++ -- 150
+- -- 111
+* -- 746
+:= -- 1522
+add.period$ -- 39
+call.type$ -- 39
+change.case$ -- 36
+chr.to.int$ -- 0
+cite$ -- 46
+duplicate$ -- 342
+empty$ -- 1288
+format.name$ -- 139
+if$ -- 2878
+int.to.chr$ -- 0
+int.to.str$ -- 39
+missing$ -- 37
+newline$ -- 125
+num.names$ -- 39
+pop$ -- 261
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 729
+stack$ -- 0
+substring$ -- 561
+swap$ -- 49
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 7
+while$ -- 84
+width$ -- 41
+write$ -- 330
+(There were 7 warnings)
