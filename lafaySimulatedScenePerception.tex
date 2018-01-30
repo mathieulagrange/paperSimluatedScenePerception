@@ -21,10 +21,10 @@
 
 \newtheorem{mydef}{Définition}
 
-\newcommand{\gl}[1]{\textcolor{magenta}{GL : #1}}
-\newcommand{\mr}[1]{\textcolor{green}{MR : #1}}
-\newcommand{\ml}[1]{\textcolor{red}{ML : #1}}
-\newcommand{\jfp}[1]{\textcolor{blue}{JFP : #1}}
+%\newcommand{\gl}[1]{\textcolor{magenta}{GL : #1}}
+%\newcommand{\mr}[1]{\textcolor{green}{MR : #1}}
+%\newcommand{\ml}[1]{\textcolor{red}{ML : #1}}
+%\newcommand{\jfp}[1]{\textcolor{blue}{JFP : #1}}
 \newcommand{\ie}{\emph{i.\,e.}}
 \newcommand{\Ie}{\emph{I.\,e.}}
 \newcommand{\cf}{cf.}
@@ -51,7 +51,7 @@
     $^{2)}$ STMS Ircam-CNRS-UPMC Institut de Recherche et Coordination Acoustique/Musique, Paris, France}
 
 
-    \title{Investigating soundscapes perception through acoustic scenes simulation.}
+    \title{Investigating soundscapes perception through acoustic scenes simulation}
 
   \begin{abstract}
     This paper introduces a new experimental protocol to study mental representations of urban soundscapes through a simulation process. Subjects are asked to create a full soundscape by means of a dedicated software tool, coupled with a structured sound data set. This paradigm is used to characterize urban sound environment representations by analyzing the sound classes that were used to simulate the auditory scenes. A rating experiment of the soundscape pleasantness using a 7-point bipolar semantic scale is conducted to further refine the analysis of the simulated urban acoustic scenes. Results show that 1) a semantic characterization in terms of presence~/ absence of sound sources is an effective way to characterize urban soundscapes pleasantness, and 2) physical descriptors computed for specific sound sources better characterize the appraisal than global descriptors.
@@ -218,7 +218,7 @@ In the light of those results, it appears that the processing of auditory inform
 \begin{figure}[t]
         \myfloatalign
         \includegraphics[width=.8\linewidth]{gfx/3.pdf}
-       \caption{Hierarchical organisation of the isolated sounds used in the simulation.\gl{TODO : translate and remove subject box}}\label{fig:orgDb}
+       \caption{Hierarchical organisation of the isolated sounds used in the simulation.}\label{fig:orgDb}
 \end{figure}
 
 %Nous nommons sample, un enregistrement d'un son isolé, événement ou texture. Chaque classe est alors comprise comme une collection de samples jugés perceptivement équivalents.
@@ -231,7 +231,7 @@ The sound classes are organized hierarchically (\cf~Figure~\ref{fig:orgDb}) acco
 
 %Nous établissons deux taxonomies, une pour les événements, une autre pour les textures (\cf~Annexe~\ref{app:taxonomie}). Pour les événements, nous considérons quatre niveaux d'abstraction allant des classes les plus générales (niveau d'abstraction 0), aux classes les plus spécifiques (niveau d'abstraction 3). Pour les textures, nous ne considérons que trois niveaux d'abstraction. Notons que la taxonomie des événements est proche de celle de \cite{Salamon14}, introduite postérieurement à notre étude.
 
-Accounting for the previously detailed perceptual matters, two taxonomies are built, one for event sounds and one for texture sounds. Four \ml{Three ?} \gl{non 4} levels of abstraction are considered from the most generic (level 0) to the most specific classes (level 2), leading to a taxonomy close to the one used in \cite{Salamon14}. Only three levels of abstraction are considered for the texture sounds.
+Accounting for the previously detailed perceptual matters, two taxonomies are built, one for event sounds and one for texture sounds. Four levels of abstraction are considered from the most generic (level 0) to the most specific classes (level 2), leading to a taxonomy close to the one used in \cite{Salamon14}. Only three levels of abstraction are considered for the texture sounds.
 
 \subsubsection*{Sound samples collection}
 
@@ -337,7 +337,7 @@ As such, the underlying model of the scene is a sum of sound sources. Further de
 
 \begin{figure}[t]
         \includegraphics[width=\linewidth]{gfx/5.pdf}
-        \caption{Experimental protocol of the simulation experiment (1.a) and pleasantness evaluation experiment (1.b).\gl{TODO : translate}}\label{fig:xp1_2}
+        \caption{Experimental protocol of the simulation experiment (1.a) and pleasantness evaluation experiment (1.b).}\label{fig:xp1_2}
 \end{figure}
 
 % L'objectif est d'étudier les influences spécifiques des différentes sources sonores qui composent les environnements urbains sur la perception de l'agrément, en utilisant la simulation. Pour ce faire, nous planifions nos deux premières expériences (\cf~Figure~\ref{fig:xp1_2}):
@@ -577,7 +577,7 @@ In order to evaluate the specific impact of the various sound sources on the per
 
 \item \emph{Analysis of perceived pleasantness}: the goal is to evaluate whether the perceived pleasantness is in accordance with the pleasantness label given by the creators of the  i- and ni-scenes during the experiment 1.a. To do so, we consider if there exist significant differences for the i- and ni-scenes of the average $\mathcal{A}_{scene}$ and the average $\mathcal{A}_{subject}$. The significance is evaluated by a two-sample Student test for $\mathcal{A}_{scene}$ and by a paired-sample Student test for $\mathcal{A}_{subject}$.
 
-\jfp{je ne comprends pas, pour moi il faut faire, pour chaque sujet de l'expé 1, un test de différence entre Aniscène  et Aiscène a quoi sert Asubject ici ?} \gl{Les deux sont possibles : Ascene mesure des différences structurelles, Asubject des différences perceptives}
+%\jfp{je ne comprends pas, pour moi il faut faire, pour chaque sujet de l'expé 1, un test de différence entre Aniscène  et Aiscène a quoi sert Asubject ici ?} \gl{Les deux sont possibles : Ascene mesure des différences structurelles, Asubject des différences perceptives}
 
 % GL comprends pas en francais
 
@@ -631,7 +631,7 @@ All statistical significance tests are conducted with a critical threshold of $\
 
 First, in order to ensure the coherence of the data, we check that none of the ni-scenes gets a $\mathcal{A}_{scene}$ higher than one of a i-scene. 4 ni-scenes do not fulfill that constraint: they are thus removed, together with their corresponding i-scenes. As a consequence, 36 i-scenes and 36 ni-scenes remain for analysis. Second, we verify that subjects really perceived a difference in terms of pleasantness between i- and ni-scenes. For that, we investigate the mean pleasantness score for each participant $\mathcal{A}_{subject}$, computed separately for each type of environment. It indeed appears that the i-scenes were perceived significantly more pleasant ($p < 0.01$) than the ni-scenes.
 
-\jfp{a la limite on pourrait ne pas écarter arbitrairement de scène et ne garder que celles pour lesquelles les iscenes sont signif. + plaisante que les ni-scene. ca revient au même. c'est les test qui les écarte. il faudrait peut être justifier pourquoi on fait cela  : pour ne pas fausser les résultats de l'analyse et vérifier que les i scènes sont effectivement perçues + plaisantes que les ni.} \gl{Oui. Mais ça revient au même de toute façon}
+%\jfp{a la limite on pourrait ne pas écarter arbitrairement de scène et ne garder que celles pour lesquelles les iscenes sont signif. + plaisante que les ni-scene. ca revient au même. c'est les test qui les écarte. il faudrait peut être justifier pourquoi on fait cela  : pour ne pas fausser les résultats de l'analyse et vérifier que les i scènes sont effectivement perçues + plaisantes que les ni.} \gl{Oui. Mais ça revient au même de toute façon}
 
 \subsubsection*{Analysis of sound levels}
 
@@ -735,8 +735,10 @@ Those first outcomes tend to show that 1) two modes of perception exist dependin
 
   \subfloat[]{\includegraphics[width=.5\linewidth]{gfx/xp1_class_2}\label{fig:soundsourceb}}
   \subfloat[]{\includegraphics[width=.5\linewidth]{gfx/xp1_class_3}\label{fig:soundsourcec}}
-                             \caption{Proportion of simulated scenes (i or ni) involving a specific class of sounds: (a) event classes at an abstraction level $0+$, (b) texture classes at an abstraction level $0$, (c) event sub-classes at an abstraction level $1$ belonging to \emph{traffic} and \emph{public transportation} classes of the abstraction level $0$. \jfp{pourquoi la classe "start passage way", présente en figure A9, n'est pas présente sur ce graphe ?} \gl{Elle n'est pas parlante}}\label{fig:soundsource}
+                             \caption{Proportion of simulated scenes (i or ni) involving a specific class of sounds: (a) event classes at an abstraction level $0+$, (b) texture classes at an abstraction level $0$, (c) event sub-classes at an abstraction level $1$ belonging to \emph{traffic} and \emph{public transportation} classes of the abstraction level $0$. }\label{fig:soundsource}
 \end{figure}
+
+%\jfp{pourquoi la classe "start passage way", présente en figure A9, n'est pas présente sur ce graphe ?} \gl{Elle n'est pas parlante}
 
 %Nous analysons la composition des scènes en comptant le nombre de sujets ayant utilisé une classe de sons pour simuler un type d'environnement. Les résultats sont présentés à la figure~\ref{fig:soundsourcea} pour les événements, et à la figure~\ref{fig:soundsourceb} pour les textures. Par souci d'espace, nous choisissons un niveau d'abstraction intermédiaire entre les niveaux 0 et 1, noté $0+$, pour représenter les classes (\cf~Figure~\ref{fig:taxonomie}).
 
@@ -794,7 +796,7 @@ level & i-scenes & ni-scenes \\
 \end{tabular}
 }
 \vspace{0.5mm}
-\caption{Event and texture classes identified as sound markers. In each cell, markers are ranked as decreasing order of V-test value \ml{ shown between parenthesis}. $p\leq0.01$ for all sound markers.}
+\caption{Event and texture classes identified as sound markers. In each cell, markers are ranked as decreasing order of V-test value, shown between parenthesis. $p\leq0.01$ for all sound markers.}
 \label{tab:markers}
 \end{table}
 
@@ -997,9 +999,11 @@ We can assume two perceptual modes of operation that involve different types of 
 
 A similar phenomenon is observed for the perception of textures, see Section~\ref{sec:simscene_sampleDataSet}. It seems that the brain selectively adapts the way it encodes the information (statistic summary for textures, finer description for events) following a previous decision making process based on the nature of the stimuli, \ie~is it an event or a texture ?
 
-\mr{Honnêtement, je trouve que là les conclusions vont au-delà de ce que l'expérience permet de soutenir. Les résultats pourraient tout aussi bien s'expliquer de manière plus simple, sans parler de modes de perception différents, en supposant que le volume sonore a toujours un impact négatif sur l'agrément, mais que si un accroissement du volume sonore est concentré sur des marqueurs positifs, l'impact positif de ceux-ci contrebalance l'impact négatif du volume.}
+%\mr{Honnêtement, je trouve que là les conclusions vont au-delà de ce que l'expérience permet de soutenir. Les résultats pourraient tout aussi bien s'expliquer de manière plus simple, sans parler de modes de perception différents, en supposant que le volume sonore a toujours un impact négatif sur l'agrément, mais que si un accroissement du volume sonore est concentré sur des marqueurs positifs, l'impact positif de ceux-ci contrebalance l'impact négatif du volume.}
 
-\ml{Ma traduction : Another hypothesis would be that the volume somehow act as an hedonic "gain" factor. If the volume of a negative marker is high, it lowers the overall pleasantness. If the volume of a positive marker is high, it highers the overall pleasantness. Evidently, the positive gain is expected to saturate at a given level and will quickly decreases as the level raises above a given threshold.} \gl{@mathieu, pourquoi pas. Mais je pense qu'on peut laisser également le premier paragraphe, ça permettra aux reviewer de commenter qqch :). Quid de mettre les deux.}
+Another hypothesis would be that the volume somehow act as an hedonic "gain" factor. If the volume of a negative marker is high, it lowers the overall pleasantness. If the volume of a positive marker is high, it highers the overall pleasantness. Evidently, the positive gain is expected to saturate at a given level and will quickly decreases as the level raises above a given threshold.
+
+%\gl{@mathieu, pourquoi pas. Mais je pense qu'on peut laisser également le premier paragraphe, ça permettra aux reviewer de commenter qqch :). Quid de mettre les deux.}
 
 \section{Experiment 2: modification of the semantic content}
 \label{sec:modification}
@@ -1113,7 +1117,7 @@ The type of data analyzed in this experiment have been considered for experiment
 
 %Il s'agit ici de vérifier que la suppression des i- et ni-marqueurs impacte l'agrément perçu. Pour ce faire, nous utilisons l'analyse de variance. Nous considérons, comme variable dépendante, $\mathcal{A}_{sujet}$, et, comme variables indépendantes, le type d'environnement (i/ni), et la présence/absence de marqueurs (am/sm). Chaque sujet devant évaluer la totalité des stimuli, une ANOVA à mesures répétées à deux facteurs est utilisée afin vérifier s'il existe des différences significatives d'agrément perçu. Les deux variables indépendantes sont considérées comme des facteurs intra-sujet (\emph{within-subject}. Les facteurs n'étant composés que de deux niveaux chacun (type: i/ni; marqueur: am/sm), l'hypothèse de sphéricité n'a pas besoin d'être vérifiée. Les analyses \emph{post hoc} sont conduites en appliquant la procédure de Tukey-Kramer.
 
-The aim here is to validate the hypothesis that the removal of i-markers and ni-markers have an impact on the perceived pleasantness. To do so, we perform a variance analysis. We consider $\mathcal{A}_{subject}$ as a dependent variable, and as independent variables, the type of environment (i/ni) and the presence/absence of markers (km/rm). As each subject evaluated the whole set of scenes, a two factors repeated measure ANOVA is used to evaluate whether there exist a significant difference of perceived pleasantness between km-scenes and rm-scenes. The two independent variables are considered as \emph{within-subject} factors. The factors being of only two levels each (type: i/ni,  marker: km/rm), the sphericity hypothesis does not need to be checked. \emph{Post hoc} analyses are done using the Tukey-Kramer procedure. \jfp{l'analyse est inutile a mon avis, il n'y a que 2 niveaux pour chaque facteur de l'ANOVA.} \gl{2 niveaux par facteur, mais 4 niveaux en tout}
+The aim here is to validate the hypothesis that the removal of i-markers and ni-markers have an impact on the perceived pleasantness. To do so, we perform a variance analysis. We consider $\mathcal{A}_{subject}$ as a dependent variable, and as independent variables, the type of environment (i/ni) and the presence/absence of markers (km/rm). As each subject evaluated the whole set of scenes, a two factors repeated measure ANOVA is used to evaluate whether there exist a significant difference of perceived pleasantness between km-scenes and rm-scenes. The two independent variables are considered as \emph{within-subject} factors. The factors being of only two levels each (type: i/ni,  marker: km/rm), the sphericity hypothesis does not need to be checked. \emph{Post hoc} analyses are done using the Tukey-Kramer procedure. %\jfp{l'analyse est inutile a mon avis, il n'y a que 2 niveaux pour chaque facteur de l'ANOVA.} \gl{2 niveaux par facteur, mais 4 niveaux en tout}
 
 %Tous les tests de significativité sont effectués avec un seuil critique $\alpha=0.05$.
 
@@ -1129,8 +1133,10 @@ All the significance tests are performed with critical threshold $\alpha=0.05$.
         {\includegraphics[width=.33\linewidth]{gfx/xp4_note_13}\label{fig:xp2_Asubject}}
         \subfloat[]
         {\includegraphics[width=.33\linewidth]{gfx/xp4_note_15}\label{fig:xp2_Ascene}}
-        \caption{Distribution of the mean perceived pleasantness per subject $\mathcal{A}_{subject}$ (a) and the mean perceived pleasantness per scene$\mathcal{A}_{scene}$ (b) versus scene type. Black stars in subfigure (a) stand for the detected outlier, \ie~subject 7. \ml{maj figure: sujet->subject, et changer am et sm pour km et rm}}\label{fig:xp2A}
+        \caption{Distribution of the mean perceived pleasantness per subject $\mathcal{A}_{subject}$ (a) and the mean perceived pleasantness per scene$\mathcal{A}_{scene}$ (b) versus scene type. Black stars in subfigure (a) stand for the detected outlier, \ie~subject 7.}\label{fig:xp2A}
 \end{figure}
+
+% {maj figure: changer am et sm pour km et rm}
 
 %Considérons $\mathcal{A}_{sujet}$ pour les am-scènes. Il apparaît que les réponses d'un des sujets diffèrent des autres. Ce dernier a évalué positivement près de la moitié des ni/am-scènes (\cf~Annexe~\ref{app:xp2} : sujet 7). Le sujet a donné à 58\% des ni/am-scènes une note supérieure à 0, contre une moyenne de 11\% pour les autres sujets. De plus, le sujet a utilisé l'ambitus maximal (-5 à 5) pour noter à la fois les i/ et ni/am-scènes. Ces faits n'ayant pas été observés pour les autres sujets, que l'on considère les expériences 2 ou 1.b, le sujet 7 est éliminé de l'analyse.
 
@@ -1146,7 +1152,7 @@ In this section, we study the scores given by the subject while listening to the
 
 %The \emph{post hoc} montre, quant à elle, des différences significatives entre tous les groupes d'observations, notamment entre les i/am- et i/sm-scenes ($p<0.05$) et les ni/am- et ni/sm-scenes ($p<0.01$).
 
-\jfp{je crois que l'analyse post-hoc n'est pas nécessaire lorsqu'il n'y a que 2 niveaux pour les facteurs de l'ANOVA. les conclusions seront strictement les mêmes que pour l'ANOVA.c'est utile à partir de 3 niveaux, pour savoir quelle moyenne diffère signif. des autres.}
+%\jfp{je crois que l'analyse post-hoc n'est pas nécessaire lorsqu'il n'y a que 2 niveaux pour les facteurs de l'ANOVA. les conclusions seront strictement les mêmes que pour l'ANOVA.c'est utile à partir de 3 niveaux, pour savoir quelle moyenne diffère signif. des autres.}
 
 The \emph{post hoc} analysis exhibits significant differences between all groups of observations, notably between the i/km- and the i/rm scenes ($p<0.05$) as well as between the ni/km- and the ni/rm-scenes ($p<0.01$).
 
