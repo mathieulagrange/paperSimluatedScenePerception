@@ -56,7 +56,7 @@
     \title{Investigating soundscapes perception through acoustic scenes simulation}
 
   \begin{abstract}
-    This paper introduces a new experimental protocol to study mental representations of urban soundscapes through a simulation process. Subjects are asked to create a full soundscape by means of a dedicated software tool, coupled with a structured sound data set. This paradigm is used to characterize urban sound environment representations by analyzing the sound classes that were used to simulate the auditory scenes. A rating experiment of the soundscape pleasantness using a 7-point bipolar semantic scale is conducted to further refine the analysis of the simulated urban acoustic scenes. Results show that 1) a semantic characterization in terms of presence~/ absence of sound sources is an effective way to characterize urban soundscapes pleasantness, and 2) physical descriptors computed for specific sound sources better characterize the appraisal than global descriptors.
+    This paper introduces a new experimental protocol to study mental representations of urban soundscapes through a simulation process. Subjects are asked to create a full soundscape by means of a dedicated software tool, coupled with a structured sound data set. This paradigm is used to characterize urban sound environment representations by analyzing the sound classes that were used to simulate the auditory scenes. A rating experiment of the soundscape pleasantness using a 7-point bipolar semantic scale is conducted to further refine the analysis of the simulated urban acoustic scenes. Results show that 1) a semantic characterization in terms of presence~/ absence of sound sources is an effective way to characterize urban soundscapes pleasantness, and 2) acoustic pressure levels computed for specific sound sources better characterize the appraisal than the acoustic pressure level computed over the overall soundscape.
   \end{abstract}
 
   \begin{keyword}
@@ -1176,7 +1176,7 @@ These results indicate that the removal of the markers indeed modify the percept
 
 The significant interaction shows that the type of environment influences the effect of the presence/absence of the markers. Indeed, the average difference between km-scenes and rm-scenes is larger for the non ideal scenes ($1.1$) than for the ideal scenes ($0.5$).
 
-\subsection{Discussion}
+%\subsection{Discussion}
 
 %Cette expérience fait apparaître que la présence, dans une scène, des marqueurs relevés à l'expérience 1 impacte bien l'agrément perçu. La suppression des ni-marqueurs a un effet bénéfique sur le ressenti des ni-scènes, tandis que, plus surprenant, la suppression des i-marqueurs dégrade légèrement la qualité des i-scènes. Ce dernier point est d'autant plus marquant que, du fait de la suppression des marqueurs, le niveau des i/am-scènes est supérieur à celui des i/sm-scènes.
 
@@ -1234,6 +1234,29 @@ Second, the fact that the removal of sound markers changes the perceived pleasan
 %Troisièmement, le fait que les descripteurs structurels corrélés à l'agrément diffèrent en fonction du type de scènes nous porte à croire que les caractéristiques structurelles permettant de distinguer deux instances d'un même concept abstrait lié à l'agrément ne sont pas les mêmes pour EA et ED.
 
 %Third, the fact that the compositional descriptors correlated with the perceived pleasantness change according to the type of scenes leads us to believe that the compositional characteristics that allow us to distinguish between two instances of the same abstract concept linked to the pleasantness are not the same for PE and UE.
+
+\section{Related computational approaches}
+
+Considering sound scene synthesis or composition as part of an experimental protocol requires the availability of software resources that are easier and easier to master. While most processing framework that have been considered are developed in native language for efficiency purposes like Marsyas \cite{tzanetakis2000marsyas} or Clam \cite{amatriain2006clam}, many advanced sound manipulation.
+
+Closer to our sound model is the Tapestrea framework \cite{misra2007musical} that allows the manipulation sounds trough wavelet and sinusoidal modeling to allow sound manipulations for doing acousmatic composition or sound
+design. The main issue with considering this framework for soundscape perception studies is that the sounds are processed using sound models that would strongly decrease the ecological validity of the study. That being said, the sequencing model is quite close to the one considered in this study.
+
+The experiments described here does not introduce yet another sound manipulation framework and is thus not designed to be extensible. Rather it is considered here to demonstrate the following:
+\begin{itemize}
+  \item the use of Webaudio javascript library is useful to design advanced experimental protocols that consider sound manipulation over the web
+  \item the soundscape model considered is useful to question important research questions within the soundscape community  but simple enough to be grasped by novice participants.
+\end{itemize}
+
+Extensions to other sound parameters beyond acoustic levels and . However, the control of those new parameters would need a specific user experience study to maintain a high degree of usability of the controlling interface.
+
+
+
+
+
+
+
+
 
 \section{Conclusion}
 
