@@ -182,31 +182,27 @@ We choose not to include any musical content in the sound database, as the study
 % \item {une texture sonore}: un son, isolé, long, dont les caractéristiques physiques restent stables au cours du temps \cite{saint1995classification}.
 % \end{itemize}
 
- A commonly accepted distinction consists in separating:
+A commonly accepted distinction consists in separating:
 
 \begin{itemize}
 \item {sound events}: isolated sounds, precisely located in time, whose acoustical characteristics may change with respect to time;
 \item {sound textures}: isolated sounds of long duration whose acoustical characteristics are stable with respect to time, as expressed by~\cite{saint1995classification}.
 \end{itemize}
 
-It indeed appears that the processing of auditory information comprises some sort of decision concerning the nature of the stimuli. We consider in this study the soundscape as a ``\,skeleton of events on a bed of textures\,'' as coined by~\cite{nelken2013ear}.
+It indeed appears that the processing of auditory information comprises some sort of decision concerning the nature of the stimuli.
 
-Event sequences are composed of salient events that can easily be recognized, such as \emph{car start} or \emph{male speech}. They arise from a descriptive analysis based on the identification of the sound sources. On the contrary, amorphous sequences are sound environments where distinct events cannot be readily identified, such as \emph{traffic hubhub}. They result from a holistic analysis based on global acoustic features.
+\cite{maffiolo_caracterisation_1999} distinguishes two separated categorization processes, either of which is triggered depending on the listener's ability to identify sound events. She shows that those processes lead to two abstract cognitive categories respectively termed "event sequences" and "amorphous sequences". Event sequences are composed of salient events that can easily be recognized, such as \emph{car start} or \emph{male speech}. They arise from a descriptive analysis based on the identification of the sound sources. On the contrary, amorphous sequences are sound environments where distinct events cannot be readily identified, such as \emph{traffic hubhub}. They result from a holistic analysis based on global acoustic features.
 
-\cite{maffiolo_caracterisation_1999} also distinguishes two separated categorization processes, either of which is triggered depending on the listener's ability to identify sound events. She shows that those processes lead to two abstract cognitive categories respectively termed "event sequences" and "amorphous sequences".
+Concerning sound textures, \ie~sounds that have stable characteristics over time, \cite{mcdermott2011sound,mcdermott2013summary} demonstrates that the human brain can opt for an abstract, statistical representation of the perceived information, discarding precise physical properties of the sound.
 
-In order to account for the possibility that the morphological differences between those two classes may have some important consequences on the perception of the scenes, the simulation tool \emph{Simscene} follows this distinction and considers two distinct sound databases: one with classes of events only and the other with classes of textures only. These two types of sound classes also have specific scheduling procedures during the simulation process.
+In order to account for the possibility that the morphological differences between soud events and sound textures may have some important consequences on the perception of the scenes, the simulation tool \emph{Simscene} follows this distinction and considers two distinct sound databases: one with classes of events only and the other with classes of textures only. These two types of sound classes also have specific scheduling procedures during the simulation process.
+
+We consider in this study the soundscape as a ``\,skeleton of events on a bed of textures\,'' as coined by~\cite{nelken2013ear}.
 
 
 % et utilise deux banques de données distinctes : l'une regroupant des classes d’événements, l'autre des classes de textures. Événements et textures bénéficient de processus de simulation spécifiques.
 
 %Les différences morphologiques entre événements et textures sonores ont des conséquences sur la perception des scènes.
-
-
-
-
-
-
 
 %Lorsque des événements émergent d'un environnement sonore, le cerveau traite l'information des différentes sources de manière séparée \cite{bregman1994auditory}. Plusieurs flux auditifs sont ainsi générés, \ie~un pour chaque séquence d'événements émis par la même source \cite{carlyon2004brain}. Inversement, quand le cerveau ne parvient pas à isoler des événements, les éléments constituants de la scène sont agglomérés dans un même flux.
 
@@ -214,10 +210,7 @@ In order to account for the possibility that the morphological differences betwe
 
 %Maffiolo~\cite{maffiolo_caracterisation_1999} met en évidence deux processus de catégorisation distincts, engagés en fonction de la capacité de l'auditeur à identifier des événements sonores. Elle montre l'existence de deux catégories cognitives abstraites d'environnements sonores respectivement appelées: «~les séquences événementielles~» et «~les séquences amorphes~».
 
-
 %Les séquences événementielles sont des environnements composés d'événements saillants et identifiables (\emph{démarrage de voiture}, \emph{voix d'homme}). Elles profitent d'une analyse descriptive basée sur l'identification des sources sonores. Les séquences amorphes sont des environnements dont il est difficile d'isoler des éléments distincts («~brouhaha de rue~», «~brouhaha de trafic~»). Elles profitent, elles, d'une analyse holistique, effectuée à partir d'indicateurs acoustiques (objectifs) globaux. %Cette différence de traitement entre scènes événementielles et scènes amorphes est relevée également dans~\cite{guastavino2006ideal,dubois2006cognitive}.
-
-
 
 %Pour ce qui est des textures, \ie~des sons possédants des caractéristiques stables au cours du temps, \cite{mcdermott2011sound,mcdermott2013summary} montrent que le cerveau peut décider sciemment de dégrader l'information physique perçue, en la résumant de manière statistique, faisant fi de toute autre représentation plus détaillée \cite{nelken2013ear}.
 
@@ -225,9 +218,7 @@ In order to account for the possibility that the morphological differences betwe
 
 %Au regard de ces résultats, il apparaît que le processus de traitement de l'information sonore comprend une prise de décision quant à la nature des stimuli \cite{nelken2013ear,mcdermott2013summary}, laquelle va ensuite influer sur la manière d'extraire et d'analyser l'information.
 
-
-
-% ,mcdermott2013summary
+% mcdermott2013summary
 
 \subsubsection*{Taxonomy}
 
@@ -374,7 +365,7 @@ Experiment 1 aims at using a simulation paradigm to investigate the specific inf
 \item \emph{experiment 2.a (evaluation)}: after the simulation phase, only a binary information on the pleasantness property of the respective scenes is available: respectively ideal (i) or non ideal (ni). Furthermore, this information is given by the creator of the scene. The second experimental step aims at investigating more deeply and more broadly our knowledge on the pleasantness of the simulated scenes. For that, a second group of subjects is asked to evaluate the pleasantness of each scene produced during (1.a), on a semantic scale. This experiment has two goals:
 \begin{enumerate}
 \item to evaluate more precisely the respective influence of the various sources composing the scenes on the pleasantness  (ideal or non ideal) thanks to a finer quantification of the pleasantness of the scene;
-\item to detect the presence of \emph{outliers} or ambiguous scenes. Indeed, throughout our analyses, the predefined hedonic properties of the scenes (ideal or not) are used as reference. We thus need to ensure beforehand that no ambiguity exists between extreme cases of ideal and non ideal scenes, \ie~that the least pleasant ideal scene remains more highly rated on average than the most pleasant non ideal scene.
+\item to detect the presence of \emph{outliers} or ambiguous scenes. Indeed, throughout our analyses, the predefined hedonic properties of the scenes (ideal or non ideal) are used as reference. We thus need to ensure beforehand that no ambiguity exists between extreme cases of ideal and non ideal scenes, \ie~that the least pleasant ideal scene remains more highly rated on average than the most pleasant non ideal scene.
 \end{enumerate}
 \end{itemize}
 
@@ -818,7 +809,7 @@ level & ideal scenes & non ideal scenes \\
 
 %Nous avons mis en évidence que, qualitativement, la composition des sources sonores des scènes diffère selon les types d'environnement (i ou ni). Nous essayons de voir maintenant si, parmi ces classes, certaines sont typiques d'un environnement en particulier. Pour ce faire, nous utilisons le V-test (\cf~Section~\ref{sec:xp1_dataAna}), en considérant séparément chaque niveau d'abstraction. Les résultats sont présentés dans le tableau~\ref{tab:markers}.
 
-We have shown that, from a qualitative point of view, the composition of the scenes in terms of sound sources differs between i- or non ideal scenes. We now investigate whether some of the sound classes are specific to a given environment. For that purpose, the V-test detailed in  Section~\ref{sec:xp1_dataAna} is considered separately for each abstraction level. Results are presented in Table~\ref{tab:markers}.
+We have shown that, from a qualitative point of view, the composition of the scenes in terms of sound sources differs between ideal or non ideal scenes. We now investigate whether some of the sound classes are specific to a given environment. For that purpose, the V-test detailed in  Section~\ref{sec:xp1_dataAna} is considered separately for each abstraction level. Results are presented in Table~\ref{tab:markers}.
 
 %Concernant les événements sonores, 9 marqueurs sont identifiés sur l'ensemble des niveaux d'abstraction. Comme la figure~\ref{fig:soundsource} le laissait présager, les classes relatives à la présence humaine (\emph{pas homme béton}, \emph{sonnette vélo}), et à la nature (\emph{animaux, oiseaux}, \emph{chants d'oiseaux}) sont des marqueurs de i-scènes. Nous notons également la présence de la classe \emph{cloche} dans les marqueurs d'un environnement idéal. Ce fait est possiblement dû au \emph{background} socio-culturel des sujets, dans leur grande majorité, des citoyens européens. En effet, selon Schafer, un son reconnu par un individu comme faisant partie intégrante de son environnement est bien accepté. Les marqueurs de ni-scènes sont des classes faisant référence à des sons de travaux (\emph{travaux}), ou suggérant un trafic dense (\emph{klaxon}, \emph{sirène}).
 
@@ -850,7 +841,7 @@ Concerning $ET$, the rank 5-precision is $76\%$ at abstraction level $0$ (the mo
 
 %En considérant séparément $E$ et $T$, il apparaît 1) que la $p@5$ obtenue avec $E$ est similaire à celle obtenue avec $ET$, 2) que la $p@5$ obtenue avec $T$ est systématiquement inférieure d'environ $10$ à $15\%$ à celle de $E$. Ces résultats indiquent que l'information sémantique permettant de séparer les deux environnements est principalement portée par les événements. Ces résultats font, par ailleurs, écho aux travaux de  \cite{maffiolo_caracterisation_1999}, qui montrent que nous analysons de manière descriptive (en identifiant les sources) les scènes événementielles, \ie~composées d'événements sonores (\cf~Section~\ref{sec:simscene_sampleDataSet}).
 
-Considering $E$ and $T$ separately, it appears that: 1) the rank 5-precision obtained with $E$ is similar to the one obtained with $ET$ ; 2) the precision obtained with $T$ is always lower than the one obtained with $E$, by $10\%$ to $15\%$. Those results indicate that the semantic information that is discriminative is mostly carried by the events. Those results are in line with results of~\cite{maffiolo_caracterisation_1999}. As discussed in Section~\ref{sec:simscene_sampleDataSet}, it seems that humans analyze the event scenes which are composed of several sound events in a causal manner, \ie~by identifying the sources.
+Considering $E$ and $T$ separately, it appears that: 1) the rank 5-precision obtained with $E$ is similar to the one obtained with $ET$ ; 2) the rank 5-precision obtained with $T$ is always lower than the one obtained with $E$, by $10\%$ to $15\%$. Those results indicate that the semantic information that is discriminative is mostly carried by the events. Those results are in line with results of~\cite{maffiolo_caracterisation_1999}. As discussed in Section~\ref{sec:simscene_sampleDataSet}, it seems that humans analyze the event scenes which are composed of several sound events in a causal manner, \ie~by identifying the sources.
 
 %Enfin, il apparaît que la $p@5$ obtenue avec $E_{m}$ est égale, voire supérieure à celles obtenues avec $E$ et $ET$, et ce bien qu'une information partielle soit utilisée dans ce cas pour décrire les scènes. La dimension des vecteurs de description $S$ pour $E_m$ est en effet inférieure à la dimension des vecteurs $S$ pour $E$, qui est elle même inférieure à celle obtenue dans le cas où toutes les classes sont utilisées ($ET$). De plus, dans le cas où les marqueurs ne sont pas pris en compte pour la description ($E_{w/o,m}$), les résultats chutent, passant même en dessous de ceux obtenus en ne considérant que les textures. Cela confirme que la majorité de l'information sémantique permettant de faire la distinction entre i-scènes et ni-scènes est incluse dans les marqueurs.
 
@@ -922,7 +913,7 @@ $L(T)_m-L(T)_b$    & 0.16 ($p=0.54$)            & 0.21 ($p=0.28$) \\
 
 %Nous évaluons les corrélations entre $\mathcal{A}_{scene}$ et les descripteurs structurels. Pour cette section, les descripteurs structurels sont calculés en tenant compte des marqueurs sonores précédemment identifiés. Nous définissons $X_m$ le descripteur $X$ calculé en ne prenant en compte que les sons des marqueurs. A l'inverse, nous définissons $X_b$ ($b$: pour «~bruit~») le descripteur $X$ calculé en prenant en compte toutes les classes de sons, excepté les marqueurs. Lorsque le descripteur caractérise une i-scène (idem pour une ni-scène), nous ne considérons, pour le calcul, que les marqueurs identifiés pour les i-scènes (ou pour les ni-scènes), que nous nommons i-marqueurs (ou ni-marqueurs). Les résultats sont affichés sur le tableau~\ref{tab:corrMarkers}.
 
-To do so, the correlations between $\mathcal{A}_{scene}$ and the sound levels are evaluated. In this section, the sound levels are computed by taking into account only the previously identified sound markers. We define $X_m$, the $X$ feature computed by taking into account only the sound markers, and $X_b$, the $X$ feature computed by taking into account all the sound classes, except the sound markers. When the feature characterizes an ideal scene (resp. non ideal scene), only the markers identified for the ideal scenes (resp. non ideal scenes) are considered. We henceforth call \emph{ideal markers} and \emph{non ideal markers} the two types of markers. Results are shown on Table~\ref{tab:corrMarkers}.
+To do so, the correlations between $\mathcal{A}_{scene}$ and the sound levels are evaluated. In this section, the sound levels are computed by taking into account only the previously identified sound markers. We define $L_m$ (resp. $L(E)_m$ and $L(T)_m$), the sound level computed by taking into account only the sound markers, and $L_b$ (resp. $L(E)_b$ and $L(T)_b$), the sound level computed by taking into account all the sound classes, except the sound markers. When the feature characterizes an ideal scene (resp. non ideal scene), only the markers identified for the ideal scenes (resp. non ideal scenes) are considered. We henceforth call \emph{ideal markers} and \emph{non ideal markers} the two types of markers. Results are shown on Table~\ref{tab:corrMarkers}.
 
 %Concernant les niveaux sonores (\cf~Figures~\ref{fig:soundlevelMarkera} et~\ref{fig:soundlevelMarkerd}), les mêmes tendances sont observées entre $L_m$, $L(E)_m$ et $L(T)_m$, d'une part, et $L$, $L(E)$ et $L(T)$, d'autre part. Que l'on considère uniquement les marqueurs, ou l'ensemble des classes, il s'avère que :
 
@@ -1073,11 +1064,11 @@ There are 144 stimuli of 30 seconds duration. More precisely:
 
 %Nonobstant l'absence des marqueurs, les am- et sm-scènes sont en tout point semblables.
 
-Notwithstanding the presence or absence of markers, the km-scenes and rm-scenes are exactly the same.
+Notwithstanding the presence or absence of markers, the scenes with and without markers are exactly the same.
 
 %Nombre de am-scènes sont composées, en majorité, de samples de marqueurs. Afin de ne pas dénaturer abusivement ces scènes, en créant notamment des temps de «~vide~», \ie~ne comprenant aucun sample, nous ne supprimons que les marqueurs des classes d'événements du premier niveau d'abstraction (\cf~Tableau~\ref{tab:markers}). Ces classes sont:
 
-In order to create rm-scenes with still some sound diversity and no  absence of sound activity within a long period of the scene, only the sound classes of events of the first level of abstraction are removed, see Table~\ref{tab:markers}. Those classes are:
+In order to create the scenes without markers with still some sound diversity and no absence of sound activity within a long period of the scene, only the sound classes of events of the first level of abstraction are removed, see Table~\ref{tab:markers}. Those classes are:
 
 % \begin{itemize}
 % \item \emph{cloche}, \emph{sonnette de vélo}, \emph{animaux} pour les i/sm-scènes;
@@ -1103,7 +1094,7 @@ Thus, only part of the ideal markers and non ideal markers are removed from the 
 
 The subjects evaluate the 144 scenes. The evaluation is done on a 11-point bipolar semantic scale ranging from -5 (non-ideal / very unpleasant) to +5 (ideal / very pleasant). Before rating a scene, subjects must listen to the first 20 seconds. After scoring, they are free to move on to the next scene.
 
-For each subject, the scenes are presented in a random order. The first 10 scenes allow the subject to calibrate their scores. Those calibration scenes are  5 ideal scenes with markers and 5 nideal scenes with markers. These first 10 scenes are replayed at the end of the experiment, and only the scores given at the second occurrence are taken into account.
+For each subject, the scenes are presented in a random order. The first 10 scenes allow the subject to calibrate their scores. Those calibration scenes are  5 ideal scenes with markers and 5 non ideal scenes with markers. These first 10 scenes are replayed at the end of the experiment, and only the scores given at the second occurrence are taken into account.
 
 The experiment is scheduled to last 1 hour. The subjects do not know the nature of the scenes.
 
@@ -1133,7 +1124,7 @@ The type of data analyzed in this experiment have been considered for experiment
 
 %Il s'agit ici de vérifier que la suppression des i- et ni-marqueurs impacte l'agrément perçu. Pour ce faire, nous utilisons l'analyse de variance. Nous considérons, comme variable dépendante, $\mathcal{A}_{sujet}$, et, comme variables indépendantes, le type d'environnement (i/ni), et la présence/absence de marqueurs (am/sm). Chaque sujet devant évaluer la totalité des stimuli, une ANOVA à mesures répétées à deux facteurs est utilisée afin vérifier s'il existe des différences significatives d'agrément perçu. Les deux variables indépendantes sont considérées comme des facteurs intra-sujet (\emph{within-subject}. Les facteurs n'étant composés que de deux niveaux chacun (type: i/ni; marqueur: am/sm), l'hypothèse de sphéricité n'a pas besoin d'être vérifiée. Les analyses \emph{post hoc} sont conduites en appliquant la procédure de Tukey-Kramer.
 
-The aim here is to validate the hypothesis that the removal of ideal markers and non ideal markers have an impact on the perceived pleasantness. To do so, we perform a variance analysis. We consider $\mathcal{A}_{subject}$ as a dependent variable, and as independent variables, the type of environment (i/ni) and the presence/absence of markers (km/rm). As each subject evaluated the whole set of scenes, a two factors repeated measure ANOVA is used to evaluate whether there exist a significant difference of perceived pleasantness between km-scenes and rm-scenes. The two independent variables are considered as \emph{within-subject} factors. The factors being of only two levels each (type: i/ni,  marker: km/rm), the sphericity hypothesis does not need to be checked. \emph{Post hoc} analyses are done using the Tukey-Kramer procedure. %\jfp{l'analyse est inutile a mon avis, il n'y a que 2 niveaux pour chaque facteur de l'ANOVA.} \gl{2 niveaux par facteur, mais 4 niveaux en tout}
+The aim here is to validate the hypothesis that the removal of ideal markers and non ideal markers have an impact on the perceived pleasantness. To do so, we perform a variance analysis. We consider $\mathcal{A}_{subject}$ as a dependent variable, and as independent variables, the type of environment (ideal or non ideal) and the presence/absence of markers. As each subject evaluated the whole set of scenes, a two factors repeated measure ANOVA is used to evaluate whether there exist a significant difference of perceived pleasantness. The two independent variables are considered as \emph{within-subject} factors. The factors being of only two levels each (type: ideal or non ideal,  marker: with or without), the sphericity hypothesis does not need to be checked. \emph{Post hoc} analyses are done using the Tukey-Kramer procedure. %\jfp{l'analyse est inutile a mon avis, il n'y a que 2 niveaux pour chaque facteur de l'ANOVA.} \gl{2 niveaux par facteur, mais 4 niveaux en tout}
 
 %Tous les tests de significativité sont effectués avec un seuil critique $\alpha=0.05$.
 
@@ -1156,7 +1147,7 @@ All the significance tests are performed with critical threshold $\alpha=0.05$.
 
 %Considérons $\mathcal{A}_{sujet}$ pour les am-scènes. Il apparaît que les réponses d'un des sujets diffèrent des autres. Ce dernier a évalué positivement près de la moitié des ni/am-scènes (\cf~Annexe~\ref{app:xp2} : sujet 7). Le sujet a donné à 58\% des ni/am-scènes une note supérieure à 0, contre une moyenne de 11\% pour les autres sujets. De plus, le sujet a utilisé l'ambitus maximal (-5 à 5) pour noter à la fois les i/ et ni/am-scènes. Ces faits n'ayant pas été observés pour les autres sujets, que l'on considère les expériences 2 ou 1.b, le sujet 7 est éliminé de l'analyse.
 
-Let us consider $\mathcal{A}_{subject}$ for the km-scenes (Figure~\ref{fig:xp2_Asubject}). Close inspection of the answers show that one subject's judgments strongly differ from the others'. This subject evaluated positively close to half of the non ideal scenes with markers (see Annex~\ref{app:xp2}, subject 7), and gave a score above 0 for 58\% of the nideal scenes with markers, contrary to an average of 11\% for the other subjects.
+Let us consider $\mathcal{A}_{subject}$ for the scenes with markers (Figure~\ref{fig:xp2_Asubject}). Close inspection of the answers show that one subject's judgments strongly differ from the others'. This subject evaluated positively close to half of the non ideal scenes with markers (see Annex~\ref{app:xp2}, subject 7), and gave a score above 0 for 58\% of the non ideal scenes with markers, contrary to an average of 11\% for the other subjects.
 
 Furthermore, this subject used the whole scale (from -5 to 5) to score both the ideal scenes and the non ideal scenes. Those behaviors strongly differ with the ones of the other subjects, be they from this experiment or the previous ones. Subject 7 is thus discarded from the analysis.
 
@@ -1164,13 +1155,13 @@ Furthermore, this subject used the whole scale (from -5 to 5) to score both the 
 
 %Dans cette section nous étudions comment les sujets ont perçu les différents types de scènes, nommément: i/am-, ni/am-, i/sm- et ni/sm-scène. L'ANOVA à mesures répétées pratiquée sur $\mathcal{A}_{sujet}$ montre un effet significatif du type d'environnement (i/ni: $F[1,10]=175$, $p<0.01$), de la présence/absence des marqueurs (am/sm: $F[1,10]=7$, $p<0.05$), ainsi que de l'interaction entre les deux facteurs ($F[1,10]=67$, $p<0.01$).
 
-In this section, we study the scores given by the subject while listening to the several types of scenes, namely the ideal scenes with markers, nideal scenes with markers, ideal scenes without markers and non ideal scenes without markers (Figure~\ref{fig:xp2_Ascene}). The repeated measure ANOVA applied to $\mathcal{A}_{subject}$ shows a significant effect of the type environment (i/ni: $F[1,10]=175$, $p<0.01$), of the presence/absence of markers (km/rm: $F[1,10]=7$, $p<0.05$), and of the interaction between those two factors ($F[1,10]=67$, $p<0.01$).
+In this section, we study the scores given by the subject while listening to the several types of scenes, namely the ideal scenes with markers, non ideal scenes with markers, ideal scenes without markers and non ideal scenes without markers (Figure~\ref{fig:xp2_Ascene}). The repeated measure ANOVA applied to $\mathcal{A}_{subject}$ shows a significant effect of the type environment (Type: $F[1,10]=175$, $p<0.01$), of the presence/absence of markers (marker: $F[1,10]=7$, $p<0.05$), and of the interaction between those two factors ($F[1,10]=67$, $p<0.01$).
 
 %The \emph{post hoc} montre, quant à elle, des différences significatives entre tous les groupes d'observations, notamment entre les i/am- et i/sm-scenes ($p<0.05$) et les ni/am- et ni/sm-scenes ($p<0.01$).
 
 %\jfp{je crois que l'analyse post-hoc n'est pas nécessaire lorsqu'il n'y a que 2 niveaux pour les facteurs de l'ANOVA. les conclusions seront strictement les mêmes que pour l'ANOVA.c'est utile à partir de 3 niveaux, pour savoir quelle moyenne diffère signif. des autres.}
 
-The \emph{post hoc} analysis exhibits significant differences between all groups of observations, notably between the i/km- and the i/rm scenes ($p<0.05$) as well as between the ni/km- and the non ideal scenes without markers ($p<0.01$).
+The \emph{post hoc} analysis exhibits significant differences between all groups of observations, notably between the ideal scenes with markers and the ideal scenes without markers ($p<0.05$) as well as between the non ideal scenes with markers and the non ideal scenes without markers ($p<0.01$).
 
 %Ces résultats indiquent que la suppression des événements a effectivement modifié la perception des scènes par les sujets. Nos deux hypothèses sont ainsi vérifiées:
 
@@ -1188,7 +1179,7 @@ These results indicate that the removal of the markers indeed modify the percept
 
 %L'interaction significative montre que l'effet du type d'environnement influe sur l'effet de l'absence/présence des marqueurs. En effet la moyenne des écarts entre am- et sm-scènes est plus importante pour les ni-scènes ($1.1$) que pour les i-scènes ($0.5$).
 
-The significant interaction shows that the type of environment influences the effect of the presence/absence of the markers. Indeed, the average difference between km-scenes and rm-scenes is larger for the non ideal scenes ($1.1$) than for the ideal scenes ($0.5$).
+The significant interaction shows that the type of environment influences the effect of the presence/absence of the markers. Indeed, the average difference between the scenes with markers and the scenes without markers is larger for the non ideal scenes ($1.1$) than for the ideal scenes ($0.5$).
 
 %\subsection{Discussion}
 
