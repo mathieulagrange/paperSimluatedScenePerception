@@ -214,7 +214,7 @@ The sound classes are organized hierarchically (\cf~Figure~\ref{fig:orgDb}) acco
 
 %Nous établissons deux taxonomies, une pour les événements, une autre pour les textures (\cf~Annexe~\ref{app:taxonomie}). Pour les événements, nous considérons quatre niveaux d'abstraction allant des classes les plus générales (niveau d'abstraction 0), aux classes les plus spécifiques (niveau d'abstraction 3). Pour les textures, nous ne considérons que trois niveaux d'abstraction. Notons que la taxonomie des événements est proche de celle de \cite{Salamon14}, introduite postérieurement à notre étude.
 
-Accounting for the previously detailed perceptual matters, two taxonomies are built, one for sound events and one for sound textures. Up to four levels of abstraction are considered from the most generic classes(level 0) to the most specific classes (level 3), leading to a taxonomy close to the one used in~\cite{Salamon14}, see Appendix~\ref{app:taxonomie}. Only three levels of abstraction are considered for the texture sounds, see Figure~\ref{fig:taxonomieT}.
+Accounting for the previously detailed perceptual matters, two taxonomies are built, one for sound events and one for sound textures. Up to four levels of abstraction are considered from the most generic classes (level 0) to the most specific classes (level 3), leading to a taxonomy close to the one used in~\cite{Salamon14}, see Appendix~\ref{app:taxonomie}. Only three levels of abstraction are considered for the texture sounds, see Figure~\ref{fig:taxonomieT}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%    FIN RELECTURE APPROFONDIE    %%%%%%%%%%%%%%%%%%%
@@ -575,7 +575,7 @@ For each sound scene, three types of features are considered :
 % \end{itemize}
 
 \begin{itemize}
-\item \emph{perceptual features}: the perceived pleasantness of the composed scene, assessed on a 7-point bipolar semantic scale. $\mathcal{A}_{scene}$ is the average pleasantness for each scene, computed as the average of all the scores given by all the subjects to a specific scene. $\mathcal{A}_{subject}$ is the average pleasantness for each subject, computed as the average of all the scores given by a specific subject to all the scenes. $\mathcal{A}_{subject}$ is computed for ideal scenes and non-ideal scenes separately. Given the low number of subjects in experiment 1.b, we choose not to normalize the pleasantness scores. 
+\item \emph{perceptual features}: the perceived pleasantness of the composed scene, assessed on a 7-point bipolar semantic scale. $\mathcal{A}_{scene}$ is the average pleasantness for each scene, computed as the average of all the scores given by all the subjects to a specific scene. $\mathcal{A}_{subject}$ is the average pleasantness for each subject, computed as the average of all the scores given by a specific subject to all the scenes. $\mathcal{A}_{subject}$ is computed for ideal scenes and non-ideal scenes separately. Given the low number of subjects in experiment 1.b, we choose not to normalize the pleasantness scores.
 
 \item \emph{semantic features}: we use a boolean vector $S = (x_1, x_2, \ldots, x_n)$ that indicates the classes of sounds involved in the scene, \ie~the sound classes that are present / absent from the scene. Each boolean $x$ of this vector corresponds to a specific class of sounds: $x = 1$ if the class is present in the scene, and $x = 0$ otherwise. The vector dimension ($n$) depends on the level of abstraction that is considered for the analysis. For instance, for the abstraction level 1, that includes 44 classes of sounds, the dimension is thus $44$ ($n = 44$).
 
@@ -619,7 +619,7 @@ V_{jk}=\dfrac{c_{jk}-c_k\frac{c_j}{c}}{\sqrt{c_k\frac{c-c_k}{c-1}\frac{c_j}{c}(1
 \end{equation}
 
 % Si pour un environnement $k$, et une classe $j$, l'hypothèse est rejetée, la classe $j$ est alors typique de l'environnement $k$. Les classes typiques sont nommées \textbf{marqueurs sonores};
- 
+
 If the null hypothesis is rejected, the class $j$ is said to be typical with respect to the type of environnement $k$. Such typical classes are called \textbf{sound markers}, in reference to the work of \cite{schafer1993soundscape}. Testing is done for each class, at each level of abstraction, and separately for texture and event classes.
 
 %\item \emph{étude des espaces de représentation induits par les descripteurs sémantiques}: afin d'étudier si une représentation basée uniquement sur la présence ou l'absence de classes de sons permet de séparer les deux types d'environnement, nous considérons l'espace induit par les descripteurs sémantiques $S$. $S$ étant un vecteur booléen, nous calculons les distances entre les scènes à partir de la distance de Hamming. Considérant les deux vecteurs $S_1=(x_{1,1},x_{1,2},\ldots,x_{1,n})$, et $S_2=(x_{2,1},x_{2,2},\ldots,x_{2,n})$ de dimension $n$, avec $x=\lbrace 0,1\rbrace$, la distance de Hamming $d_{ham}$ mesure le pourcentage de coordonnées qui diffèrent entre les deux vecteurs:
@@ -1224,7 +1224,7 @@ An experimenter was available during the whole duration of the experiment in ord
 
 \subsubsection*{Subjects}
 
-%12 sujets (4 femmes) participent à l'expérience. Aucun d'entre eux n'a réalisé l'expérience de simulation, ni la première expérience d'évaluation. Les sujets sont âgés de 22 à 61 ans (moyenne: 29.5, écart-type: 14). Tous les sujets sont Nantais, et vivent dans cette ville depuis deux ans ou plus. 
+%12 sujets (4 femmes) participent à l'expérience. Aucun d'entre eux n'a réalisé l'expérience de simulation, ni la première expérience d'évaluation. Les sujets sont âgés de 22 à 61 ans (moyenne: 29.5, écart-type: 14). Tous les sujets sont Nantais, et vivent dans cette ville depuis deux ans ou plus.
 
 12 subjects performed the experiment (8 male, 4 female; averaging $29.5$ years of age, s.d. of $14$ years). All the subjects had been living in Nantes, France, for at least two years at the time of the experiment and reported normal hearing. None of them took part in the previous experiments 1.a and 1.b.
 
@@ -1448,7 +1448,7 @@ Once again, besides the interesting possibilities already mentioned, the simulat
 
 %\begin{itemize}
 % \item le simulateur peut être déployé à large échelle via internet du fait de l'architecture logicielle choisie pour son développement;
-% \item les scènes simulées peuvent être analysées sans avoir à tenir compte des différentes langues maternelles des sujets, la nature sémantique des classes de sons utilisées étant connue \emph{a priori} par l'expérimentateur 
+% \item les scènes simulées peuvent être analysées sans avoir à tenir compte des différentes langues maternelles des sujets, la nature sémantique des classes de sons utilisées étant connue \emph{a priori} par l'expérimentateur
 % \item les scènes simulées peuvent être analysées sans avoir besoin d'annoter la scène sonore pour idientifier les sources, leurs présences dans la scène étant directement exploitable.
 % \end{itemize}
 
