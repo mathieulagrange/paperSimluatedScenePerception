@@ -1,7 +1,7 @@
 \documentclass[12pt]{elsarticle}
 %DIF LATEXDIFF DIFFERENCE FILE
 %DIF DEL v1/lafaySimulatedScenePerception.tex   Tue Jun 26 15:03:12 2018
-%DIF ADD lafaySimulatedScenePerception.tex      Tue Sep  4 11:07:27 2018
+%DIF ADD lafaySimulatedScenePerception.tex      Wed Sep  5 14:43:37 2018
 \usepackage{url}
 \usepackage[utf8]{inputenc}
 \usepackage{setspace}
@@ -148,7 +148,7 @@ To demonstrate the potential of the proposed approach in its ability to question
 % \end{enumerate}
 
  \begin{enumerate} 
-\item \emph{experiment 1.a, simulation}:  the subjects use the soundscape simulator to produce ideal / \DIFdelbegin \DIFdel{non ideal }\DIFdelend \DIFaddbegin \DIFadd{non-ideal }\DIFaddend soundscapes that are considered as material for the following experiments \DIFaddbegin \DIFadd{(the resulting waveforms are available for download}\footnote{\DIFadd{Soundscapes, available online }\url{https://archive.org/details/soundSimulatedUrbanScene}}\DIFadd{)}\DIFaddend ;
+\item \emph{experiment 1.a, simulation}:  the subjects use the soundscape simulator to produce ideal / \DIFdelbegin \DIFdel{non ideal }\DIFdelend \DIFaddbegin \DIFadd{non-ideal }\DIFaddend soundscapes that are considered as material for the following experiments \DIFaddbegin \DIFadd{(the resulting waveforms are available for download}\footnote{\DIFadd{Soundscapes: }\url{https://archive.org/details/soundSimulatedUrbanScene}}\DIFadd{)}\DIFaddend ;
 \item \emph{experiment 1.b, pleasantness evaluation}: the subjects judge the pleasantness of the simulated scenes on a semantic scale;
 \item \emph{experiment 2, pleasantness evaluation after modification of the scenes}: the subjects judge the pleasantness of the simulated scenes on a semantic scale as in 1.b, but some scenes are modified beforehand, \ie~some specific sounds classes that are identified as having a significant impact on perceived pleasantness are removed.
  \end{enumerate} 
@@ -159,7 +159,7 @@ To the best of our knowledge, only\DIFdelbegin \DIFdel{Bruce}\DIFdelend ~\cite{b
 
 %Dans notre démarche, le simulateur utilisé \footnote{simScene, disponible en ligne \url{http://soundthings.org/research/}} permet une restitution simplifiée (monophonique) des scènes, au profit d'un nombre plus important de paramètres et de sources disponibles, ce afin de garantir, à la sortie, des données viables et expressives.
 
-In our approach, the simulator developed for this study\footnote{simScene, available online \url{https://bitbucket.org/mlagrange/simscene}} only yields a monophonic representation of the scene, but that simplification comes with the benefit of a wider range of available sound sources and scheduling parameters in order to provide outputs which are both expressive and useful for analysis.
+In our approach, the simulator developed for this study\footnote{simScene\DIFdelbegin \DIFdel{, available online }\DIFdelend \DIFaddbegin \DIFadd{: }\DIFaddend \url{https://bitbucket.org/mlagrange/simscene}} only yields a monophonic representation of the scene, but that simplification comes with the benefit of a wider range of available sound sources and scheduling parameters in order to provide outputs which are both expressive and useful for analysis.
 
 %Le papier comprend 5 sections: Introduction, L'outil de simulation \emph{SimScene}, Expérience 1 .a \emph{simulation} et .b \emph{évaluation de l'agrément}, Expérience 2 \emph{évaluation de l'agrément après modification des scènes}, et Conclusions et perspectives.
 
@@ -180,7 +180,8 @@ The remaining of \DIFdelbegin \DIFdel{the }\DIFdelend \DIFaddbegin \DIFadd{this 
 
 %\emph{Simscene} est un environnement de travail audio-numérique dont la première version a été développée dans le cadre du projet HOULE\footnote{\emph{Projet HOULE} : \url{houle.ircam.fr}}. Il est prévu pour fonctionner sur les navigateurs internet \emph{Chrome} et \emph{Firefox}. L'outil a été développé en javascript à l'aide de la bibliothèque \emph{angular.js}\footnote{\emph{angular.js} : \url{angularjs.org}} et du standard \emph{web-audio}\footnote{\emph{web-audio} : \url{www.w3.org/TR/webaudio}}. L'interface de sélection (\cf~Section~\ref{sec:simscene_ssf}) a été développée à l'aide de la bibliothèque \emph{D3.js} \cite{d32011}.
 
-\emph{Simscene} is an online digital audio tool whose first version has been developed as part of the HOULE project\footnote{\emph{Projet HOULE} : \url{houle.ircam.fr}}. It has been designed to run on the popular web browsers \emph{Chrome} and \emph{Firefox}. It is fully written in javascript using the \emph{angular.js} library\footnote{\emph{angular.js} : \url{angularjs.org}} and the \emph{Web Audio} standard that allows the manipulation of digital audio data within the browser\footnote{\emph{Web Audio}: \url{www.w3.org/TR/webaudio}}. The interface for selecting sound sources (\cf~Section~\ref{sec:simscene_ssf}) uses the popular \emph{D3.js} \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
+\emph{Simscene} is an online digital audio tool whose first version has been developed as part of the HOULE project\footnote{\DIFdelbegin \emph{\DIFdel{Projet HOULE}} %DIFAUXCMD
+\DIFdelend \DIFaddbegin \emph{\DIFadd{HOULE project}}\DIFaddend : \url{houle.ircam.fr}}. It has been designed to run on the popular web browsers \emph{Chrome} and \emph{Firefox}. It is fully written in javascript using the \emph{angular.js} library\footnote{\emph{angular.js}: \url{angularjs.org}} and the \emph{Web Audio} standard that allows the manipulation of digital audio data within the browser\footnote{\emph{Web Audio}: \url{www.w3.org/TR/webaudio}}. The interface for selecting sound sources (\cf~Section~\ref{sec:simscene_ssf}) uses the popular \emph{D3.js} \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
 \cite{d32011} }%DIFAUXCMD
 visualization library }\DIFdelend \DIFaddbegin \DIFadd{visualization library proposed by~\mbox{%DIFAUXCMD
 \cite{d32011}}%DIFAUXCMD
@@ -308,11 +309,11 @@ The sound classes are organized hierarchically (\cf~Figure~\ref{fig:orgDb}) acco
 
 %Nous établissons deux taxonomies, une pour les événements, une autre pour les textures (\cf~Annexe~\ref{app:taxonomie}). Pour les événements, nous considérons quatre niveaux d'abstraction allant des classes les plus générales (niveau d'abstraction 0), aux classes les plus spécifiques (niveau d'abstraction 3). Pour les textures, nous ne considérons que trois niveaux d'abstraction. Notons que la taxonomie des événements est proche de celle de \cite{Salamon14}, introduite postérieurement à notre étude.
 
-Accounting for the previously detailed perceptual matters, two taxonomies are built, one for \DIFdelbegin \DIFdel{event sounds }\DIFdelend \DIFaddbegin \DIFadd{sound events }\DIFaddend and one for \DIFdelbegin \DIFdel{texture sounds. Four }\DIFdelend \DIFaddbegin \DIFadd{sound textures. Up to four }\DIFaddend levels of abstraction are considered from the most generic \DIFaddbegin \DIFadd{classes}\DIFaddend (level 0) to the most specific classes (level \DIFdelbegin \DIFdel{2}\DIFdelend \DIFaddbegin \DIFadd{3}\DIFaddend ), leading to a taxonomy close to the one used in\DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
+Accounting for the previously detailed perceptual matters, two taxonomies are built, one for \DIFdelbegin \DIFdel{event sounds }\DIFdelend \DIFaddbegin \DIFadd{sound events }\DIFaddend and one for \DIFdelbegin \DIFdel{texture sounds. Four }\DIFdelend \DIFaddbegin \DIFadd{sound textures. Up to four }\DIFaddend levels of abstraction are considered from the most generic \DIFaddbegin \DIFadd{classes }\DIFaddend (level 0) to the most specific classes (level \DIFdelbegin \DIFdel{2}\DIFdelend \DIFaddbegin \DIFadd{3}\DIFaddend ), leading to a taxonomy close to the one used in\DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
 \cite{Salamon14}}%DIFAUXCMD
 }\DIFdelend \DIFaddbegin \DIFadd{~\mbox{%DIFAUXCMD
 \cite{Salamon14}}%DIFAUXCMD
-, see Appendix~\ref{app:taxonomie}}\DIFaddend . Only three levels of abstraction are considered for the texture sounds\DIFaddbegin \DIFadd{, see Figure~\ref{fig:taxonomieT}}\DIFaddend .
+, see~\ref{app:taxonomie}}\DIFaddend . Only three levels of abstraction are considered for the texture sounds\DIFaddbegin \DIFadd{, see Figure~\ref{fig:taxonomieT}}\DIFaddend .
 
 %DIF > %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %DIF > %%%%%%%%%%%%%%%%%%%    FIN RELECTURE APPROFONDIE    %%%%%%%%%%%%%%%%%%%
@@ -589,7 +590,7 @@ Three experimenters (one in each room) were available during the whole duration 
 
 Among the 44 subjects, 40 succeeded, producing \DIFdelbegin \DIFdel{at }\DIFdelend \DIFaddbegin \DIFadd{in }\DIFaddend the end 80 simulated sound scenes (40 ideal scenes, 40 \DIFdelbegin \DIFdel{non ideal }\DIFdelend \DIFaddbegin \DIFadd{non-ideal }\DIFaddend scenes). \DIFdelbegin \DIFdel{the }\DIFdelend \DIFaddbegin \DIFadd{The }\DIFaddend 4 other subjects were excluded from the process due to a lack of understanding of the instructions or failure to respect them, or for exceeding the maximum duration allowed to perform the experiment.  The software platform used for the experiment, the parametrization of the software platform for each generated scene, as well as a 2 dimensional projection of the resulting scenes are available \DIFdelbegin %DIFDELCMD < \url{http://soundthings.org/research/urbanSoundScape/XP2014}%%%
 \DIFdel{. The resulting waveforms are available for download }%DIFDELCMD < \url{https://archive.org/details/soundSimulatedUrbanScene}%%%
-\DIFdelend \DIFaddbegin \DIFadd{online}\footnote{\DIFadd{Available online }\url{http://soundthings.org/research/urbanSoundScape/XP2014}}\DIFaddend .
+\DIFdelend \DIFaddbegin \DIFadd{online}\footnote{\DIFadd{Experiment 1.a: }\url{http://soundthings.org/research/urbanSoundScape/XP2014}}\DIFaddend .
 
 %DIF > %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %DIF > %%%%%%%%%%%%%%%%%%%    FIN RELECTURE APPROFONDIE    %%%%%%%%%%%%%%%%%%%
@@ -705,7 +706,7 @@ For each sound scene, three types of features are considered :
 % \end{itemize}
 
  \begin{itemize} 
-\item \emph{perceptual features}: the perceived pleasantness of the composed scene, assessed on a 7-point bipolar semantic scale. $\mathcal{A}_{scene}$ is the average pleasantness for \DIFdelbegin \DIFdel{one scene, }\DIFdelend \DIFaddbegin \DIFadd{each scene, computed }\DIFaddend as the average of \DIFdelbegin \DIFdel{the marks of }\DIFdelend \DIFaddbegin \DIFadd{all the scores given by }\DIFaddend all the subjects \DIFaddbegin \DIFadd{to a specific scene}\DIFaddend . $\mathcal{A}_{subject}$ is the average pleasantness for each \DIFdelbegin \DIFdel{participant}\DIFdelend \DIFaddbegin \DIFadd{subject}\DIFaddend , computed as the average of all the \DIFdelbegin \DIFdel{score given by each participant}\DIFdelend \DIFaddbegin \DIFadd{scores given by a specific subject to all the scenes. $\mathcal{A}_{subject}$ is computed for ideal scenes and non-ideal scenes separately}\DIFaddend . Given the low number of subjects in experiment 1.b, we choose not to normalize the pleasantness scores. 
+\item \emph{perceptual features}: the perceived pleasantness of the composed scene, assessed on a 7-point bipolar semantic scale. $\mathcal{A}_{scene}$ is the average pleasantness for \DIFdelbegin \DIFdel{one scene, }\DIFdelend \DIFaddbegin \DIFadd{each scene, computed }\DIFaddend as the average of \DIFdelbegin \DIFdel{the marks of }\DIFdelend \DIFaddbegin \DIFadd{all the scores given by }\DIFaddend all the subjects \DIFaddbegin \DIFadd{to a specific scene}\DIFaddend . $\mathcal{A}_{subject}$ is the average pleasantness for each \DIFdelbegin \DIFdel{participant}\DIFdelend \DIFaddbegin \DIFadd{subject}\DIFaddend , computed as the average of all the \DIFdelbegin \DIFdel{score given by each participant}\DIFdelend \DIFaddbegin \DIFadd{scores given by a specific subject to all the scenes. $\mathcal{A}_{subject}$ is computed for ideal scenes and non-ideal scenes separately}\DIFaddend . Given the low number of subjects in experiment 1.b, we choose not to normalize the pleasantness scores.
 \DIFdelbegin \DIFdel{$\mathcal{A}_{subject}$ is computed for i-scenes and ni-scenes.
 }\DIFdelend 
 
@@ -764,7 +765,7 @@ V_{jk}=\dfrac{c_{jk}-c_k\frac{c_j}{c}}{\sqrt{c_k\frac{c-c_k}{c-1}\frac{c_j}{c}(1
 \end{equation}
 
 %DIF >  Si pour un environnement $k$, et une classe $j$, l'hypothèse est rejetée, la classe $j$ est alors typique de l'environnement $k$. Les classes typiques sont nommées \textbf{marqueurs sonores};
- \DIFaddbegin 
+\DIFaddbegin 
 
 \DIFaddend If the null hypothesis is rejected, the class $j$ is said to be typical with respect to the type of \DIFdelbegin \DIFdel{scene }\DIFdelend \DIFaddbegin \DIFadd{environnement }\DIFaddend $k$. Such typical classes are called \textbf{sound markers}\DIFaddbegin \DIFadd{, in reference to the work of \mbox{%DIFAUXCMD
 \cite{schafer1993soundscape}}%DIFAUXCMD
@@ -957,7 +958,9 @@ We study the composition of the scenes by counting the number of subjects who us
 %Nous observons une différence notable dans le choix des classes entre les i- et ni-scènes. La répartition des classes est très proche de celle obtenue dans une étude similaire sur les environnements sonores urbains idéaux \cite{guastavino2006ideal}, \ie~les classes suggérant la présence humaine et la nature sont très présentes dans les i-scènes, a contrario, les classes désignant des sons mécaniques et/ou de travaux sont principalement utilisées pour les ni-scènes.
 
 We observe a \DIFdelbegin \DIFdel{noticable }\DIFdelend \DIFaddbegin \DIFadd{noticeable }\DIFaddend difference in terms of class choices between the \DIFdelbegin \DIFdel{i- and ni-scenes}\DIFdelend \DIFaddbegin \DIFadd{ideal and non-ideal scenes}\DIFaddend . The distribution of the classes is very similar to the one obtained in a related work on ideal urban soundscapes \DIFaddbegin \DIFadd{by~}\DIFaddend \cite{guastavino2006ideal}, \ie~on one hand, classes involving human presence and nature are prevailing in the \DIFdelbegin \DIFdel{i-scenes}\DIFdelend \DIFaddbegin \DIFadd{ideal scenes}\DIFaddend , and on the other hand, classes involving mechanical sounds and/or public works are prevailing in the \DIFdelbegin \DIFdel{ni-scenes}\DIFdelend \DIFaddbegin \DIFadd{non-ideal scenes}\DIFaddend . These results confirm a \DIFdelbegin \DIFdel{previously observed fact}\DIFdelend \DIFaddbegin \DIFadd{fact previously observed by~\mbox{%DIFAUXCMD
-\cite{raimbault2005urban,dubois2006cognitive}}%DIFAUXCMD
+\cite{raimbault2005urban} }%DIFAUXCMD
+and~\mbox{%DIFAUXCMD
+\cite{dubois2006cognitive}}%DIFAUXCMD
 }\DIFaddend : the semantic nature of the sound sources play an important role in the assessment of the environment\DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
 \cite{raimbault2005urban,dubois2006cognitive}}%DIFAUXCMD
 }\DIFdelend .
@@ -1221,7 +1224,7 @@ For the \DIFdelbegin \DIFdel{i-scenes}\DIFdelend \DIFaddbegin \DIFadd{ideal scen
 
 %Pour les ni-scènes, le fait que nous observions des corrélations pour $L_m$ et $L(E)_m$, et aucune pour $L_m-L_b$ et $L(E)_m-L(E)_b$, montre que c'est bien le niveau absolu qui importe.
 
-On the contrary, the fact that we observe \DIFaddbegin \DIFadd{for the non-ideal scenes both }\DIFaddend significant correlations for $L_m$ and $L(E)_m$ and no correlation for $L_m-L_b$ and $L(E)_m$ - $L(E)_b$\DIFdelbegin \DIFdel{for the ni-scenes}\DIFdelend , shows that \DIFdelbegin \DIFdel{this }\DIFdelend \DIFaddbegin \DIFadd{it }\DIFaddend is indeed the absolute level that matters \DIFaddbegin \DIFadd{for non ideal environments}\DIFaddend .
+On the contrary, the fact that we observe \DIFaddbegin \DIFadd{for the non-ideal scenes both }\DIFaddend significant correlations for $L_m$ and $L(E)_m$ and no correlation for $L_m-L_b$ and $L(E)_m$ - $L(E)_b$\DIFdelbegin \DIFdel{for the ni-scenes}\DIFdelend , shows that \DIFdelbegin \DIFdel{this }\DIFdelend \DIFaddbegin \DIFadd{it }\DIFaddend is indeed the absolute level that matters \DIFaddbegin \DIFadd{for non-ideal environments}\DIFaddend .
 
 %DIF > %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %DIF > %%%%%%%%%%%%%%%%%%%    FIN RELECTURE APPROFONDIE    %%%%%%%%%%%%%%%%%%%
@@ -1443,7 +1446,7 @@ Thus, only part of the \DIFdelbegin \DIFdel{i-markers and ni-markers }\DIFdelend
 \DIFaddend \subsubsection*{Subjects}
 
 %DIF < 12 sujets (4 femmes) participent à l'expérience. Aucun d'entre eux n'a réalisé l'expérience de simulation, ni la première expérience d'évaluation. Les sujets sont âgés de 22 à 61 ans (moyenne: 29.5, écart-type: 14). Tous les sujets sont Nantais, et vivent dans cette ville depuis deux ans ou plus.Tous les sujets ont réalisé l'expérience avec succès.
-%DIF > 12 sujets (4 femmes) participent à l'expérience. Aucun d'entre eux n'a réalisé l'expérience de simulation, ni la première expérience d'évaluation. Les sujets sont âgés de 22 à 61 ans (moyenne: 29.5, écart-type: 14). Tous les sujets sont Nantais, et vivent dans cette ville depuis deux ans ou plus. 
+%DIF > 12 sujets (4 femmes) participent à l'expérience. Aucun d'entre eux n'a réalisé l'expérience de simulation, ni la première expérience d'évaluation. Les sujets sont âgés de 22 à 61 ans (moyenne: 29.5, écart-type: 14). Tous les sujets sont Nantais, et vivent dans cette ville depuis deux ans ou plus.
 
 12 subjects \DIFdelbegin \DIFdel{perform the test }\DIFdelend \DIFaddbegin \DIFadd{performed the experiment }\DIFaddend (8 male, 4 female; averaging $29.5$ years of age, s.d. of $14$ years). \DIFdelbegin \DIFdel{None of them have performed experiments 1.a and 1.b. }\DIFdelend All the subjects had been living in Nantes, France, for at least two years at the time of the experiment \DIFdelbegin \DIFdel{. }\DIFdelend \DIFaddbegin \DIFadd{and reported normal hearing. None of them took part in the previous experiments 1.a and 1.b.
 }
@@ -1503,7 +1506,7 @@ Furthermore, this subject used the whole scale (from -5 to 5) to score both the 
 
 %Dans cette section nous étudions comment les sujets ont perçu les différents types de scènes, nommément: i/am-, ni/am-, i/sm- et ni/sm-scène. L'ANOVA à mesures répétées pratiquée sur $\mathcal{A}_{sujet}$ montre un effet significatif du type d'environnement (i/ni: $F[1,10]=175$, $p<0.01$), de la présence/absence des marqueurs (am/sm: $F[1,10]=7$, $p<0.05$), ainsi que de l'interaction entre les deux facteurs ($F[1,10]=67$, $p<0.01$).
 
-In this section, we study the scores given by the \DIFdelbegin \DIFdel{subject }\DIFdelend \DIFaddbegin \DIFadd{subjects }\DIFaddend while listening to the \DIFdelbegin \DIFdel{several }\DIFdelend \DIFaddbegin \DIFadd{different }\DIFaddend types of scenes, namely the \DIFdelbegin \DIFdel{i/km-scenes, ni/km-scenes, i/rm-scenes and ni/rm-scenes (}\DIFdelend \DIFaddbegin \DIFadd{ideal scenes with markers, non-ideal scenes with markers, ideal scenes without markers and non-ideal scenes without markers, see }\DIFaddend Figure~\ref{fig:xp2_Ascene}\DIFdelbegin \DIFdel{)}\DIFdelend . The repeated \DIFdelbegin \DIFdel{measure }\DIFdelend \DIFaddbegin \DIFadd{measures }\DIFaddend ANOVA applied to $\mathcal{A}_{subject}$ shows a significant effect of the \DIFdelbegin \DIFdel{type environment (i/ni}\DIFdelend \DIFaddbegin \DIFadd{environment type (Type}\DIFaddend : $F[1,10]=175$, $p<0.01$), of the presence/absence of markers (\DIFdelbegin \DIFdel{km/rm}\DIFdelend \DIFaddbegin \DIFadd{marker}\DIFaddend : $F[1,10]=7$, $p<0.05$), and of the interaction between those two factors ($F[1,10]=67$, $p<0.01$).
+In this section, we study the scores given by the \DIFdelbegin \DIFdel{subject }\DIFdelend \DIFaddbegin \DIFadd{subjects }\DIFaddend while listening to the \DIFdelbegin \DIFdel{several }\DIFdelend \DIFaddbegin \DIFadd{different }\DIFaddend types of scenes, namely the \DIFdelbegin \DIFdel{i/km-scenes, ni/km-scenes, i/rm-scenes and ni/rm-scenes (}\DIFdelend \DIFaddbegin \DIFadd{ideal scenes with markers, non-ideal scenes with markers, ideal scenes without markers and non-ideal scenes without markers, see }\DIFaddend Figure~\ref{fig:xp2_Ascene}\DIFdelbegin \DIFdel{)}\DIFdelend . The repeated \DIFdelbegin \DIFdel{measure }\DIFdelend \DIFaddbegin \DIFadd{measures }\DIFaddend ANOVA applied to $\mathcal{A}_{subject}$ shows a significant effect of the \DIFdelbegin \DIFdel{type environment (i/ni: }\DIFdelend \DIFaddbegin \DIFadd{environment type (}\DIFaddend $F[1,10]=175$, $p<0.01$), of the presence/absence of markers (\DIFdelbegin \DIFdel{km/rm: }\DIFdelend $F[1,10]=7$, $p<0.05$), and of the interaction between those two factors ($F[1,10]=67$, $p<0.01$).
 
 %DIF < The \emph{post hoc} montre, quant à elle, des différences significatives entre tous les groupes d'observations, notamment entre les i/am- et i/sm-scenes ($p<0.05$) et les ni/am- et ni/sm-scenes ($p<0.01$).
 %DIF > %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1702,7 +1705,7 @@ Once again, besides the interesting possibilities already mentioned, the simulat
 %\begin{itemize}
 % \item le simulateur peut être déployé à large échelle via internet du fait de l'architecture logicielle choisie pour son développement;
 %DIF <  \item les scènes simulées peuvent être analysées sans avoir à tenir compte des différentes langues maternelles des sujets, la nature sémantique des classes de sons utilisées étant connue \emph{a priori} par l'expérimentateur et sans avoir besoin d'analyser la scène sonore pour idientifier les sources, leurs présences dans la scène étant directement exploitable.
-%DIF >  \item les scènes simulées peuvent être analysées sans avoir à tenir compte des différentes langues maternelles des sujets, la nature sémantique des classes de sons utilisées étant connue \emph{a priori} par l'expérimentateur 
+%DIF >  \item les scènes simulées peuvent être analysées sans avoir à tenir compte des différentes langues maternelles des sujets, la nature sémantique des classes de sons utilisées étant connue \emph{a priori} par l'expérimentateur
 %DIF >  \item les scènes simulées peuvent être analysées sans avoir besoin d'annoter la scène sonore pour idientifier les sources, leurs présences dans la scène étant directement exploitable.
 % \end{itemize}
 
@@ -1750,14 +1753,14 @@ Research project partly funded by ANR-11-JS03-005-01. The authors would like to 
 \begin{figure}[!hp]
     \centering
         {\includegraphics[trim={ 0 0 0cm 1cm},clip,width=.9\columnwidth]{gfx/appendix/event_1_en}\label{fig:taxonomieEventa}} \par
-         \caption{Taxonomy of sound classes of mechanical events used for the simulation urban soundscapes with level of abstraction from left to right.}
+         \caption{Taxonomy of sound classes of mechanical events used for the simulation \DIFaddbeginFL \DIFaddFL{of }\DIFaddendFL urban soundscapes\DIFaddbeginFL \DIFaddFL{, }\DIFaddendFL with level of abstraction from left to right.}
        \label{fig:taxonomieEa}
 \end{figure}
 
 \begin{figure}[hp]
     \centering
         {\includegraphics[trim={ 0 0 0cm 1cm},clip,width=.9\columnwidth]{gfx/appendix/event_2_en}\label{fig:taxonomieEventb}}
-       \caption{Taxonomy of sound classes of non-mechanical events used for the simulation urban soundscapes with level of abstraction from left to right.}
+       \caption{Taxonomy of sound classes of non-mechanical events used for the simulation \DIFaddbeginFL \DIFaddFL{of }\DIFaddendFL urban soundscapes\DIFaddbeginFL \DIFaddFL{, }\DIFaddendFL with level of abstraction from left to right.}
        \label{fig:taxonomieEb}
 \end{figure}
 
@@ -1766,7 +1769,7 @@ Research project partly funded by ANR-11-JS03-005-01. The authors would like to 
         {\includegraphics[trim={ 0 0 7cm 0},clip,width=.7\columnwidth]{gfx/appendix/texture_1_en}\label{fig:taxonomieTexturea}} \par
 
         {\includegraphics[trim={ 0 0 7cm 1cm},clip,width=.7\columnwidth]{gfx/appendix/texture_2_en}\label{fig:taxonomieTextureb}}
-       \caption{Taxonomy of sound classes of textures used for the simulation urban soundscapes with level of abstraction from left to right.}
+       \caption{Taxonomy of sound classes of textures used for the simulation \DIFaddbeginFL \DIFaddFL{of }\DIFaddendFL urban soundscapes\DIFaddbeginFL \DIFaddFL{, }\DIFaddendFL with level of abstraction from left to right.}
        \label{fig:taxonomieT}
 \end{figure}
 
@@ -1800,7 +1803,7 @@ Research project partly funded by ANR-11-JS03-005-01. The authors would like to 
         {\includegraphics[width=.24\linewidth]{gfx/appendix/xp4_note_11}\label{fig:xp4_note_1z}}
         \subfloat[subject 12]
         {\includegraphics[width=.24\linewidth]{gfx/appendix/xp4_note_12}\label{fig:xp4_note_1l}}
-        \caption{Distribution of scores given by the subjects during experiment 2 for \DIFdelbeginFL \DIFdelFL{i/am-scenes }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{the ideal scenes with markers }\DIFaddendFL (green) et \DIFdelbeginFL \DIFdelFL{ni/am-scenes }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{non-ideal scenes with markers }\DIFaddendFL (red). The horizontal axis is, from left to right, the 11-point bipolar semantic scale ranging from -5 (non-ideal / very unpleasant) to +5 (ideal / very pleasant).}\label{fig:xp4_note_1}
+        \caption{Distribution of scores given by the subjects during experiment 2 for \DIFdelbeginFL \DIFdelFL{i/am-scenes }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{the ideal scenes with markers }\DIFaddendFL (green) \DIFdelbeginFL \DIFdelFL{et ni/am-scenes }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{and the non-ideal scenes with markers }\DIFaddendFL (red). The horizontal axis is, from left to right, the 11-point bipolar semantic scale ranging from -5 (non-ideal / very unpleasant) to +5 (ideal / very pleasant).}\label{fig:xp4_note_1}
 \end{figure}
 
 \end{document}
