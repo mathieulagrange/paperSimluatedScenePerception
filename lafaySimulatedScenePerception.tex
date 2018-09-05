@@ -118,7 +118,7 @@ To demonstrate the potential of the proposed approach in its ability to question
 % \end{enumerate}
 
 \begin{enumerate}
-\item \emph{experiment 1.a, simulation}:  the subjects use the soundscape simulator to produce ideal / non-ideal soundscapes that are considered as material for the following experiments (the resulting waveforms are available for download\footnote{Soundscapes, available online \url{https://archive.org/details/soundSimulatedUrbanScene}});
+\item \emph{experiment 1.a, simulation}:  the subjects use the soundscape simulator to produce ideal / non-ideal soundscapes that are considered as material for the following experiments (the resulting waveforms are available for download\footnote{Soundscapes: \url{https://archive.org/details/soundSimulatedUrbanScene}});
 \item \emph{experiment 1.b, pleasantness evaluation}: the subjects judge the pleasantness of the simulated scenes on a semantic scale;
 \item \emph{experiment 2, pleasantness evaluation after modification of the scenes}: the subjects judge the pleasantness of the simulated scenes on a semantic scale as in 1.b, but some scenes are modified beforehand, \ie~some specific sounds classes that are identified as having a significant impact on perceived pleasantness are removed.
 \end{enumerate}
@@ -129,7 +129,7 @@ To the best of our knowledge, only~\cite{bruce2009development,bruce2014effects} 
 
 %Dans notre démarche, le simulateur utilisé \footnote{simScene, disponible en ligne \url{http://soundthings.org/research/}} permet une restitution simplifiée (monophonique) des scènes, au profit d'un nombre plus important de paramètres et de sources disponibles, ce afin de garantir, à la sortie, des données viables et expressives.
 
-In our approach, the simulator developed for this study\footnote{simScene, available online \url{https://bitbucket.org/mlagrange/simscene}} only yields a monophonic representation of the scene, but that simplification comes with the benefit of a wider range of available sound sources and scheduling parameters in order to provide outputs which are both expressive and useful for analysis.
+In our approach, the simulator developed for this study\footnote{simScene: \url{https://bitbucket.org/mlagrange/simscene}} only yields a monophonic representation of the scene, but that simplification comes with the benefit of a wider range of available sound sources and scheduling parameters in order to provide outputs which are both expressive and useful for analysis.
 
 %Le papier comprend 5 sections: Introduction, L'outil de simulation \emph{SimScene}, Expérience 1 .a \emph{simulation} et .b \emph{évaluation de l'agrément}, Expérience 2 \emph{évaluation de l'agrément après modification des scènes}, et Conclusions et perspectives.
 
@@ -150,7 +150,7 @@ The remaining of this paper is organized as follows: the soundscape simulator \e
 
 %\emph{Simscene} est un environnement de travail audio-numérique dont la première version a été développée dans le cadre du projet HOULE\footnote{\emph{Projet HOULE} : \url{houle.ircam.fr}}. Il est prévu pour fonctionner sur les navigateurs internet \emph{Chrome} et \emph{Firefox}. L'outil a été développé en javascript à l'aide de la bibliothèque \emph{angular.js}\footnote{\emph{angular.js} : \url{angularjs.org}} et du standard \emph{web-audio}\footnote{\emph{web-audio} : \url{www.w3.org/TR/webaudio}}. L'interface de sélection (\cf~Section~\ref{sec:simscene_ssf}) a été développée à l'aide de la bibliothèque \emph{D3.js} \cite{d32011}.
 
-\emph{Simscene} is an online digital audio tool whose first version has been developed as part of the HOULE project\footnote{\emph{Projet HOULE} : \url{houle.ircam.fr}}. It has been designed to run on the popular web browsers \emph{Chrome} and \emph{Firefox}. It is fully written in javascript using the \emph{angular.js} library\footnote{\emph{angular.js} : \url{angularjs.org}} and the \emph{Web Audio} standard that allows the manipulation of digital audio data within the browser\footnote{\emph{Web Audio}: \url{www.w3.org/TR/webaudio}}. The interface for selecting sound sources (\cf~Section~\ref{sec:simscene_ssf}) uses the popular \emph{D3.js} visualization library proposed by~\cite{d32011}.
+\emph{Simscene} is an online digital audio tool whose first version has been developed as part of the HOULE project\footnote{\emph{HOULE project}: \url{houle.ircam.fr}}. It has been designed to run on the popular web browsers \emph{Chrome} and \emph{Firefox}. It is fully written in javascript using the \emph{angular.js} library\footnote{\emph{angular.js}: \url{angularjs.org}} and the \emph{Web Audio} standard that allows the manipulation of digital audio data within the browser\footnote{\emph{Web Audio}: \url{www.w3.org/TR/webaudio}}. The interface for selecting sound sources (\cf~Section~\ref{sec:simscene_ssf}) uses the popular \emph{D3.js} visualization library proposed by~\cite{d32011}.
 
 %Le fonctionnement de \emph{Simscene} se rapproche de celui d'un séquenceur audio. Un utilisateur choisit une classe de sons via l'interface de sélection (\cf~Section~\ref{sec:simscene_ssf}). Une fois la classe de sons sélectionnée, une piste audio, liée à cette classe, est créée. L'utilisateur peut alors modifier certaines propriétés de la piste via un groupe de paramètres de contrôle propre à chacune (\cf~Section~\ref{sec:simscene_parametre}). Des champs de texte sont prévus afin de permettre à l'utilisateur 1) de nommer chaque piste, 2) de donner un titre à la scène simulée 3) de commenter la scène simulée.
 
@@ -214,7 +214,7 @@ The sound classes are organized hierarchically (\cf~Figure~\ref{fig:orgDb}) acco
 
 %Nous établissons deux taxonomies, une pour les événements, une autre pour les textures (\cf~Annexe~\ref{app:taxonomie}). Pour les événements, nous considérons quatre niveaux d'abstraction allant des classes les plus générales (niveau d'abstraction 0), aux classes les plus spécifiques (niveau d'abstraction 3). Pour les textures, nous ne considérons que trois niveaux d'abstraction. Notons que la taxonomie des événements est proche de celle de \cite{Salamon14}, introduite postérieurement à notre étude.
 
-Accounting for the previously detailed perceptual matters, two taxonomies are built, one for sound events and one for sound textures. Up to four levels of abstraction are considered from the most generic classes (level 0) to the most specific classes (level 3), leading to a taxonomy close to the one used in~\cite{Salamon14}, see Appendix~\ref{app:taxonomie}. Only three levels of abstraction are considered for the texture sounds, see Figure~\ref{fig:taxonomieT}.
+Accounting for the previously detailed perceptual matters, two taxonomies are built, one for sound events and one for sound textures. Up to four levels of abstraction are considered from the most generic classes (level 0) to the most specific classes (level 3), leading to a taxonomy close to the one used in~\cite{Salamon14}, see~\ref{app:taxonomie}. Only three levels of abstraction are considered for the texture sounds, see Figure~\ref{fig:taxonomieT}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%    FIN RELECTURE APPROFONDIE    %%%%%%%%%%%%%%%%%%%
@@ -477,7 +477,7 @@ Three experimenters (one in each room) were available during the whole duration 
 
 % Sur les 44 sujets, 40 réalisent l'expérience avec succès, produisant au final 80 scènes sonores simulées, dont 40 scènes idéales, et 40 scènes non idéales. 4 sont éliminés pour non respect ou incompréhension des consignes, d'une part, et dépassement du temps, d'autre part.
 
-Among the 44 subjects, 40 succeeded, producing in the end 80 simulated sound scenes (40 ideal scenes, 40 non-ideal scenes). The 4 other subjects were excluded from the process due to a lack of understanding of the instructions or failure to respect them, or for exceeding the maximum duration allowed to perform the experiment.  The software platform used for the experiment, the parametrization of the software platform for each generated scene, as well as a 2 dimensional projection of the resulting scenes are available online\footnote{Available online \url{http://soundthings.org/research/urbanSoundScape/XP2014}}.
+Among the 44 subjects, 40 succeeded, producing in the end 80 simulated sound scenes (40 ideal scenes, 40 non-ideal scenes). The 4 other subjects were excluded from the process due to a lack of understanding of the instructions or failure to respect them, or for exceeding the maximum duration allowed to perform the experiment.  The software platform used for the experiment, the parametrization of the software platform for each generated scene, as well as a 2 dimensional projection of the resulting scenes are available online\footnote{Experiment 1.a: \url{http://soundthings.org/research/urbanSoundScape/XP2014}}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%    FIN RELECTURE APPROFONDIE    %%%%%%%%%%%%%%%%%%%
@@ -1488,14 +1488,14 @@ Research project partly funded by ANR-11-JS03-005-01. The authors would like to 
 \begin{figure}[!hp]
     \centering
         {\includegraphics[trim={ 0 0 0cm 1cm},clip,width=.9\columnwidth]{gfx/appendix/event_1_en}\label{fig:taxonomieEventa}} \par
-         \caption{Taxonomy of sound classes of mechanical events used for the simulation urban soundscapes with level of abstraction from left to right.}
+         \caption{Taxonomy of sound classes of mechanical events used for the simulation of urban soundscapes, with level of abstraction from left to right.}
        \label{fig:taxonomieEa}
 \end{figure}
 
 \begin{figure}[hp]
     \centering
         {\includegraphics[trim={ 0 0 0cm 1cm},clip,width=.9\columnwidth]{gfx/appendix/event_2_en}\label{fig:taxonomieEventb}}
-       \caption{Taxonomy of sound classes of non-mechanical events used for the simulation urban soundscapes with level of abstraction from left to right.}
+       \caption{Taxonomy of sound classes of non-mechanical events used for the simulation of urban soundscapes, with level of abstraction from left to right.}
        \label{fig:taxonomieEb}
 \end{figure}
 
@@ -1504,7 +1504,7 @@ Research project partly funded by ANR-11-JS03-005-01. The authors would like to 
         {\includegraphics[trim={ 0 0 7cm 0},clip,width=.7\columnwidth]{gfx/appendix/texture_1_en}\label{fig:taxonomieTexturea}} \par
 
         {\includegraphics[trim={ 0 0 7cm 1cm},clip,width=.7\columnwidth]{gfx/appendix/texture_2_en}\label{fig:taxonomieTextureb}}
-       \caption{Taxonomy of sound classes of textures used for the simulation urban soundscapes with level of abstraction from left to right.}
+       \caption{Taxonomy of sound classes of textures used for the simulation of urban soundscapes, with level of abstraction from left to right.}
        \label{fig:taxonomieT}
 \end{figure}
 
@@ -1538,7 +1538,7 @@ Research project partly funded by ANR-11-JS03-005-01. The authors would like to 
         {\includegraphics[width=.24\linewidth]{gfx/appendix/xp4_note_11}\label{fig:xp4_note_1z}}
         \subfloat[subject 12]
         {\includegraphics[width=.24\linewidth]{gfx/appendix/xp4_note_12}\label{fig:xp4_note_1l}}
-        \caption{Distribution of scores given by the subjects during experiment 2 for the ideal scenes with markers (green) et non-ideal scenes with markers (red). The horizontal axis is, from left to right, the 11-point bipolar semantic scale ranging from -5 (non-ideal / very unpleasant) to +5 (ideal / very pleasant).}\label{fig:xp4_note_1}
+        \caption{Distribution of scores given by the subjects during experiment 2 for the ideal scenes with markers (green) and the non-ideal scenes with markers (red). The horizontal axis is, from left to right, the 11-point bipolar semantic scale ranging from -5 (non-ideal / very unpleasant) to +5 (ideal / very pleasant).}\label{fig:xp4_note_1}
 \end{figure}
 
 \end{document}
